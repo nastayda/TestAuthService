@@ -13,6 +13,8 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class TestAuthorization extends BaseClass {
+    @FindBy(xpath = "//table")
+    static WebElement table;
 
     @Title("Авторизация пользователя")
     @Test
@@ -20,6 +22,6 @@ public class TestAuthorization extends BaseClass {
     public void TestAuthorization() {
         login();
         //Завязываемся на отображение таблицы
-        assertTrue(wd.findElement(By.xpath("//table")).isEnabled());
+        assertTrue(table.isEnabled());
     }
 }
