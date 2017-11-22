@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="TestAuthService" external.linked.project.path="$USER_HOME$/Desktop/TestAuthService" external.root.project.path="$USER_HOME$/Desktop/TestAuthService" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$USER_HOME$/Desktop/TestAuthService">
+      <excludeFolder url="file://$USER_HOME$/Desktop/TestAuthService/.gradle" />
+      <excludeFolder url="file://$USER_HOME$/Desktop/TestAuthService/build" />
+      <excludeFolder url="file://$USER_HOME$/Desktop/TestAuthService/out" />
+    </content>
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

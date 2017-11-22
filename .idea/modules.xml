@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GitHub-TestAuthService.iml" filepath="$PROJECT_DIR$/.idea/modules/GitHub-TestAuthService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestAuthService_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TestAuthService_main.iml" group="TestAuthService" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestAuthService_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TestAuthService_test.iml" group="TestAuthService" />
+    </modules>
+  </component>
+</project>
