@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/AuthService/CreateNewUser.class" afterPath="$PROJECT_DIR$/out/test/classes/AuthService/CreateNewUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AuthService/CreateNewUser.java" afterPath="$PROJECT_DIR$/src/test/java/AuthService/CreateNewUser.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/AuthService/CreateNewUser.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/AuthService/CreateNewUser.java" afterPath="$PROJECT_DIR$/src/test/java/AuthService/CreateUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AuthService/TestAuthorization.java" afterPath="$PROJECT_DIR$/src/test/java/AuthService/TestAuthorization.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -37,7 +40,7 @@
       <file leaf-file-name="Auth.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Auth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="0">
               <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               <folding>
                 <element signature="e#63#64#0" expanded="true" />
@@ -47,17 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="187">
+              <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#login#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
                 <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
                 <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-                <element signature="e#3695#3696#0" expanded="true" />
-                <element signature="e#3720#3721#0" expanded="true" />
                 <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
               </folding>
             </state>
@@ -68,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/TestAuthorization.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,16 +82,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateNewUser.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateNewUser.java">
+      <file leaf-file-name="CreateUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            <state relative-caret-position="59">
+              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#165#166#0" expanded="true" />
-                <element signature="e#188#189#0" expanded="true" />
+                <element signature="method#clickToSave#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setRole#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setPhoneNumber#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setEmail#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setMiddleName#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setFirstName#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setSurname#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setPassword#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setLogin#0;class#CreateUser#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageLocators.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/PageLocators.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth-info.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/help-files/auth-info.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -605,9 +642,13 @@
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/WriteReadFromFile.java" />
         <option value="$PROJECT_DIR$/src/help-files/auth-info.txt" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/Authorization.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AuthService/TestAuthorization.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/AuthService/CreateNewUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AuthService/CreateNUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AuthService/CreateUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HelpClass/PageObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HelpClass/PageLocators.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AuthService/TestAuthorization.java" />
       </list>
     </option>
   </component>
@@ -653,6 +694,12 @@
               <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="help-files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -692,6 +739,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -710,7 +758,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CreateNewUser.test">
+  <component name="RunManager" selected="TestNG.TestAuthorization.TestAuthorization">
     <configuration name="Auth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Auth" />
@@ -725,7 +773,7 @@
       <module name="TestAuthService_main" />
       <envs />
     </configuration>
-    <configuration name="CreateNewUser.test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateUser.test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="AuthService.*" />
@@ -737,7 +785,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="AuthService" />
-      <option name="MAIN_CLASS_NAME" value="AuthService.CreateNewUser" />
+      <option name="MAIN_CLASS_NAME" value="AuthService.CreateUser" />
       <option name="METHOD_NAME" value="test" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -905,12 +953,12 @@
       <item index="0" class="java.lang.String" itemvalue="Application.Auth" />
       <item index="1" class="java.lang.String" itemvalue="Application.WriteReadFromFile" />
       <item index="2" class="java.lang.String" itemvalue="TestNG.TestAuthorization.TestAuthorization" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.CreateNewUser.test" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.CreateUser.test" />
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.CreateNewUser.test" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.TestAuthorization.TestAuthorization" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TestAuthorization.TestAuthorization" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.CreateUser.test" />
         <item index="2" class="java.lang.String" itemvalue="Application.WriteReadFromFile" />
         <item index="3" class="java.lang.String" itemvalue="Application.Auth" />
       </list>
@@ -930,16 +978,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreateNewUser_test - 2017.11.22 at 14h 25m 23s.xml">
-      <configuration name="CreateNewUser.test" configurationId="TestNG" />
+    <history-entry file="CreateUser_test - 2017.11.22 at 15h 05m 09s.xml">
+      <configuration name="CreateUser.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.22 at 12h 53m 58s.xml">
+    <history-entry file="CreateUser_test - 2017.11.22 at 15h 13m 05s.xml">
+      <configuration name="CreateUser.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CreateUser_test - 2017.11.22 at 15h 13m 57s.xml">
+      <configuration name="CreateUser.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CreateUser_test - 2017.11.22 at 15h 14m 50s.xml">
+      <configuration name="CreateUser.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.22 at 15h 34m 11s.xml">
       <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.22 at 13h 26m 41s.xml">
+    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.22 at 15h 35m 53s.xml">
       <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.22 at 14h 16m 52s.xml">
+    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.22 at 15h 46m 43s.xml">
+      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.22 at 15h 47m 43s.xml">
+      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.22 at 16h 29m 38s.xml">
+      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.22 at 16h 33m 38s.xml">
       <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -955,7 +1021,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -981,7 +1047,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1003,10 +1069,13 @@
           <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
             <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
             <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-            <element signature="e#3695#3696#0" expanded="true" />
-            <element signature="e#3720#3721#0" expanded="true" />
             <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
           </folding>
         </state>
@@ -1022,14 +1091,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateNewUser.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
+            <element signature="method#clickToSave#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setRole#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setPhoneNumber#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setEmail#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setMiddleName#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setFirstName#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setSurname#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setPassword#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setLogin#0;class#CreateUser#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1051,10 +1127,13 @@
           <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
             <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
             <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-            <element signature="e#3695#3696#0" expanded="true" />
-            <element signature="e#3720#3721#0" expanded="true" />
             <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
           </folding>
         </state>
@@ -1070,14 +1149,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateNewUser.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
+            <element signature="method#clickToSave#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setRole#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setPhoneNumber#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setEmail#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setMiddleName#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setFirstName#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setSurname#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setPassword#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setLogin#0;class#CreateUser#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1085,7 +1171,7 @@
     <entry file="file://$USER_HOME$/Desktop/TestAuthService/src/main/java/Auth.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Auth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="0">
           <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding>
             <element signature="e#63#64#0" expanded="true" />
@@ -1111,22 +1197,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/help-files/auth-info.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+        <state relative-caret-position="34">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/PageObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-            <element signature="e#3695#3696#0" expanded="true" />
-            <element signature="e#3720#3721#0" expanded="true" />
-            <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#clickToSave#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setRole#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setPhoneNumber#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setEmail#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setMiddleName#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setFirstName#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setSurname#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setPassword#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setLogin#0;class#CreateUser#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/PageLocators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1134,21 +1245,27 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/TestAuthorization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateNewUser.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="187">
+          <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
+            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
           </folding>
         </state>
       </provider>

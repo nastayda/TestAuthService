@@ -13,16 +13,12 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class TestAuthorization extends BaseClass {
-    @FindBy(xpath = "//table")
-    static WebElement table;
 
     @Title("Авторизация пользователя")
     @Test
     @Step("Вызов метода авторизации")
     public void TestAuthorization() {
         login();
-        //PageFactory.initElements( wd, TestAuthorization.class );
-        //System.out.println( table.isEnabled());
         //Завязываемся на отображение таблицы
         assertTrue(wd.findElement(By.xpath("//table")).isEnabled());
     }
