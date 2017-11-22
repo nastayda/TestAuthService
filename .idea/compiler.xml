@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="TestAuthService_main" target="1.8" />
       <module name="TestAuthService_test" target="1.8" />
+      <module name="TestAuthServiceNew_main" target="1.8" />
+      <module name="TestAuthServiceNew_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

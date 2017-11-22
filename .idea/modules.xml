@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GitHub-TestAuthService.iml" filepath="$PROJECT_DIR$/.idea/modules/GitHub-TestAuthService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestAuthService_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TestAuthService_main.iml" group="TestAuthService" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestAuthService_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TestAuthService_test.iml" group="TestAuthService" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestAuthServiceNew.iml" filepath="$PROJECT_DIR$/.idea/modules/TestAuthServiceNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestAuthServiceNew_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TestAuthServiceNew_main.iml" group="TestAuthServiceNew" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestAuthServiceNew_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TestAuthServiceNew_test.iml" group="TestAuthServiceNew" />
     </modules>
   </component>
 </project>
