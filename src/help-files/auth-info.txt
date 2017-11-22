@@ -1,0 +1,3 @@
+﻿http://vm-auth-dev.ursip.ru/auth/
+admin
+admin
