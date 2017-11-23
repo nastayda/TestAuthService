@@ -14,57 +14,58 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class DeleteUser extends BaseClass{
-    @FindBy(xpath ="//table/tbody/tr")
+public class DeleteUser extends BaseClass {
+    @FindBy(xpath = "//table/tbody/tr")
     static List<WebElement> table;
-    @FindBy(xpath ="//table/tbody/tr[last()]/td[1]")
+    @FindBy(xpath = "//table/tbody/tr[last()]/td[1]")
     static WebElement checkB;
-    @FindBy(xpath ="//table/tbody/tr[last()]/td[2]")
+    @FindBy(xpath = "//table/tbody/tr[last()]/td[2]")
     static WebElement userLoginT;
-    @FindBy(xpath ="//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[1]/button")
+    @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[1]/button")
     static WebElement deleteBTN;
-    @FindBy(xpath ="//div[2]/div/div[2]/div/div[1]/div[3]/button[2]")
+    @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[3]/button[2]")
     static WebElement confirmDeletionBTN;
 
     @Test
     @Title("Удалить пользователя")
-    public void deleteUser(){
-        login();
-        int countRowsBefore = getCountRows();
+    public void deleteUser( ) {
+        login( );
+        int countRowsBefore = getCountRows( );
         choseUserForDeletion( );
         clickToDeleteBtn( );
-        assertEquals( getCountRows(), countRowsBefore-1);
+        assertEquals( getCountRows( ), countRowsBefore - 1 );
 
     }
 
     @Step("Удалить и подтвердить удалене")
-    private void clickToDeleteBtn( ) {
+    public void clickToDeleteBtn( ) {
         waitUntilElementBeClickable( deleteBTN );
-        deleteBTN.click();
+        deleteBTN.click( );
         waitUntilElementBeClickable( confirmDeletionBTN );
-        confirmDeletionBTN.click();
+        confirmDeletionBTN.click( );
         waitUntilElementBeClickable( checkB );
 
     }
 
     //Подождем пока появится элемент
-    private void waitUntilElementBeClickable( WebElement clickableElement ) {
-        WebDriverWait wait = new WebDriverWait(wd, 5);
-        WebElement element = wait.until( ExpectedConditions.elementToBeClickable( clickableElement ));
+    public void waitUntilElementBeClickable( WebElement clickableElement ) {
+        WebDriverWait wait = new WebDriverWait( wd, 5 );
+        WebElement element = wait.until( ExpectedConditions.elementToBeClickable( clickableElement ) );
     }
 
     @Step("Получить имя пользователя")
-    private void choseUserForDeletion( ) {
-        if (!checkB.isSelected()&userLoginT.getText().contains( "testUser"+ LocalDateTime.now().getYear() )) {
-            checkB.click();
+    public void choseUserForDeletion( ) {
+        if (!checkB.isSelected( ) & (userLoginT.getText( ).contains( "testUser" + LocalDateTime.now( ).getYear( ) )||
+                                     userLoginT.getText( ).contains( "editedUser" + LocalDateTime.now( ).getYear( ) ))) {
+            checkB.click( );
         }
     }
 
     @Step("Получить число элементов со страницы")
-    public int getCountRows() {
-        wd.navigate().refresh();
+    public int getCountRows( ) {
+        wd.navigate( ).refresh( );
         //Посчитать число строк в таблице
-        return table.size();
+        return table.size( );
     }
 
 }

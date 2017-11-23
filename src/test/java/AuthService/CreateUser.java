@@ -42,87 +42,97 @@ public class CreateUser extends BaseClass {
     public void createUser( ) {
         login( );
         String loginName = "testUser" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
-        createNewUser( loginName );
+        clickAddBtn( );
+        createNewUser( loginName, "test", "Testov", "Test", "Testovich", "test@test.ru", "+79999999999", "Tester" );
         assertEquals( nameLoginObject.getText(), loginName );
+        //проверить авторизацию созданным пользователем
     }
 
     @Step("Создание новго пользователя")
-    private void createNewUser( String login ) {
+    public void createNewUser( String login, String password, String surname, String firstName, String middleName, String email, String phoneNumber, String role ) {
         setLogin( login );
-        setPassword( "test" );
-        setSurname( "Testov" );
-        setFirstName( "Test" );
-        setMiddleName( "Testovich" );
-        setEmail( "test@test.ru" );
-        setPhoneNumber( "+79999999999" );
-        setRole( "Tester" );
+        setPassword( password );
+        setSurname( surname );
+        setFirstName( firstName );
+        setMiddleName( middleName );
+        setEmail( email );
+        setPhoneNumber( phoneNumber );
+        setRole( role );
         clickToSave( );
         wd.navigate( ).refresh( );
     }
 
     @Step("9. Сохранине")
-    private void clickToSave( ) {
+    public void clickToSave( ) {
         saveBTN.click();
     }
 
     @Step("8. Ввод роли {0}")
-    private void setRole( String role ) {
+    public void setRole( String role ) {
         roleTB.click( );
         roleTB.clear( );
         roleTB.sendKeys( role );
     }
 
     @Step("7. Ввод номера телефона {0}")
-    private void setPhoneNumber( String phoneNumber ) {
+    public void setPhoneNumber( String phoneNumber ) {
         phoneNumberTB.click( );
         phoneNumberTB.clear( );
         phoneNumberTB.sendKeys( phoneNumber );
     }
 
     @Step("6. Ввод email {0}")
-    private void setEmail( String email ) {
+    public void setEmail( String email ) {
         emailTB.click( );
         emailTB.clear( );
         emailTB.sendKeys( email );
     }
 
     @Step("5. Ввод отчества {0}")
-    private void setMiddleName( String middleName ) {
+    public void setMiddleName( String middleName ) {
         middleNameTB.click( );
         middleNameTB.clear( );
         middleNameTB.sendKeys( middleName );
     }
 
     @Step("4. Ввод имени {0}")
-    private void setFirstName( String firstName ) {
+    public void setFirstName( String firstName ) {
         firstNameTB.click( );
         firstNameTB.clear( );
         firstNameTB.sendKeys( firstName );
     }
 
     @Step("3. Ввод фамилии {0}")
-    private void setSurname( String surname ) {
+    public void setSurname( String surname ) {
         lastNameTB.click( );
         lastNameTB.clear( );
         lastNameTB.sendKeys( surname );
     }
 
     @Step("2. Ввод пароля {0}")
-    private void setPassword( String password ) {
+    public void setPassword( String password ) {
+
         passwordTB.click( );
         passwordTB.clear( );
         passwordTB.sendKeys( password );
-        passwordRepeatTB.click( );
-        passwordRepeatTB.clear( );
-        passwordRepeatTB.sendKeys( password );
-
+        String Source = wd.getPageSource();
+        System.out.println(passwordRepeatTB.getText() );
+        if (Source.contains(passwordRepeatTB.getText()))
+        {
+            passwordRepeatTB.click( );
+            passwordRepeatTB.clear( );
+            passwordRepeatTB.sendKeys( password );
+        }
     }
 
     @Step("1. Ввод логина {0}")
-    private void setLogin( String login ) {
-        buttonAddBTN.click( );
+    public static void setLogin( String login ) {
         loginNameTB.clear( );
         loginNameTB.clear( );
         loginNameTB.sendKeys( login );
+    }
+
+    public void clickAddBtn( ) {
+      buttonAddBTN.click();
     }
 }
