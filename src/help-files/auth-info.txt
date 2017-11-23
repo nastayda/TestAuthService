@@ -1,3 +1,4 @@
 ﻿http://vm-auth-dev.ursip.ru/auth/
 admin
 admin
+http://vm-auth-dev.ursip.ru/policy-manager/

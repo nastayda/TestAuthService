@@ -1,6 +1,5 @@
 package HelpClass;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -122,9 +121,9 @@ public class BaseClass {
         WebElement element = wait.until( ExpectedConditions.elementToBeClickable( clickableElement ) );
     }
 
-    public String[] getDataFromFile( ) {
+    public String[] getDataFromFile( String pathname ) {
         //Получить путь к тестовым файлам
-        File testFile = new File( "src/help-files/data-for-doc.txt" );
+        File testFile = new File( pathname );
         //Читаем из файла по абсолютному пути
         WriteReadFromFile readDataForCompare = new WriteReadFromFile( testFile.getAbsolutePath( ) );
         //Заполнить массив тестовыми данными
