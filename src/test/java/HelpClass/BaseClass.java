@@ -54,7 +54,6 @@ public class BaseClass {
 
         wd = new FirefoxDriver( );
         wd.manage( ).timeouts( ).implicitlyWait( 10, TimeUnit.SECONDS );
-
         //C:\Users\danilkinaas\Documents\GitHub\TestAuthServiceNew\src\help-files\geckodriver.exe
         //Читаем из файла адрес сервера
         readData = new WriteReadFromFile( testFile.getAbsolutePath( ) );
