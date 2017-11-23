@@ -50,7 +50,7 @@ public class DeleteUser extends BaseClass {
     @Step("Получить имя пользователя")
     public void choseUserForDeletion( ) {
         if (!checkB.isSelected( ) & (userLoginT.getText( ).contains( "testUser" + LocalDateTime.now( ).getYear( ) )||
-                                     userLoginT.getText( ).contains( "editedUser" + LocalDateTime.now( ).getYear( ) ))) {
+                                     userLoginT.getText( ).contains( "editUser" + LocalDateTime.now( ).getYear( ) ))) {
             checkB.click( );
         }
     }
