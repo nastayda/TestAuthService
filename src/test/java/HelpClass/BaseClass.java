@@ -116,6 +116,12 @@ public class BaseClass {
         wd.quit( );
     }
 
+    //Подождем пока появится элемент
+    public void waitUntilElementBeClickable( WebElement clickableElement ) {
+        WebDriverWait wait = new WebDriverWait( wd, 5 );
+        WebElement element = wait.until( ExpectedConditions.elementToBeClickable( clickableElement ) );
+    }
+
     public String[] getDataFromFile( ) {
         //Получить путь к тестовым файлам
         File testFile = new File( "src/help-files/data-for-doc.txt" );

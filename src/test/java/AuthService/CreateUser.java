@@ -64,6 +64,7 @@ public class CreateUser extends BaseClass {
 
     @Step("9. Сохранине")
     public void clickToSave( ) {
+        waitUntilElementBeClickable( saveBTN );
         saveBTN.click();
     }
 

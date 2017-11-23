@@ -47,12 +47,6 @@ public class DeleteUser extends BaseClass {
 
     }
 
-    //Подождем пока появится элемент
-    public void waitUntilElementBeClickable( WebElement clickableElement ) {
-        WebDriverWait wait = new WebDriverWait( wd, 5 );
-        WebElement element = wait.until( ExpectedConditions.elementToBeClickable( clickableElement ) );
-    }
-
     @Step("Получить имя пользователя")
     public void choseUserForDeletion( ) {
         if (!checkB.isSelected( ) & (userLoginT.getText( ).contains( "testUser" + LocalDateTime.now( ).getYear( ) )||

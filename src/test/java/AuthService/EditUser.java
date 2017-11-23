@@ -7,7 +7,9 @@ import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Random;
 
 import static org.testng.Assert.assertEquals;
 
@@ -28,7 +30,8 @@ public class EditUser extends CreateUser {
     @Title("Редактирование пользователя")
     public void editUser( ) {
         login( );
-        /*String[] dataForEdite = { userLoginRow.getText( ).replaceAll(userLoginRow.getText( ).substring( 0,4 ), "edit" ),
+        String loginName = "editUser" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
+        String[] dataForEdite = { loginName,
                 "test1",
                 "Testovsky",
                 "Testky",
@@ -36,21 +39,24 @@ public class EditUser extends CreateUser {
                 "testky@test.ru",
                 "+70000000000",
                 "Testerer" };
-        editUserToEdited( dataForEdite );*/
-
+        editUserToEdited( dataForEdite );
+        compareDataFromTable( dataForEdite, loginName );
     }
 
-    public void compareDataFromTable(String [] dataForEdite){
+    @Step("Сравнние введенных данных и тех, что отображаются в таблице")
+    public void compareDataFromTable( String[] dataForEdite , String loginName) {
         //Выбрать только то, что отображается в таблице
-        String [] dataFromMass ={dataForEdite[0],dataForEdite[2],dataForEdite[3],dataForEdite[4],dataForEdite[5],dataForEdite[7]};
-        String [] dataFromTable = new String[tableColums.size()-1];
-        for (int i =1 ; i< tableColums.size()-1; i++) {
-            dataFromTable[i-1]= tableColums.get( i-1 ).getText();
+        String[] dataFromMass = { loginName, dataForEdite[ 2 ], dataForEdite[ 3 ], dataForEdite[ 4 ], dataForEdite[ 5 ], dataForEdite[ 7 ] };
+        wd.navigate().refresh();
+        //Выбрать из таблицы то, с чем будем сравнивать
+        String[] dataFromTable = new String[ tableColums.size( ) - 1 ];
+        for (int i = 1; i < tableColums.size( ) ; i++) {
+            dataFromTable[ i - 1 ] = tableColums.get( i ).getText( );
         }
-        assertEquals(dataFromMass,dataFromTable);
+        assertEquals( dataFromMass, dataFromTable );
     }
 
-    @Step("Редактирвоание документа")
+    @Step("Редактирвоание пользователя")
     private void editUserToEdited( String[] dataForEdite ) {
         userLoginRow.click( );
         editBTN.click( );
@@ -69,6 +75,6 @@ public class EditUser extends CreateUser {
     public void setNewPasswordTB( String newPassword ) {
         newPasswordTB.click( );
         newPasswordTB.clear( );
-        newPasswordTB.sendKeys( newPassword );
+        newPasswordTB.sendKeys( newPassword);
     }
 }
