@@ -16,6 +16,9 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
+    @FindBy(xpath = "//ul/li[5]")
+    static WebElement pagginationArrow;
+
     public FirefoxDriver wd;
     WriteReadFromFile readData;
 
@@ -133,5 +136,15 @@ public class BaseClass {
         }
         //System.out.println(dataFromFile[1]);
         return dataFromFile;
+    }
+
+    @Step("1. Перейти на последнюю страницу")
+    protected void goToLastPage( ) {
+        //Классно! если только не 100500 страниц надо будет перелистывать....
+        if (pagginationArrow.getAttribute( "aria-disabled" ) != null) {
+            while (pagginationArrow.getAttribute( "aria-disabled" ).equals( "false" )) {
+                pagginationArrow.click( );
+            }
+        }
     }
 }

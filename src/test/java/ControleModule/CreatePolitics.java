@@ -1,14 +1,16 @@
 package ControleModule;
 
 import HelpClass.BaseClass;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 
+import javax.print.attribute.standard.Fidelity;
 import java.time.LocalDateTime;
+
+import static org.testng.Assert.assertEquals;
 
 public class CreatePolitics extends BaseClass {
     ///html/body/div[2]/div/div[2]/div/div[1]/div[3]/div/button[2]
@@ -18,6 +20,8 @@ public class CreatePolitics extends BaseClass {
     static WebElement addBTN;
     @FindBy(xpath = "//ul[@class='ant-select-tree']/li[1]/ul/li[2]/span[2]/span")
     static WebElement expandMenu;
+    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[5]/div/div[2]/div[2]/div/div/div/div")
+    static WebElement dropdownMenuSign1;
     @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[4]/div/div[2]/div[2]/div/div/div/div")
     static WebElement dropdownMenuSign;
     @FindBy(xpath = "//div[4]/div/div/div/ul/li[1]")
@@ -32,6 +36,10 @@ public class CreatePolitics extends BaseClass {
     static WebElement parametrINPT0;
     @FindBy(id = "subjectValue-0")
     static WebElement valueINPT0;
+    @FindBy(id = "subjectParameter-1")
+    static WebElement parametrINPT1;
+    @FindBy(id = "subjectValue-1")
+    static WebElement valueINPT1;
     @FindBy(id = "policyName")
     static WebElement policyNameINPT;
     @FindBy(id = "policyDescription")
@@ -42,6 +50,8 @@ public class CreatePolitics extends BaseClass {
     static WebElement menuItem;
     @FindBy(css = "span.ant-select-tree-switcher.ant-select-tree-switcher_close")
     static WebElement chooseServiceSetting;
+    @FindBy(xpath = "//table/tbody/tr[last()]/td[2]")
+    static WebElement lastRow;
 
     @Test
     public void createPolitics( ) {
@@ -49,14 +59,26 @@ public class CreatePolitics extends BaseClass {
         wd.navigate( ).to( getDataFromFile( "src/help-files/auth-info.txt" )[ 3 ] );
         wd.get( "http://vm-auth-dev.ursip.ru/policy-manager/" );
         String politicsName = "testPolitics" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
+        createPolitics( politicsName, "Фамилия", "123", "test description", "Авторизация" );
+        goToLastPage( );
+        assertEquals(politicsName, lastRow.getText());
+    }
+
+    public void createPolitics( String politicsName, String parameter, String meaning, String description, String serviceName ) {
         clickToAddBtn( );
-        choseParametr( "Фамилия" );
+        //Заполнить первую строку
+        choseParameter( parameter, parametrINPT0 );
         choseSign( );
-        setMeaning( "123" );
-        //chooseCondition( );
+        setMeaning( meaning, valueINPT0 );
+        /*chooseCondition( );
+        //Заполнить вторую строку
+        choseParameter( "Фамилия", parametrINPT1 );
+        choseSign( );
+        setMeaning( "123", valueINPT1 );*/
+
         setPoliticsName( politicsName );
-        setDescription( "test description" );
-        setServiceName( "Авторизация" );
+        setDescription( description );
+        setServiceName( serviceName );
         chooseSetting( );
         clickSave( );
     }
@@ -104,9 +126,9 @@ public class CreatePolitics extends BaseClass {
     }
 
     @Step("Установить значение {0}")
-    public void setMeaning( String meaning ) {
-        valueINPT0.click( );
-        valueINPT0.sendKeys( meaning );
+    public void setMeaning( String meaning, WebElement valueINPT ) {
+        valueINPT.click( );
+        valueINPT.sendKeys( meaning );
     }
 
     @Step("Выбрать знак")
@@ -116,9 +138,9 @@ public class CreatePolitics extends BaseClass {
     }
 
     @Step("Выбрать параметр {0}")
-    public void choseParametr( String parameter ) {
-        parametrINPT0.click( );
-        parametrINPT0.sendKeys( parameter );
+    public void choseParameter( String parameter, WebElement parametrINPT ) {
+        parametrINPT.click( );
+        parametrINPT.sendKeys( parameter );
     }
 
     @Step("Клик на кнопку Добавить политику")
