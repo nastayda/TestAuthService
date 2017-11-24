@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/ControleModule/CreatePolitics.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/ControleModule/DeletePolitics.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/ControleModule/EditPolitics.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java" afterPath="$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ControleModule/DeletePolitics.java" afterPath="$PROJECT_DIR$/src/test/java/Politics/DeletePolitics.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ControleModule/EditPolitics.java" afterPath="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/HelpClass/BaseClass.class" afterPath="$PROJECT_DIR$/out/test/classes/HelpClass/BaseClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Modules/CreateModule.java" afterPath="$PROJECT_DIR$/src/test/java/Modules/CreateModule.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -88,8 +80,8 @@
       <file leaf-file-name="CreateModule.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Modules/CreateModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="279">
+              <caret line="35" column="96" lean-forward="true" selection-start-line="35" selection-start-column="96" selection-end-line="35" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setAddress#0;class#CreateModule#0" expanded="false" />
@@ -1103,15 +1095,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreateModule_createModule - 2017.11.24 at 17h 40m 24s.xml">
-      <configuration name="CreateModule.createModule" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CreateModule_createModule - 2017.11.24 at 17h 49m 55s.xml">
-      <configuration name="CreateModule.createModule" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CreateModule_createModule - 2017.11.24 at 17h 52m 00s.xml">
-      <configuration name="CreateModule.createModule" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="CreateModule_createModule - 2017.11.24 at 17h 57m 43s.xml">
       <configuration name="CreateModule.createModule" configurationId="TestNG" />
     </history-entry>
@@ -1121,17 +1104,26 @@
     <history-entry file="CreateModule_createModule - 2017.11.24 at 18h 10m 50s.xml">
       <configuration name="CreateModule.createModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 17h 16m 43s.xml">
-      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
+    <history-entry file="CreateModule_createModule - 2017.11.24 at 18h 11m 45s.xml">
+      <configuration name="CreateModule.createModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 17h 17m 21s.xml">
-      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
+    <history-entry file="CreateModule_createModule - 2017.11.24 at 18h 16m 42s.xml">
+      <configuration name="CreateModule.createModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 17h 19m 00s.xml">
-      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
+    <history-entry file="CreateModule_createModule - 2017.11.24 at 18h 18m 54s.xml">
+      <configuration name="CreateModule.createModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 17h 19m 33s.xml">
-      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
+    <history-entry file="CreateModule_createModule - 2017.11.24 at 18h 19m 22s.xml">
+      <configuration name="CreateModule.createModule" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CreateModule_createModule - 2017.11.24 at 18h 19m 54s.xml">
+      <configuration name="CreateModule.createModule" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CreateModule_createModule - 2017.11.24 at 18h 20m 20s.xml">
+      <configuration name="CreateModule.createModule" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CreateModule_createModule - 2017.11.24 at 18h 21m 24s.xml">
+      <configuration name="CreateModule.createModule" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1505,8 +1497,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Modules/CreateModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="279">
+          <caret line="35" column="96" lean-forward="true" selection-start-line="35" selection-start-column="96" selection-end-line="35" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setAddress#0;class#CreateModule#0" expanded="false" />

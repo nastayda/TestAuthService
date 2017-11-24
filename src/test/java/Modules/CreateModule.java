@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
@@ -22,8 +23,9 @@ public class CreateModule extends BaseClass {
     static WebElement addressINPT;
     @FindBy(xpath = "//div[3]/div/div[2]/div/div[1]/div[3]/div/button[2]")
     static WebElement saveModuleBTN;
+    //*[@id="authorization"]/div/div[1]/ul/li[4]
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[1]/ul/li[last()]")
-    static WebElement lastMenuItem;
+    static WebElement lastMenuItems;
 
 
     @Test
@@ -37,7 +39,9 @@ public class CreateModule extends BaseClass {
         setAddress("testAddress" );
         clickToSaveBtn( );*/
         wd.navigate().refresh();
-        assertEquals(lastMenuItem.getText(), moduleName);
+        //Подождать пока прогрузится меню! Иначе он берет первый попавшися элемент списка
+        waitUntilElementBeClickable( lastMenuItems );
+        assertEquals(lastMenuItems.getText(), moduleName);
 
 
     }
