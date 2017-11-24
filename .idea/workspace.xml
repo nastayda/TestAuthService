@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/ControleModule/CreateModule.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ControleModule/CreateModule.java" afterPath="$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/ControleModule/CreatePolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/ControleModule/CreatePolitics.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java" afterPath="$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -38,10 +38,40 @@
       <file leaf-file-name="CreatePolitics.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+            <state relative-caret-position="51">
+              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2665#2666#0" expanded="true" />
+                <element signature="e#2697#2698#0" expanded="true" />
+                <element signature="method#chooseCondition#0;class#CreatePolitics#0" expanded="false" />
+                <element signature="method#setMeaning#0;class#CreatePolitics#0" expanded="false" />
+                <element signature="method#choseSign#0;class#CreatePolitics#0" expanded="false" />
+                <element signature="method#choseParametr#0;class#CreatePolitics#0" expanded="false" />
+                <element signature="e#4446#4447#0" expanded="true" />
+                <element signature="e#4477#4478#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodInvocationHelper.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Invoker.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="731" column="0" lean-forward="false" selection-start-line="731" selection-start-column="0" selection-end-line="731" selection-end-column="0" />
+              <folding>
+                <element signature="e#27713#27726#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,6 +109,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CreateUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="43" column="93" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="93" />
+              <folding>
+                <element signature="method#createNewUser#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#clickToSave#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setRole#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setPhoneNumber#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setEmail#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setMiddleName#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setFirstName#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setSurname#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setPassword#0;class#CreateUser#0" expanded="false" />
+                <element signature="method#setLogin#0;class#CreateUser#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -91,6 +142,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>auth</find>
+      <find>ul.ant-select-selection__rendered</find>
+      <find>span.ant-select-tree-switcher.ant-select-tree-switcher_close</find>
+      <find>//ul[@class='ant-select-tree']/li[1]/ul/li[2]/span[2]/span</find>
+      <find>policyDescription</find>
+      <find>//div[@class='ant-modal-body']/form/div[4]/div/div[4]/div[2]/div/div/div/span</find>
+      <find>//div[@class='ant-modal-body']/form/div[4]/div/div[2]/div[2]/div/div/div/div</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -728,7 +785,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../FunctionalTests/autotests" />
-    <property name="extract.method.default.visibility" value="private" />
+    <property name="extract.method.default.visibility" value="public" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1032,34 +1089,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 14h 21m 47s.xml">
+    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 15h 23m 17s.xml">
       <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 14h 22m 09s.xml">
+    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 15h 38m 39s.xml">
       <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 14h 25m 41s.xml">
+    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 15h 39m 44s.xml">
       <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 14h 26m 02s.xml">
+    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 15h 41m 31s.xml">
       <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 14h 27m 55s.xml">
+    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 15h 42m 33s.xml">
       <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 14h 28m 49s.xml">
+    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 15h 43m 53s.xml">
       <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 14h 30m 20s.xml">
+    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 15h 45m 07s.xml">
       <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 14h 31m 10s.xml">
+    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 15h 45m 41s.xml">
       <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 14h 32m 07s.xml">
+    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 15h 46m 35s.xml">
       <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 14h 34m 59s.xml">
+    <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 15h 47m 08s.xml">
       <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1075,7 +1132,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2478355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2478355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1087,7 +1144,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24025974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24025974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1104,36 +1161,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java</url>
-          <line>62</line>
+          <line>60</line>
           <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java</url>
-          <line>68</line>
-          <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="66" />
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="67" />
+      <option name="time" value="72" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1354,26 +1387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="43" column="93" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#createNewUser#0;class#CreateUser#0" expanded="false" />
-            <element signature="method#clickToSave#0;class#CreateUser#0" expanded="false" />
-            <element signature="method#setRole#0;class#CreateUser#0" expanded="false" />
-            <element signature="method#setPhoneNumber#0;class#CreateUser#0" expanded="false" />
-            <element signature="method#setEmail#0;class#CreateUser#0" expanded="false" />
-            <element signature="method#setMiddleName#0;class#CreateUser#0" expanded="false" />
-            <element signature="method#setFirstName#0;class#CreateUser#0" expanded="false" />
-            <element signature="method#setSurname#0;class#CreateUser#0" expanded="false" />
-            <element signature="method#setPassword#0;class#CreateUser#0" expanded="false" />
-            <element signature="method#setLogin#0;class#CreateUser#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/help-files/auth-info.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1392,14 +1405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -1411,16 +1416,6 @@
             <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
             <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
             <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
-          <folding>
-            <element signature="e#27713#27726#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1438,12 +1433,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="43" column="93" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="93" />
+          <folding>
+            <element signature="method#createNewUser#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#clickToSave#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setRole#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setPhoneNumber#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setEmail#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setMiddleName#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setFirstName#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setSurname#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setPassword#0;class#CreateUser#0" expanded="false" />
+            <element signature="method#setLogin#0;class#CreateUser#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="731" column="0" lean-forward="false" selection-start-line="731" selection-start-column="0" selection-end-line="731" selection-end-column="0" />
+          <folding>
+            <element signature="e#27713#27726#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        <state relative-caret-position="51">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2665#2666#0" expanded="true" />
+            <element signature="e#2697#2698#0" expanded="true" />
+            <element signature="method#chooseCondition#0;class#CreatePolitics#0" expanded="false" />
+            <element signature="method#setMeaning#0;class#CreatePolitics#0" expanded="false" />
+            <element signature="method#choseSign#0;class#CreatePolitics#0" expanded="false" />
+            <element signature="method#choseParametr#0;class#CreatePolitics#0" expanded="false" />
+            <element signature="e#4446#4447#0" expanded="true" />
+            <element signature="e#4477#4478#0" expanded="true" />
           </folding>
         </state>
       </provider>

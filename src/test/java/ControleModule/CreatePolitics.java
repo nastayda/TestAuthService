@@ -6,12 +6,26 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Step;
+
+import java.time.LocalDateTime;
 
 public class CreatePolitics extends BaseClass {
-    @FindBy(xpath = "//div[@class='ant-modal-footer']//button[2]")
+    ///html/body/div[2]/div/div[2]/div/div[1]/div[3]/div/button[2]
+    @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[3]/div/button[2]")
     static WebElement saveBTN;
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div[1]/span[3]/button")
     static WebElement addBTN;
+    @FindBy(xpath = "//ul[@class='ant-select-tree']/li[1]/ul/li[2]/span[2]/span")
+    static WebElement expandMenu;
+    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[4]/div/div[2]/div[2]/div/div/div/div")
+    static WebElement dropdownMenuSign;
+    @FindBy(xpath = "//div[4]/div/div/div/ul/li[1]")
+    static WebElement elementSign;
+    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[4]/div/div[4]/div[2]/div/div/div/span")
+    static WebElement dropdownMenuCondition;
+    @FindBy(xpath = "//div[6]/div/div/div/ul/li[1]")
+    static WebElement elementCondition;
     @FindBy(id = "serviceName")
     static WebElement chooseINPT;
     @FindBy(id = "subjectParameter-0")
@@ -26,63 +40,89 @@ public class CreatePolitics extends BaseClass {
     static WebElement dropdownMenuService;
     @FindBy(css = "ul.ant-select-selection__rendered")
     static WebElement menuItem;
-    
+    @FindBy(css = "span.ant-select-tree-switcher.ant-select-tree-switcher_close")
+    static WebElement chooseServiceSetting;
 
     @Test
     public void createPolitics( ) {
         login( );
         wd.navigate( ).to( getDataFromFile( "src/help-files/auth-info.txt" )[ 3 ] );
         wd.get( "http://vm-auth-dev.ursip.ru/policy-manager/" );
-        //"Клик на кнопку Добавить политику"
-        addBTN.click( );
-        //"Заполнить название политики"
-        policyNameINPT.click( );
-        policyNameINPT.clear( );
-        policyNameINPT.sendKeys( "testPoliticy2017" );
-        //"Заполнить описание"
+        String politicsName = "testPolitics" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
+        clickToAddBtn( );
+        choseParametr( "Фамилия" );
+        choseSign( );
+        setMeaning( "123" );
+        //chooseCondition( );
+        setPoliticsName( politicsName );
+        setDescription( "test description" );
+        setServiceName( "Авторизация" );
+        chooseSetting( );
+        clickSave( );
+    }
+
+    @Step("Сохранить")
+    public void clickSave( ) {
+        saveBTN.click( );
+    }
+
+    @Step("Выбрать настройку {0}")
+    public void chooseSetting( ) {
+        menuItem.click();
+        chooseServiceSetting.click();
+        expandMenu.click();
+        policyDescriptionINPT.click();
+    }
+
+    @Step("Заполнить название сервиса {0}")
+    public void setServiceName( String serviceName ) {
+        chooseINPT.click( );
+        chooseINPT.clear();
+        chooseINPT.sendKeys( serviceName );
+    }
+
+    @Step("Заполнить описание {0}")
+    public void setDescription( String decription ) {
         policyDescriptionINPT.click( );
         policyDescriptionINPT.clear( );
-        policyDescriptionINPT.sendKeys( "test description" );
+        policyDescriptionINPT.sendKeys( decription );
+    }
 
-        //"Choese service"
-        chooseINPT.click();
-        dropdownMenuService.click( );
-        menuItem.click( );
+    @Step("Заполнить название политики {0}")
+    public void setPoliticsName( String politicsName ) {
+        policyNameINPT.click( );
+        policyNameINPT.clear( );
+        policyNameINPT.sendKeys( politicsName );
+    }
 
-        //Выбрать настройку
-        wd.findElement( By.cssSelector( "span.ant-select-tree-switcher.ant-select-tree-switcher_close" ) ).click( );
-        wd.findElement( By.xpath( "//ul[@class='ant-select-tree']/li[1]/ul/li[2]/span[2]/span" ) ).click( );
-        wd.findElement( By.cssSelector( "ul.ant-select-selection__rendered" ) ).click( );
+    @Step("Условие И/ИЛИ")
+    public void chooseCondition( ) {
+        //Сделать активным выпадающее меню
+        dropdownMenuCondition.click( );
+        //Выполнить скрипт
+        ( (JavascriptExecutor) wd ).executeScript( "arguments[0].click();", elementCondition );
+    }
 
-        //Выбрать параметр
-        parametrINPT0.click();
-        parametrINPT0.sendKeys( "Фамилия" );
+    @Step("Установить значение {0}")
+    public void setMeaning( String meaning ) {
+        valueINPT0.click( );
+        valueINPT0.sendKeys( meaning );
+    }
 
-        //Знак
-        wd.findElement( By.xpath( "//div[@class='ant-modal-body']/form/div[4]/div/div[2]/div[2]/div/div/div/div" ) ).click();
-         WebElement elementSign = wd.findElement(By.xpath("//div[4]/div/div/div/ul/li[1]"));
-        ((JavascriptExecutor)wd).executeScript("arguments[0].click();", elementSign);
+    @Step("Выбрать знак")
+    public void choseSign( ) {
+        dropdownMenuSign.click( );
+        ( (JavascriptExecutor) wd ).executeScript( "arguments[0].click();", elementSign );
+    }
 
-        //Значение
-        //input[@id='subjectValue-0']
-        valueINPT0.click();
-        valueINPT0.sendKeys( "123" );
-       
-        //+
-        wd.findElement( By.xpath( "//div[@class='ant-modal-body']/form/div[4]/div/div[4]/div[2]/div/div/div/span" ) ).click( );
-        WebElement elementCondition = wd.findElement( By.xpath( "//div[6]/div/div/div/ul/li[1]" ) );
-        ((JavascriptExecutor)wd).executeScript("arguments[0].click();", elementCondition);
+    @Step("Выбрать параметр {0}")
+    public void choseParametr( String parameter ) {
+        parametrINPT0.click( );
+        parametrINPT0.sendKeys( parameter );
+    }
 
-        //Параметр
-        wd.findElement( By.id( "subjectParameter-1" ) ).click( );
-        wd.findElement( By.cssSelector( "li.ant-select-dropdown-menu-item-active.ant-select-dropdown-menu-item" ) ).click( );
-        //Знак
-        wd.findElement( By.xpath( "//div[@class='ant-modal-body']/form/div[5]/div/div[2]/div[2]/div/div/div/div" ) ).click( );
-        wd.findElement( By.cssSelector( "li.ant-select-dropdown-menu-item-active.ant-select-dropdown-menu-item" ) ).click( );
-        //Значение
-        wd.findElement( By.id( "subjectValue-1" ) ).click( );
-        wd.findElement( By.cssSelector( "li.ant-select-dropdown-menu-item-active.ant-select-dropdown-menu-item" ) ).click( );
-
-        saveBTN.click( );
+    @Step("Клик на кнопку Добавить политику")
+    public void clickToAddBtn( ) {
+        addBTN.click( );
     }
 }
