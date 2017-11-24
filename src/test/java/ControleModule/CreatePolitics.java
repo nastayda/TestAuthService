@@ -56,15 +56,18 @@ public class CreatePolitics extends BaseClass {
     @Test
     public void createPolitics( ) {
         login( );
-        wd.navigate( ).to( getDataFromFile( "src/help-files/auth-info.txt" )[ 3 ] );
-        wd.get( "http://vm-auth-dev.ursip.ru/policy-manager/" );
+        goToPolicyPage( );
         String politicsName = "testPolitics" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
-        createPolitics( politicsName, "Фамилия", "123", "test description", "Авторизация" );
+        createNewPolitics( politicsName, "Фамилия", "123", "test description", "Авторизация" );
         goToLastPage( );
         assertEquals(politicsName, lastRow.getText());
     }
 
-    public void createPolitics( String politicsName, String parameter, String meaning, String description, String serviceName ) {
+    public void goToPolicyPage( ) {
+        wd.navigate( ).to( getDataFromFile( "src/help-files/auth-info.txt" )[ 3 ] );
+    }
+
+    public void createNewPolitics( String politicsName, String parameter, String meaning, String description, String serviceName ) {
         clickToAddBtn( );
         //Заполнить первую строку
         choseParameter( parameter, parametrINPT0 );

@@ -1,5 +1,6 @@
 package HelpClass;
 
+import ControleModule.DeletePolitics;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,6 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import ru.yandex.qatools.allure.annotations.Step;
 
 import java.io.File;
+import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
@@ -30,6 +32,11 @@ public class BaseClass {
     static WebElement userNameTB;
     @FindBy(xpath = "//table")
     static WebElement table;
+
+    @FindBy(xpath = "//table/tbody/tr[last()]/td[1]")
+    static public WebElement checkB;
+    @FindBy(xpath = "//table/tbody/tr[last()]/td[2]")
+    static public WebElement lastRowText;
 
 
     public static boolean isAlertPresent( FirefoxDriver wd ) {
@@ -146,5 +153,14 @@ public class BaseClass {
                 pagginationArrow.click( );
             }
         }
+    }
+
+    @Step("2. Получить название политики")
+    public boolean chosePolicy( String testPoliticsName, String editPoliticsName ) {
+        if (!DeletePolitics.checkB.isSelected( ) & ( lastRowText.getText( ).contains( testPoliticsName + LocalDateTime.now( ).getYear( ) ) ||
+                lastRowText.getText( ).contains( editPoliticsName + LocalDateTime.now( ).getYear( ) ) )) {
+            checkB.click( );
+            return true;
+        } else return false;
     }
 }
