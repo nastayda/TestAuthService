@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/ControleModule/CreatePolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/ControleModule/CreatePolitics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/ControleModule/DeletePolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/ControleModule/DeletePolitics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/HelpClass/BaseClass.class" afterPath="$PROJECT_DIR$/out/test/classes/HelpClass/BaseClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/ControleModule/EditPolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/ControleModule/EditPolitics.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java" afterPath="$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ControleModule/DeletePolitics.java" afterPath="$PROJECT_DIR$/src/test/java/ControleModule/DeletePolitics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ControleModule/EditPolitics.java" afterPath="$PROJECT_DIR$/src/test/java/ControleModule/EditPolitics.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -42,44 +39,18 @@
       <file leaf-file-name="CreatePolitics.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+            <state relative-caret-position="144">
+              <caret line="102" column="16" lean-forward="false" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2816#2817#0" expanded="true" />
-                <element signature="e#2907#2908#0" expanded="true" />
+                <element signature="e#2819#2820#0" expanded="true" />
+                <element signature="e#2910#2911#0" expanded="true" />
                 <element signature="method#chooseSetting#0;class#CreatePolitics#0" expanded="false" />
-                <element signature="method#setServiceName#0;class#CreatePolitics#0" expanded="false" />
                 <element signature="method#setDescription#0;class#CreatePolitics#0" expanded="false" />
                 <element signature="method#setPoliticsName#0;class#CreatePolitics#0" expanded="false" />
                 <element signature="method#chooseCondition#0;class#CreatePolitics#0" expanded="false" />
                 <element signature="method#setMeaning#0;class#CreatePolitics#0" expanded="false" />
                 <element signature="method#choseSign#0;class#CreatePolitics#0" expanded="false" />
-                <element signature="method#choseParameter#0;class#CreatePolitics#0" expanded="false" />
-                <marker date="1511529729700" expanded="false" signature="3041:3574" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="158" column="83" lean-forward="false" selection-start-line="158" selection-start-column="83" selection-end-line="158" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#login#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#waitUntilElementBeClickable#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#goToLastPage#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#chosePolicy#0;class#BaseClass#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -88,10 +59,12 @@
       <file leaf-file-name="EditPolitics.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/EditPolitics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="398">
+              <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#compareDataFromTable#0;class#EditPolitics#0" expanded="false" />
+                <element signature="method#editNewPolitics#0;class#EditPolitics#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -100,49 +73,10 @@
       <file leaf-file-name="EditUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/EditUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="204">
+              <caret line="56" column="5" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
               <folding>
-                <element signature="method#compareDataFromTable#0;class#EditUser#0" expanded="false" />
                 <element signature="method#setNewPasswordTB#0;class#EditUser#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Invoker.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
-              <folding>
-                <element signature="e#27713#27726#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeletePolitics.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/DeletePolitics.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#clickToDeleteBtn#0;class#DeletePolitics#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/DeleteUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-              <folding>
-                <element signature="method#clickToDeleteBtn#0;class#DeleteUser#0" expanded="false" />
-                <element signature="method#getCountRows#0;class#DeleteUser#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -689,9 +623,9 @@
         <option value="$PROJECT_DIR$/src/test/java/AuthService/DeleteUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java" />
         <option value="$PROJECT_DIR$/src/test/java/ControleModule/CreateModule.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/ControleModule/DeletePolitics.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java" />
         <option value="$PROJECT_DIR$/src/test/java/ControleModule/EditPolitics.java" />
       </list>
     </option>
@@ -1145,24 +1079,6 @@
     <history-entry file="CreatePolitics_createPolitics - 2017.11.24 at 16h 41m 06s.xml">
       <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeletePolitics_deletePolitics - 2017.11.24 at 16h 38m 17s.xml">
-      <configuration name="DeletePolitics.deletePolitics" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 16h 36m 08s.xml">
-      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 16h 37m 44s.xml">
-      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 16h 39m 09s.xml">
-      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 16h 39m 48s.xml">
-      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 16h 40m 11s.xml">
-      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 16h 40m 45s.xml">
       <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
     </history-entry>
@@ -1170,6 +1086,24 @@
       <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
     </history-entry>
     <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 16h 44m 17s.xml">
+      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 17h 02m 12s.xml">
+      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 17h 15m 56s.xml">
+      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 17h 16m 43s.xml">
+      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 17h 17m 21s.xml">
+      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 17h 19m 00s.xml">
+      <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="EditPolitics_editPolitics - 2017.11.24 at 17h 19m 33s.xml">
       <configuration name="EditPolitics.editPolitics" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1185,7 +1119,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47727272" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36688313" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1211,14 +1145,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ControleModule/EditPolitics.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="75" />
     </breakpoint-manager>
     <watches-manager />
@@ -1495,8 +1421,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="158" column="83" lean-forward="false" selection-start-line="158" selection-start-column="83" selection-end-line="158" selection-end-column="83" />
+        <state relative-caret-position="245">
+          <caret line="148" column="19" lean-forward="false" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
@@ -1508,7 +1434,6 @@
             <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
             <element signature="method#waitUntilElementBeClickable#0;class#BaseClass#0" expanded="false" />
             <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#goToLastPage#0;class#BaseClass#0" expanded="false" />
             <element signature="method#chosePolicy#0;class#BaseClass#0" expanded="false" />
           </folding>
         </state>
@@ -1516,31 +1441,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/CreatePolitics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        <state relative-caret-position="144">
+          <caret line="102" column="16" lean-forward="false" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2816#2817#0" expanded="true" />
-            <element signature="e#2907#2908#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2910#2911#0" expanded="true" />
             <element signature="method#chooseSetting#0;class#CreatePolitics#0" expanded="false" />
-            <element signature="method#setServiceName#0;class#CreatePolitics#0" expanded="false" />
             <element signature="method#setDescription#0;class#CreatePolitics#0" expanded="false" />
             <element signature="method#setPoliticsName#0;class#CreatePolitics#0" expanded="false" />
             <element signature="method#chooseCondition#0;class#CreatePolitics#0" expanded="false" />
             <element signature="method#setMeaning#0;class#CreatePolitics#0" expanded="false" />
             <element signature="method#choseSign#0;class#CreatePolitics#0" expanded="false" />
-            <element signature="method#choseParameter#0;class#CreatePolitics#0" expanded="false" />
-            <marker date="1511529729700" expanded="false" signature="3041:3574" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/EditUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="35" />
+        <state relative-caret-position="204">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
           <folding>
-            <element signature="method#compareDataFromTable#0;class#EditUser#0" expanded="false" />
             <element signature="method#setNewPasswordTB#0;class#EditUser#0" expanded="false" />
           </folding>
         </state>
@@ -1548,10 +1469,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/EditPolitics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="398">
+          <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#compareDataFromTable#0;class#EditPolitics#0" expanded="false" />
+            <element signature="method#editNewPolitics#0;class#EditPolitics#0" expanded="false" />
           </folding>
         </state>
       </provider>

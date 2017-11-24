@@ -60,7 +60,7 @@ public class CreatePolitics extends BaseClass {
         String politicsName = "testPolitics" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
         createNewPolitics( politicsName, "Фамилия", "123", "test description", "Авторизация" );
         goToLastPage( );
-        assertEquals(politicsName, lastRow.getText());
+        assertEquals( politicsName, lastRow.getText( ) );
     }
 
     public void goToPolicyPage( ) {
@@ -93,16 +93,16 @@ public class CreatePolitics extends BaseClass {
 
     @Step("Выбрать настройку {0}")
     public void chooseSetting( ) {
-        menuItem.click();
-        chooseServiceSetting.click();
-        expandMenu.click();
-        policyDescriptionINPT.click();
+        menuItem.click( );
+        chooseServiceSetting.click( );
+        expandMenu.click( );
+        policyDescriptionINPT.click( );
     }
 
     @Step("Заполнить название сервиса {0}")
     public void setServiceName( String serviceName ) {
         chooseINPT.click( );
-        chooseINPT.clear();
+        chooseINPT.clear( );
         chooseINPT.sendKeys( serviceName );
     }
 
@@ -143,6 +143,7 @@ public class CreatePolitics extends BaseClass {
     @Step("Выбрать параметр {0}")
     public void choseParameter( String parameter, WebElement parametrINPT ) {
         parametrINPT.click( );
+        parametrINPT.clear( );
         parametrINPT.sendKeys( parameter );
     }
 
