@@ -1,6 +1,6 @@
 package HelpClass;
 
-import ControleModule.DeletePolitics;
+import Politics.DeletePolitics;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -162,5 +162,9 @@ public class BaseClass {
             checkB.click( );
             return true;
         } else return false;
+    }
+
+    public void goToPolicyPage( ) {
+        wd.navigate( ).to( getDataFromFile( "src/help-files/auth-info.txt" )[ 3 ] );
     }
 }

@@ -1,4 +1,4 @@
-package ControleModule;
+package Politics;
 
 import HelpClass.BaseClass;
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 
-import javax.print.attribute.standard.Fidelity;
 import java.time.LocalDateTime;
 
 import static org.testng.Assert.assertEquals;
@@ -61,10 +60,6 @@ public class CreatePolitics extends BaseClass {
         createNewPolitics( politicsName, "Фамилия", "123", "test description", "Авторизация" );
         goToLastPage( );
         assertEquals( politicsName, lastRow.getText( ) );
-    }
-
-    public void goToPolicyPage( ) {
-        wd.navigate( ).to( getDataFromFile( "src/help-files/auth-info.txt" )[ 3 ] );
     }
 
     public void createNewPolitics( String politicsName, String parameter, String meaning, String description, String serviceName ) {

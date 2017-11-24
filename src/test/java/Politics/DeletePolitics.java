@@ -1,4 +1,4 @@
-package ControleModule;
+package Politics;
 
 import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
-
-import java.time.LocalDateTime;
 
 import static org.testng.Assert.assertEquals;
 
@@ -27,7 +25,7 @@ public class DeletePolitics extends BaseClass {
     @Title("Удаление политики")
     public void deletePolitics( ) {
         login( );
-        wd.navigate( ).to( getDataFromFile( "src/help-files/auth-info.txt" )[ 3 ] );
+        goToPolicyPage( );
         goToLastPage( );
         //Количество элементов напротив "Всего"
         int countBefore = Integer.parseInt( countRowsText.getText( ).substring( 7 ) );

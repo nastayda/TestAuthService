@@ -1,4 +1,4 @@
-package ControleModule;
+package Politics;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
