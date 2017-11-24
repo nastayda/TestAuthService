@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/ControleModule/DeleteModule.class" afterPath="$PROJECT_DIR$/out/test/classes/ControleModule/DeleteModule.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java" afterPath="$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/ControleModule/DeleteModule.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java" afterPath="$PROJECT_DIR$/src/test/java/ControleModule/DeletePolitics.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -46,17 +47,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteModule.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java">
+      <file leaf-file-name="DeletePolitics.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/DeletePolitics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="9" column="97" lean-forward="false" selection-start-line="9" selection-start-column="97" selection-end-line="9" selection-end-column="97" />
+            <state relative-caret-position="477">
+              <caret line="45" column="129" lean-forward="false" selection-start-line="45" selection-start-column="129" selection-end-line="45" selection-end-column="129" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#deleteModule#0;class#DeleteModule#0" expanded="false" />
-                <element signature="method#clickToDeleteBtn#0;class#DeleteModule#0" expanded="false" />
-                <element signature="method#choseUserForDeletion#0;class#DeleteModule#0" expanded="false" />
-                <element signature="method#goToLastPage#0;class#DeleteModule#0" expanded="false" />
+                <element signature="method#clickToDeleteBtn#0;class#DeletePolitics#0" expanded="false" />
+                <element signature="method#choseUserForDeletion#0;class#DeletePolitics#0" expanded="false" />
+                <element signature="method#goToLastPage#0;class#DeletePolitics#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -648,6 +648,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ControleModule/CreateModule.java" />
         <option value="$PROJECT_DIR$/src/test/java/AuthService/DeleteUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ControleModule/DeletePolitics.java" />
       </list>
     </option>
   </component>
@@ -779,7 +780,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DeleteModule.deleteModule">
+  <component name="RunManager">
     <configuration name="CreateModule.createModule" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -844,7 +845,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="DeleteModule.deleteModule" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeletePolitics.deletePolitics" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ControleModule.*" />
@@ -856,8 +857,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="ControleModule" />
-      <option name="MAIN_CLASS_NAME" value="ControleModule.DeleteModule" />
-      <option name="METHOD_NAME" value="deleteModule" />
+      <option name="MAIN_CLASS_NAME" value="ControleModule.DeletePolitics" />
+      <option name="METHOD_NAME" value="deletePolitics" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1038,11 +1039,11 @@
       <item index="1" class="java.lang.String" itemvalue="TestNG.DeleteUser.deleteUser" />
       <item index="2" class="java.lang.String" itemvalue="TestNG.EditUser.editUser" />
       <item index="3" class="java.lang.String" itemvalue="TestNG.CreateModule.createModule" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.DeleteModule.deleteModule" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.DeletePolitics.deletePolitics" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.DeleteModule.deleteModule" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.DeletePolitics.deletePolitics" />
         <item index="1" class="java.lang.String" itemvalue="TestNG.CreateModule.createModule" />
         <item index="2" class="java.lang.String" itemvalue="TestNG.EditUser.editUser" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.CreateUser.createUser" />
@@ -1064,15 +1065,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 46m 22s.xml">
-      <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 47m 36s.xml">
-      <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 48m 25s.xml">
-      <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 51m 01s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
@@ -1093,6 +1085,15 @@
     </history-entry>
     <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 58m 02s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DeletePolitics_deletePolitics - 2017.11.24 at 10h 12m 02s.xml">
+      <configuration name="DeletePolitics.deletePolitics" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DeletePolitics_deletePolitics - 2017.11.24 at 10h 12m 48s.xml">
+      <configuration name="DeletePolitics.deletePolitics" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DeletePolitics_deletePolitics - 2017.11.24 at 10h 15m 34s.xml">
+      <configuration name="DeletePolitics.deletePolitics" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1470,16 +1471,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/DeletePolitics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="9" column="97" lean-forward="false" selection-start-line="9" selection-start-column="97" selection-end-line="9" selection-end-column="97" />
+        <state relative-caret-position="477">
+          <caret line="45" column="129" lean-forward="false" selection-start-line="45" selection-start-column="129" selection-end-line="45" selection-end-column="129" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#deleteModule#0;class#DeleteModule#0" expanded="false" />
-            <element signature="method#clickToDeleteBtn#0;class#DeleteModule#0" expanded="false" />
-            <element signature="method#choseUserForDeletion#0;class#DeleteModule#0" expanded="false" />
-            <element signature="method#goToLastPage#0;class#DeleteModule#0" expanded="false" />
+            <element signature="method#clickToDeleteBtn#0;class#DeletePolitics#0" expanded="false" />
+            <element signature="method#choseUserForDeletion#0;class#DeletePolitics#0" expanded="false" />
+            <element signature="method#goToLastPage#0;class#DeletePolitics#0" expanded="false" />
           </folding>
         </state>
       </provider>
