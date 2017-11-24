@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/AuthService/DeleteUser.class" afterPath="$PROJECT_DIR$/out/test/classes/AuthService/DeleteUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AuthService/DeleteUser.java" afterPath="$PROJECT_DIR$/src/test/java/AuthService/DeleteUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/ControleModule/DeleteModule.class" afterPath="$PROJECT_DIR$/out/test/classes/ControleModule/DeleteModule.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java" afterPath="$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
@@ -50,10 +49,14 @@
       <file leaf-file-name="DeleteModule.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            <state relative-caret-position="137">
+              <caret line="9" column="97" lean-forward="false" selection-start-line="9" selection-start-column="97" selection-end-line="9" selection-end-column="97" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#deleteModule#0;class#DeleteModule#0" expanded="false" />
+                <element signature="method#clickToDeleteBtn#0;class#DeleteModule#0" expanded="false" />
+                <element signature="method#choseUserForDeletion#0;class#DeleteModule#0" expanded="false" />
+                <element signature="method#goToLastPage#0;class#DeleteModule#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -74,8 +77,8 @@
       <file leaf-file-name="Invoker.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
+            <state relative-caret-position="158">
+              <caret line="669" column="0" lean-forward="false" selection-start-line="669" selection-start-column="0" selection-end-line="669" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1061,34 +1064,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DeleteModule_deleteModule - 2017.11.23 at 14h 41m 43s.xml">
+    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 46m 22s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteModule_deleteModule - 2017.11.23 at 14h 42m 16s.xml">
+    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 47m 36s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteModule_deleteModule - 2017.11.23 at 14h 51m 21s.xml">
+    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 48m 25s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteModule_deleteModule - 2017.11.23 at 14h 51m 36s.xml">
+    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 51m 01s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteModule_deleteModule - 2017.11.23 at 14h 52m 00s.xml">
+    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 52m 44s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteModule_deleteModule - 2017.11.23 at 14h 53m 30s.xml">
+    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 53m 23s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteModule_deleteModule - 2017.11.23 at 14h 54m 33s.xml">
+    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 54m 24s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteModule_deleteModule - 2017.11.23 at 14h 54m 56s.xml">
+    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 56m 10s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteModule_deleteModule - 2017.11.23 at 14h 58m 01s.xml">
+    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 57m 02s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteModule_deleteModule - 2017.11.23 at 15h 00m 17s.xml">
+    <history-entry file="DeleteModule_deleteModule - 2017.11.24 at 09h 58m 02s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1174,7 +1177,7 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="28" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1386,7 +1389,7 @@
         <state relative-caret-position="426">
           <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#editUser#0;class#EditUser#0" expanded="false" />
             <element signature="method#compareDataFromTable#0;class#EditUser#0" expanded="false" />
             <element signature="method#editUserToEdited#0;class#EditUser#0" expanded="false" />
@@ -1439,14 +1442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/CreateModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1467,12 +1462,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="669" column="0" lean-forward="false" selection-start-line="669" selection-start-column="0" selection-end-line="669" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="137">
+          <caret line="9" column="97" lean-forward="false" selection-start-line="9" selection-start-column="97" selection-end-line="9" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#deleteModule#0;class#DeleteModule#0" expanded="false" />
+            <element signature="method#clickToDeleteBtn#0;class#DeleteModule#0" expanded="false" />
+            <element signature="method#choseUserForDeletion#0;class#DeleteModule#0" expanded="false" />
+            <element signature="method#goToLastPage#0;class#DeleteModule#0" expanded="false" />
           </folding>
         </state>
       </provider>

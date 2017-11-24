@@ -1,17 +1,15 @@
 package ControleModule;
 
 import HelpClass.BaseClass;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
-import sun.misc.BASE64Decoder;
 
 import java.time.LocalDateTime;
-
+/*Проверку удаления завязываю на отображение количества записей напроитв Всего рядом с пагинацией
+Т.о. проверим заодно верно ли работает отображение количества записей в таблице */
 public class DeleteModule extends BaseClass {
-    //*[@id="authorization"]/div/div[2]/div[2]/div/div/div/ul/li[5]
     @FindBy(xpath = "//ul/li[5]")
     static WebElement pagginationArrow;
     @FindBy(xpath = "//table/tbody/tr[last()]/td[2]")
@@ -20,7 +18,8 @@ public class DeleteModule extends BaseClass {
     static WebElement checkB;
     @FindBy(xpath = "//div/div[2]/div[1]/div/div[1]/span[5]/button")
     static WebElement deleteBTN;
-    @FindBy(xpath = "//div/div[13]/div/div[2]/div/div[1]/div[3]/button[2]/span")
+    //div[@class='ant-modal-footer']//button[.='OK']
+    @FindBy(xpath = "//div[@class='ant-modal-footer']//button[2]")
     static WebElement confirmDeletionBTN;
 
     @Test
@@ -28,40 +27,37 @@ public class DeleteModule extends BaseClass {
         login( );
         wd.navigate( ).to( getDataFromFile( "src/help-files/auth-info.txt" )[ 3 ] );
         goToLastPage( );
-        choseUserForDeletion( );
-        waitUntilElementBeClickable( deleteBTN );
-        clickToDeleteBtn( );
-        //System.out.println(pagginationArrow.getAttribute( "aria-disabled" ));
-        //Переход на 2 страницу
-        // wd.findElement( By.linkText("2")).click();
-        //System.out.println(pagginationArrow.getAttribute( "aria-disabled" ));
-        //*[@id="authorization"]/div/div[2]/div[2]/div/div/div/ul/li[5]/a
-        // wd.findElement(By.xpath("//tbody[@class='ant-table-tbody']//td[.='test desription']")).click();
-        // wd.findElement(By.xpath("//div[@class='service-controls']//button[.='Редактировать']")).click();
+        boolean thereIsSomethingForDeletion = choseUserForDeletion( );
+        clickToDeleteBtn( thereIsSomethingForDeletion );
 
     }
 
     @Step("3. Удалить и подтвердить удалене")
-    private void clickToDeleteBtn( ) {
-        waitUntilElementBeClickable( deleteBTN );
-        deleteBTN.click( );
-        waitUntilElementBeClickable( confirmDeletionBTN );
-        confirmDeletionBTN.click( );
+    private void clickToDeleteBtn( boolean flag ) {
+        if (flag) {
+            waitUntilElementBeClickable( deleteBTN );
+            deleteBTN.click( );
+            waitUntilElementBeClickable( confirmDeletionBTN );
+            confirmDeletionBTN.click( );
+        }
     }
 
     @Step("2. Получить название политики")
-    public void choseUserForDeletion( ) {
+    public boolean choseUserForDeletion( ) {
         if (!checkB.isSelected( ) & ( lastRowText.getText( ).contains( "testPolitics" + LocalDateTime.now( ).getYear( ) ) ||
                 lastRowText.getText( ).contains( "editPolitics" + LocalDateTime.now( ).getYear( ) ) )) {
             checkB.click( );
-        }
+            return true;
+        } else return false;
     }
 
     @Step("1. Перейти на последнюю страницу")
     private void goToLastPage( ) {
         //Классно! если только не 100500 страниц надо будет перелистывать....
-        while (pagginationArrow.getAttribute( "aria-disabled" ).equals( "false" )) {
-            pagginationArrow.click( );
+        if (pagginationArrow.getAttribute( "aria-disabled" ) != null) {
+            while (pagginationArrow.getAttribute( "aria-disabled" ).equals( "false" )) {
+                pagginationArrow.click( );
+            }
         }
     }
 }
