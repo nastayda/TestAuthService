@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.List;
 
@@ -23,6 +24,7 @@ public class DeleteModule extends BaseClass {
     static List<WebElement> menuItems;
 
     @Test
+    @Title("Удаление модуля")
     public void deleteModule( ) {
         login( );
         goToPolicyPage( );

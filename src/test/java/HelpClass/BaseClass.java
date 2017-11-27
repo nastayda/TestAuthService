@@ -145,7 +145,7 @@ public class BaseClass {
         return dataFromFile;
     }
 
-    @Step("1. Перейти на последнюю страницу")
+    @Step("Перейти на последнюю страницу")
     protected void goToLastPage( ) {
         //Классно! если только не 100500 страниц надо будет перелистывать....
         if (pagginationArrow.getAttribute( "aria-disabled" ) != null) {

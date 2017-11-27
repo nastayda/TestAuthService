@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.time.LocalDateTime;
 
@@ -16,6 +17,7 @@ public class EditModule extends CreateModule {
     static WebElement editModuleBTN;
 
     @Test
+    @Title("Редактирование модуля")
     public void editModule( ) {
         login( );
         goToPolicyPage( );

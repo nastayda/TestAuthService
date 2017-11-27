@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -23,6 +24,7 @@ public class EditPolitics extends CreatePolitics {
     static List<WebElement> tableColums;
 
     @Test
+    @Title("Редактирование политики")
     public void editPolitics( ) {
         login( );
         goToPolicyPage( );

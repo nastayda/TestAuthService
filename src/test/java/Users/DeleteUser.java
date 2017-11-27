@@ -25,7 +25,7 @@ public class DeleteUser extends BaseClass {
     static WebElement confirmDeletionBTN;
 
     @Test
-    @Title("Удалить пользователя")
+    @Title("Удаление пользователя")
     public void deleteUser( ) {
         login( );
         int countRowsBefore = getCountRows( );
