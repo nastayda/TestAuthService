@@ -19,6 +19,10 @@ import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
+    //Всего элементов в таблице
+    @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/ul/li[1]")
+    static public WebElement countRowsText;
+
     @FindBy(xpath = "//ul/li[5]")
     static WebElement pagginationArrow;
     @FindBy(css = "input.ant-input.ant-select-search__field")

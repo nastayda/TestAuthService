@@ -56,7 +56,6 @@ public class CreatePolitics extends BaseClass {
         choseParameter( "Фамилия", parametrINPT1 );
         choseSign( );
         setMeaning( "123", valueINPT1 );*/
-
         setPoliticsName( politicsName );
         setDescription( description );
         setServiceName( serviceName );

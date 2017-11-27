@@ -18,8 +18,6 @@ public class DeletePolitics extends BaseClass {
     static public WebElement deleteBTN;
     @FindBy(xpath = "//div[@class='ant-modal-footer']//button[2]")
     static public WebElement confirmDeletionBTN;
-    @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/ul/li[1]")
-    static public WebElement countRowsText;
 
     @Test
     @Title("Удаление политики")
