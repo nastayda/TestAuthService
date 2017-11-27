@@ -39,7 +39,7 @@ public class DeleteModule extends BaseClass {
 
     @Step("Выбрать модуль для удаления")
     public boolean selectedModule( ) {
-        if (rowNameModuleTD.getText( ).contains( "testModule" )) {
+        if (rowNameModuleTD.getText( ).contains( "testModule" )||rowNameModuleTD.getText( ).contains( "editModule" )) {
             rowNameModuleTD.click( );
             return true;
         } else return false;

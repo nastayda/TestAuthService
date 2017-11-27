@@ -22,9 +22,9 @@ public class EditModule extends CreateModule {
         clickControlBtn( );
         selectedModule( );
         clickToEditBtn( );
-        String moduleName = "testModule" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
-        String moduleKeyName = "testModuleKey" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
-        String moduleAddress = "testAddress" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
+        String moduleName = "editModule" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
+        String moduleKeyName = "editModuleKey" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
+        String moduleAddress = "editAddress" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
         setKeyName( moduleKeyName );
         setName( moduleName );
         setAddress( moduleAddress );
