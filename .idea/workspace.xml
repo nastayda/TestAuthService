@@ -76,10 +76,11 @@
       <file leaf-file-name="DeleteModule.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Modules/DeleteModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="12" column="183" lean-forward="false" selection-start-line="12" selection-start-column="183" selection-end-line="12" selection-end-column="183" />
+            <state relative-caret-position="165">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#goToLastPageForModule#0;class#DeleteModule#0" expanded="false" />
                 <element signature="method#selectedModule#0;class#DeleteModule#0" expanded="false" />
                 <element signature="method#clickDeleteBtn#0;class#DeleteModule#0" expanded="false" />
               </folding>
@@ -1105,11 +1106,11 @@
     <history-entry file="DeleteModule_deleteModule - 2017.11.27 at 17h 44m 36s.xml">
       <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeletePolitics_deletePolitics - 2017.11.27 at 17h 30m 04s.xml">
-      <configuration name="DeletePolitics.deletePolitics" configurationId="TestNG" />
+    <history-entry file="DeleteModule_deleteModule - 2017.11.27 at 17h 58m 43s.xml">
+      <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeletePolitics_deletePolitics - 2017.11.27 at 17h 32m 35s.xml">
-      <configuration name="DeletePolitics.deletePolitics" configurationId="TestNG" />
+    <history-entry file="DeleteModule_deleteModule - 2017.11.27 at 17h 59m 30s.xml">
+      <configuration name="DeleteModule.deleteModule" configurationId="TestNG" />
     </history-entry>
     <history-entry file="DeletePolitics_deletePolitics - 2017.11.27 at 17h 32m 41s.xml">
       <configuration name="DeletePolitics.deletePolitics" configurationId="TestNG" />
@@ -1139,7 +1140,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23593074" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23593074" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1572,10 +1573,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Modules/DeleteModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="183" lean-forward="false" selection-start-line="12" selection-start-column="183" selection-end-line="12" selection-end-column="183" />
+        <state relative-caret-position="165">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#goToLastPageForModule#0;class#DeleteModule#0" expanded="false" />
             <element signature="method#selectedModule#0;class#DeleteModule#0" expanded="false" />
             <element signature="method#clickDeleteBtn#0;class#DeleteModule#0" expanded="false" />
           </folding>

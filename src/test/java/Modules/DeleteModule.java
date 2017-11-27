@@ -9,8 +9,6 @@ import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.List;
 
-//Отказалась от перелистывания открывающейся таблицы в режиме управления модулями, т.к. в левом меню все равно отображаются модули
-//Но в перспективе все равно надо будет поправить, т.к. если все модули не будт помещаяться в таблицу на первую страницу, нужно будет перелистыва. Как появится необходимость поправлю.
 public class DeleteModule extends BaseClass {
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div[1]/span[2]/button")
     static WebElement controlModuleBTN;
@@ -22,7 +20,7 @@ public class DeleteModule extends BaseClass {
     static WebElement confirmDeletionBTN;
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[1]/ul/li")
     static List<WebElement> menuItems;
-    @FindBy(xpath = "//div[@class='ant-modal-body']/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div/div/ul/li[last()]")
+    @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div/div/ul/li[last()]")
     //html/body/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div/div/ul/li[3]
     static WebElement pagginationArrowModule;
     @Test
@@ -33,6 +31,7 @@ public class DeleteModule extends BaseClass {
         waitSomeMillisec( 1500 );
         int beforeDeletion = menuItems.size( );
         clickControlModule( );
+        goToLastPageForModule( );
         boolean flag = selectedModule( );
         clickDeleteBtn( flag );
         wd.navigate( ).refresh( );
@@ -44,7 +43,7 @@ public class DeleteModule extends BaseClass {
         softAssert.assertAll();
     }
 
-   /* @Step("Перейти на последнюю страницу")
+    @Step("Перейти на последнюю страницу")
     protected int goToLastPageForModule( ) {
         int k=countRowsOnEachPage.size();
         //Классно! если только не 100500 страниц надо будет перелистывать....
@@ -55,7 +54,7 @@ public class DeleteModule extends BaseClass {
             }
         }
         return k;
-    }*/
+    }
 
     @Step("Выбрать модуль для удаления")
     public boolean selectedModule( ) {
