@@ -20,6 +20,22 @@ import java.util.concurrent.TimeUnit;
 public class BaseClass {
     @FindBy(xpath = "//ul/li[5]")
     static WebElement pagginationArrow;
+    @FindBy(css = "input.ant-input.ant-select-search__field")
+    static WebElement loginNameTB;
+    @FindBy(id = "lastName")
+    static WebElement lastNameTB;
+    @FindBy(id = "firstName")
+    static WebElement firstNameTB;
+    @FindBy(id = "middleName")
+    static WebElement middleNameTB;
+    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[4]/div[1]/div[2]/div/div[1]/div/div/ul/li/div/input")
+    static WebElement emailTB;
+    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[4]/div[2]/div[2]/div/div/div/div/ul/li/div/input")
+    static WebElement phoneNumberTB;
+    @FindBy(id = "role")
+    static WebElement roleTB;
+    @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[3]/div/button[2]")
+    static WebElement saveBTN;
 
     public FirefoxDriver wd;
     WriteReadFromFile readData;
@@ -38,7 +54,6 @@ public class BaseClass {
     @FindBy(xpath = "//table/tbody/tr[last()]/td[2]")
     static public WebElement lastRowText;
 
-
     public static boolean isAlertPresent( FirefoxDriver wd ) {
         try {
             wd.switchTo( ).alert( );
@@ -46,6 +61,13 @@ public class BaseClass {
         } catch (NoAlertPresentException e) {
             return false;
         }
+    }
+
+    @Step("1. Ввод логина {0}")
+    public static void setLogin( String login ) {
+        loginNameTB.clear( );
+        loginNameTB.clear( );
+        loginNameTB.sendKeys( login );
     }
 
     @BeforeMethod
@@ -125,10 +147,23 @@ public class BaseClass {
         wd.quit( );
     }
 
-    //Подождем пока появится элемент
-    public void waitUntilElementBeClickable( WebElement clickableElement ) {
-        WebDriverWait wait = new WebDriverWait( wd, 5 );
-        WebElement element = wait.until( ExpectedConditions.elementToBeClickable( clickableElement ) );
+    @Step("Перейти на последнюю страницу")
+    protected void goToLastPage( ) {
+        //Классно! если только не 100500 страниц надо будет перелистывать....
+        if (pagginationArrow.getAttribute( "aria-disabled" ) != null) {
+            while (pagginationArrow.getAttribute( "aria-disabled" ).equals( "false" )) {
+                pagginationArrow.click( );
+            }
+        }
+    }
+
+    @Step("Получить название политики")
+    public boolean chosePolicy( String testPoliticsName, String editPoliticsName ) {
+        if (!DeletePolitics.checkB.isSelected( ) & ( lastRowText.getText( ).contains( testPoliticsName + LocalDateTime.now( ).getYear( ) ) ||
+                lastRowText.getText( ).contains( editPoliticsName + LocalDateTime.now( ).getYear( ) ) )) {
+            checkB.click( );
+            return true;
+        } else return false;
     }
 
     public String[] getDataFromFile( String pathname ) {
@@ -145,25 +180,6 @@ public class BaseClass {
         return dataFromFile;
     }
 
-    @Step("Перейти на последнюю страницу")
-    protected void goToLastPage( ) {
-        //Классно! если только не 100500 страниц надо будет перелистывать....
-        if (pagginationArrow.getAttribute( "aria-disabled" ) != null) {
-            while (pagginationArrow.getAttribute( "aria-disabled" ).equals( "false" )) {
-                pagginationArrow.click( );
-            }
-        }
-    }
-
-    @Step("2. Получить название политики")
-    public boolean chosePolicy( String testPoliticsName, String editPoliticsName ) {
-        if (!DeletePolitics.checkB.isSelected( ) & ( lastRowText.getText( ).contains( testPoliticsName + LocalDateTime.now( ).getYear( ) ) ||
-                lastRowText.getText( ).contains( editPoliticsName + LocalDateTime.now( ).getYear( ) ) )) {
-            checkB.click( );
-            return true;
-        } else return false;
-    }
-
     public void goToPolicyPage( ) {
         wd.navigate( ).to( getDataFromFile( "src/help-files/auth-info.txt" )[ 3 ] );
     }
@@ -175,5 +191,54 @@ public class BaseClass {
         } catch (InterruptedException e) {
             e.printStackTrace( );
         }
+    }
+
+    public void waitUntilElementBeClickable( WebElement clickableElement ) {
+        WebDriverWait wait = new WebDriverWait( wd, 5 );
+        WebElement element = wait.until( ExpectedConditions.elementToBeClickable( clickableElement ) );
+    }
+
+
+    //Edit, delete users methods
+    @Step("9. Сохранине")
+    public void clickToSave( ) {
+        waitUntilElementBeClickable( saveBTN );
+        saveBTN.click();
+    }
+    @Step("8. Ввод роли {0}")
+    public void setRole( String role ) {
+        roleTB.click( );
+        roleTB.clear( );
+        roleTB.sendKeys( role );
+    }
+    @Step("7. Ввод номера телефона {0}")
+    public void setPhoneNumber( String phoneNumber ) {
+        phoneNumberTB.click( );
+        phoneNumberTB.clear( );
+        phoneNumberTB.sendKeys( phoneNumber );
+    }
+    @Step("6. Ввод email {0}")
+    public void setEmail( String email ) {
+        emailTB.click( );
+        emailTB.clear( );
+        emailTB.sendKeys( email );
+    }
+    @Step("5. Ввод отчества {0}")
+    public void setMiddleName( String middleName ) {
+        middleNameTB.click( );
+        middleNameTB.clear( );
+        middleNameTB.sendKeys( middleName );
+    }
+    @Step("4. Ввод имени {0}")
+    public void setFirstName( String firstName ) {
+        firstNameTB.click( );
+        firstNameTB.clear( );
+        firstNameTB.sendKeys( firstName );
+    }
+    @Step("3. Ввод фамилии {0}")
+    public void setSurname( String surname ) {
+        lastNameTB.click( );
+        lastNameTB.clear( );
+        lastNameTB.sendKeys( surname );
     }
 }

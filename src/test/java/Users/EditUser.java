@@ -1,5 +1,6 @@
 package Users;
 
+import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
@@ -11,7 +12,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class EditUser extends CreateUser {
+public class EditUser extends BaseClass {
     @FindBy(xpath = "//table/tbody/tr[last()]/td")
     static List<WebElement> tableColums;
 
