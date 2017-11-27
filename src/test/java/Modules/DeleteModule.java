@@ -10,6 +10,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 import java.util.List;
 
 //Отказалась от перелистывания открывающейся таблицы в режиме управления модулями, т.к. в левом меню все равно отображаются модули
+//Но в перспективе все равно надо будет поправить, т.к. если все модули не будт помещаяться в таблицу на первую страницу, нужно будет перелистыва. Как появится необходимость поправлю.
 public class DeleteModule extends BaseClass {
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div[1]/span[2]/button")
     static WebElement controlModuleBTN;
