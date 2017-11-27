@@ -24,7 +24,6 @@ public class CreateModule extends BaseClass {
     static WebElement addressINPT;
     @FindBy(xpath = "//div[3]/div/div[2]/div/div[1]/div[3]/div/button[2]")
     static WebElement saveModuleBTN;
-    //*[@id="authorization"]/div/div[1]/ul/li[4]
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[1]/ul/li[last()]")
     static WebElement lastMenuItem;
 
@@ -38,7 +37,6 @@ public class CreateModule extends BaseClass {
         String moduleKeyName = "testModuleKey" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
         String moduleAddress = "testAddress" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
         clickToAddBtn( );
-        //System.out.println(moduleName+" "+ moduleKeyName);
         setKeyName( moduleKeyName );
         setName( moduleName );
         setAddress( moduleAddress );
@@ -50,33 +48,33 @@ public class CreateModule extends BaseClass {
 
     }
 
-    @Step("5. Нажать на сохранение")
+    @Step(" Нажать на сохранение")
     public void clickToSaveBtn( ) {
         saveModuleBTN.click( );
     }
 
-    @Step("4. Ввод адреса {0}")
+    @Step(" Ввод адреса {0}")
     public void setAddress( String address ) {
         addressINPT.click( );
         addressINPT.clear( );
         addressINPT.sendKeys( address );
     }
 
-    @Step("3. Ввод названия {0}")
+    @Step(" Ввод названия {0}")
     public void setName( String name ) {
         nameModuleINPT.click( );
         nameModuleINPT.clear( );
         nameModuleINPT.sendKeys( name );
     }
 
-    @Step("2. Ввод ключевого названия {0}")
+    @Step(" Ввод ключевого названия {0}")
     public void setKeyName( String keyName ) {
         keyNameModuleINPT.click( );
         keyNameModuleINPT.clear( );
         keyNameModuleINPT.sendKeys( keyName );
     }
 
-    @Step("1. Нажатие на кнокпу добавления модуля")
+    @Step(" Нажатие на кнокпу добавления модуля")
     public void clickToAddBtn( ) {
         clickControlBtn( );
         addModuleBTN.click( );

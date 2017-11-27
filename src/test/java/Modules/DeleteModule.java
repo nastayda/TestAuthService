@@ -4,6 +4,7 @@ import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.List;
 
@@ -27,15 +28,33 @@ public class DeleteModule extends BaseClass {
         goToPolicyPage( );
         waitSomeMillisec( 1500 );
         int beforeDeletion = menuItems.size( );
-        controlModuleBTN.click( );
-        if (rowNameModuleTD.getText( ).contains( "testModule" )) {
-            rowNameModuleTD.click( );
-            deleteBTN.click( );
-            confirmDeletionBTN.click( );
-        }
+        clickControlModule( );
+        boolean flag = selectedModule( );
+        clickDeleteBtn( flag );
         wd.navigate( ).refresh( );
         waitSomeMillisec( 1500 );
         int afterDeletion = menuItems.size( );
         assertEquals( afterDeletion, beforeDeletion - 1 );
+    }
+
+    @Step("Выбрать модуль для удаления")
+    public boolean selectedModule( ) {
+        if (rowNameModuleTD.getText( ).contains( "testModule" )) {
+            rowNameModuleTD.click( );
+            return true;
+        } else return false;
+    }
+
+    @Step("Удалить модуль")
+    public void clickDeleteBtn( boolean flag ) {
+        if (flag) {
+            deleteBTN.click( );
+            confirmDeletionBTN.click( );
+        }
+    }
+
+    @Step("Нажать на кнопку Управление модулями")
+    public void clickControlModule( ) {
+        controlModuleBTN.click( );
     }
 }

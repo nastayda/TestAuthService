@@ -1,15 +1,13 @@
-package AuthService;
+package Users;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Random;
 
 import static org.testng.Assert.assertEquals;
 

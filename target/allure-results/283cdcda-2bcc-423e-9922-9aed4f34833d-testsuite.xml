@@ -13,55 +13,64 @@ Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{moz:profile=C:\Users\danilkinaas\AppData\Local\Temp\rust_mozprofile.hc9ai81XYA9M, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=6.1, moz:processID=11032, browserName=firefox, javascriptEnabled=true, platformName=XP}]
 Session ID: 9b59086e-2e73-446a-8635-47529bc47753
 *** Element info: {Using=xpath, value=//div[@class='ant-modal-footer']//html/body/div[3]/div/div[2]/div/div[1]/div[3]/div/button[2]}</message>
-                <stack-trace>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='ant-modal-footer']//html/body/div[3]/div/div[2]/div/div[1]/div[3]/div/button[2]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DANILKINA-AS', ip: '192.168.4.89', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\danilkinaas\AppData\Local\Temp\rust_mozprofile.hc9ai81XYA9M, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=6.1, moz:processID=11032, browserName=firefox, javascriptEnabled=true, platformName=XP}]
-Session ID: 9b59086e-2e73-446a-8635-47529bc47753
-*** Element info: {Using=xpath, value=//div[@class='ant-modal-footer']//html/body/div[3]/div/div[2]/div/div[1]/div[3]/div/button[2]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at AuthService.CreateUser.clickToSave(CreateUser.java:29)
-	at AuthService.CreateUser.test(CreateUser.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</stack-trace>
+                <stack-trace>org.openqa.selenium.NoSuchElementException: Unable to locate element:
+                    //div[@class='ant-modal-footer']//html/body/div[3]/div/div[2]/div/div[1]/div[3]/div/button[2]
+                    For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                    Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+                    System info: host: 'DANILKINA-AS', ip: '192.168.4.89', os.name: 'Windows 7', os.arch: 'amd64',
+                    os.version: '6.1', java.version: '1.8.0_144'
+                    Driver info: org.openqa.selenium.firefox.FirefoxDriver
+                    Capabilities [{moz:profile=C:\Users\danilkinaas\AppData\Local\Temp\rust_mozprofile.hc9ai81XYA9M,
+                    rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal,
+                    moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false,
+                    acceptInsecureCerts=true, browserVersion=56.0, platformVersion=6.1, moz:processID=11032,
+                    browserName=firefox, javascriptEnabled=true, platformName=XP}]
+                    Session ID: 9b59086e-2e73-446a-8635-47529bc47753
+                    *** Element info: {Using=xpath,
+                    value=//div[@class='ant-modal-footer']//html/body/div[3]/div/div[2]/div/div[1]/div[3]/div/button[2]}
+                    at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+                    at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+                    at
+                    sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                    at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+                    at
+                    org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+                    at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+                    at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+                    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+                    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+                    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+                    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+                    at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+                    at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+                    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+                    at Users.CreateUser.clickToSave(CreateUser.java:29)
+                    at Users.CreateUser.test(CreateUser.java:24)
+                    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                    at java.lang.reflect.Method.invoke(Method.java:498)
+                    at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+                    at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+                    at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+                    at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+                    at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+                    at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+                    at org.testng.TestRunner.privateRun(TestRunner.java:744)
+                    at org.testng.TestRunner.run(TestRunner.java:602)
+                    at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+                    at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+                    at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+                    at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+                    at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+                    at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+                    at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+                    at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+                    at org.testng.TestNG.runSuites(TestNG.java:1144)
+                    at org.testng.TestNG.run(TestNG.java:1115)
+                    at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+                    at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+                </stack-trace>
             </failure>
             <steps/>
             <attachments/>

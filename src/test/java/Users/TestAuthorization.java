@@ -1,4 +1,4 @@
-package AuthService;
+package Users;
 
 import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
