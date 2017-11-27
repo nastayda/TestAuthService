@@ -167,4 +167,13 @@ public class BaseClass {
     public void goToPolicyPage( ) {
         wd.navigate( ).to( getDataFromFile( "src/help-files/auth-info.txt" )[ 3 ] );
     }
+
+    public void waitSomeMillisec( int millisec ) {
+        //Подождать пока прогрузится меню! Иначе он берет первый попавшися элемент списка
+        try {
+            Thread.sleep( millisec );
+        } catch (InterruptedException e) {
+            e.printStackTrace( );
+        }
+    }
 }

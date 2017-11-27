@@ -4,9 +4,10 @@ import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
@@ -25,55 +26,63 @@ public class CreateModule extends BaseClass {
     static WebElement saveModuleBTN;
     //*[@id="authorization"]/div/div[1]/ul/li[4]
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[1]/ul/li[last()]")
-    static WebElement lastMenuItems;
+    static WebElement lastMenuItem;
 
 
     @Test
-    public void createModule(){
-        login();
-        goToPolicyPage();
-       // clickToAddBtn( );
+    @Title("Создание модуля")
+    public void createModule( ) {
+        login( );
+        goToPolicyPage( );
         String moduleName = "testModule" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
-        /*setKeyName( "testModuleKey" );
+        String moduleKeyName = "testModuleKey" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
+        String moduleAddress = "testAddress" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
+        clickToAddBtn( );
+        //System.out.println(moduleName+" "+ moduleKeyName);
+        setKeyName( moduleKeyName );
         setName( moduleName );
-        setAddress("testAddress" );
-        clickToSaveBtn( );*/
-        wd.navigate().refresh();
-        //Подождать пока прогрузится меню! Иначе он берет первый попавшися элемент списка
-        waitUntilElementBeClickable( lastMenuItems );
-        assertEquals(lastMenuItems.getText(), moduleName);
+        setAddress( moduleAddress );
+        clickToSaveBtn( );
+        wd.navigate( ).refresh( );
+        waitSomeMillisec( 500 );
+        assertEquals( lastMenuItem.getText( ), moduleName );
 
 
     }
 
+    @Step("5. Нажать на сохранение")
     public void clickToSaveBtn( ) {
-        saveModuleBTN.click();
+        saveModuleBTN.click( );
     }
 
+    @Step("4. Ввод адреса {0}")
     public void setAddress( String address ) {
-        addressINPT.click();
-        addressINPT.clear();
+        addressINPT.click( );
+        addressINPT.clear( );
         addressINPT.sendKeys( address );
     }
 
+    @Step("3. Ввод названия {0}")
     public void setName( String name ) {
-        nameModuleINPT.click();
-        nameModuleINPT.clear();
+        nameModuleINPT.click( );
+        nameModuleINPT.clear( );
         nameModuleINPT.sendKeys( name );
     }
 
+    @Step("2. Ввод ключевого названия {0}")
     public void setKeyName( String keyName ) {
-        keyNameModuleINPT.click();
-        keyNameModuleINPT.clear();
+        keyNameModuleINPT.click( );
+        keyNameModuleINPT.clear( );
         keyNameModuleINPT.sendKeys( keyName );
     }
 
+    @Step("1. Нажатие на кнокпу добавления модуля")
     public void clickToAddBtn( ) {
         clickControlBtn( );
-        addModuleBTN.click();
+        addModuleBTN.click( );
     }
 
     public void clickControlBtn( ) {
-        controlModuleBTN.click();
+        controlModuleBTN.click( );
     }
 }
