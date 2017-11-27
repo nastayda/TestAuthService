@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.asserts.SoftAssert;
 import ru.yandex.qatools.allure.annotations.Step;
 
 import java.io.File;
@@ -20,14 +21,17 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
+
+    public SoftAssert softAssert = new SoftAssert( );
     //Всего элементов в таблице
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/ul/li[1]")
     static public WebElement countRowsText;
     @FindBy(xpath = "//table/tbody/tr")
     static List<WebElement> countRowsOnEachPage;
-
-    @FindBy(xpath = "//ul/li[5]")
-    static WebElement pagginationArrow;
+////*[@id="authorization"]/div/div[2]/div[2]/div/div/div/ul
+    //html/body/div[3]/div/div[2]/div/div[1]/div[2]/div[2]/div/div/ul/li[3]
+    @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/ul/li[last()-1]")
+    public static WebElement pagginationArrow;
     @FindBy(css = "input.ant-input.ant-select-search__field")
     static WebElement loginNameTB;
     @FindBy(id = "lastName")

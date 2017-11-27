@@ -30,13 +30,17 @@ public class DeleteModule extends BaseClass {
         goToPolicyPage( );
         waitSomeMillisec( 1500 );
         int beforeDeletion = menuItems.size( );
+        int countBeforeFromEachPage = goToLastPage( );
         clickControlModule( );
         boolean flag = selectedModule( );
         clickDeleteBtn( flag );
         wd.navigate( ).refresh( );
         waitSomeMillisec( 1500 );
+        int countAfterFromEachPage = goToLastPage( );
         int afterDeletion = menuItems.size( );
-        assertEquals( afterDeletion, beforeDeletion - 1 );
+        softAssert.assertEquals( afterDeletion, beforeDeletion - 1, "Проверка счетчика провалилась.");
+        softAssert.assertEquals( countAfterFromEachPage, countBeforeFromEachPage - 1, "Проверка физического наличия политик в таблице провалилась." );
+        softAssert.assertAll();
     }
 
     @Step("Выбрать модуль для удаления")

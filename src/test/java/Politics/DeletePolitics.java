@@ -23,12 +23,13 @@ public class DeletePolitics extends BaseClass {
     static public WebElement deleteBTN;
     @FindBy(xpath = "//div[@class='ant-modal-footer']//button[2]")
     static public WebElement confirmDeletionBTN;
-    private SoftAssert softAssert = new SoftAssert( );
+
     @Test
     @Title("Удаление политики")
     public void deletePolitics( ) {
         login( );
         goToPolicyPage( );
+        System.out.println(pagginationArrow.getText());
         int countBeforeFromEachPage = goToLastPage( );
         //Количество элементов напротив "Всего"
         int countBefore = Integer.parseInt( countRowsText.getText( ).substring( 7 ) );
@@ -57,5 +58,4 @@ public class DeletePolitics extends BaseClass {
         }
         wd.navigate( ).refresh( );
     }
-
 }

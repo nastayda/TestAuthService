@@ -29,10 +29,13 @@ public class DeleteUser extends BaseClass {
     public void deleteUser( ) {
         login( );
         int countRowsBefore = getCountRows( );
+        int countBeforeFromEachPage = goToLastPage( );
         choseUserForDeletion( );
         clickToDeleteBtn( );
-        assertEquals( getCountRows( ), countRowsBefore - 1 );
-
+        int countAfterFromEachPage = goToLastPage( );
+        softAssert.assertEquals( getCountRows( ), countRowsBefore - 1, "Проверка счетчика провалилась." );
+        softAssert.assertEquals( countAfterFromEachPage, countBeforeFromEachPage - 1, "Проверка физического наличия политик в таблице провалилась." );
+        softAssert.assertAll();
     }
 
     @Step("Удалить и подтвердить удалене")
@@ -47,8 +50,8 @@ public class DeleteUser extends BaseClass {
 
     @Step("Получить имя пользователя")
     public void choseUserForDeletion( ) {
-        if (!checkB.isSelected( ) & (userLoginT.getText( ).contains( "testUser" + LocalDateTime.now( ).getYear( ) )||
-                                     userLoginT.getText( ).contains( "editUser" + LocalDateTime.now( ).getYear( ) ))) {
+        if (!checkB.isSelected( ) & ( userLoginT.getText( ).contains( "testUser" + LocalDateTime.now( ).getYear( ) ) ||
+                userLoginT.getText( ).contains( "editUser" + LocalDateTime.now( ).getYear( ) ) )) {
             checkB.click( );
         }
     }
@@ -59,7 +62,7 @@ public class DeleteUser extends BaseClass {
         int countAfter = Integer.parseInt( countRowsText.getText( ).substring( 7 ) );
         //Посчитать число строк в таблице
         return table.size( );
-       // return  countAfter;
+        // return  countAfter;
     }
 
 }
