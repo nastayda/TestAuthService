@@ -58,8 +58,8 @@ public class DeleteUser extends BaseClass {
         wd.navigate( ).refresh( );
         int countAfter = Integer.parseInt( countRowsText.getText( ).substring( 7 ) );
         //Посчитать число строк в таблице
-        //return table.size( );
-        return  countAfter;
+        return table.size( );
+       // return  countAfter;
     }
 
 }

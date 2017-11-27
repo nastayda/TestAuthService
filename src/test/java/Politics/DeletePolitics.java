@@ -4,8 +4,11 @@ import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
+
+import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
@@ -14,17 +17,19 @@ import static org.testng.Assert.assertEquals;
 Проверка получается не очень атомарная, но если она свалится, то в любом случае придется проходить все руками и смотреть,
 что свалилось отображение или удаление*/
 public class DeletePolitics extends BaseClass {
+    @FindBy(xpath = "//table/tbody/tr")
+    static List<WebElement> table;
     @FindBy(xpath = "//div/div[2]/div[1]/div/div[1]/span[5]/button")
     static public WebElement deleteBTN;
     @FindBy(xpath = "//div[@class='ant-modal-footer']//button[2]")
     static public WebElement confirmDeletionBTN;
-
+    private SoftAssert softAssert = new SoftAssert( );
     @Test
     @Title("Удаление политики")
     public void deletePolitics( ) {
         login( );
         goToPolicyPage( );
-        goToLastPage( );
+        int countBeforeFromEachPage = goToLastPage( );
         //Количество элементов напротив "Всего"
         int countBefore = Integer.parseInt( countRowsText.getText( ).substring( 7 ) );
         //Определить есть ли элементы для удаления
@@ -33,7 +38,13 @@ public class DeletePolitics extends BaseClass {
         clickToDeleteBtn( thereIsSomethingForDeletion );
         //Посчитать сколько элементов после удаления
         int countAfter = Integer.parseInt( countRowsText.getText( ).substring( 7 ) );
-        assertEquals( countAfter, countBefore - 1, "Проверка не прошла. Отображается неравное количество до и после удаления." );
+        int countAfterFromEachPage = goToLastPage( );
+        //Проверка по счетчику
+        softAssert.assertEquals( countAfter, countBefore - 1, "Проверка счетчика провалилась." );
+        //Проверка по физическому наличию в таблице
+        System.out.println(countAfterFromEachPage +" "+countBeforeFromEachPage);
+        softAssert.assertEquals( countAfterFromEachPage, countBeforeFromEachPage - 1, "Проверка физического наличия политик в таблице провалилась." );
+        softAssert.assertAll();
     }
 
     @Step("3. Удалить и подтвердить удаление")

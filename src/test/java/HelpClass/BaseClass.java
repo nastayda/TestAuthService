@@ -16,12 +16,15 @@ import ru.yandex.qatools.allure.annotations.Step;
 
 import java.io.File;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
     //Всего элементов в таблице
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/ul/li[1]")
     static public WebElement countRowsText;
+    @FindBy(xpath = "//table/tbody/tr")
+    static List<WebElement> countRowsOnEachPage;
 
     @FindBy(xpath = "//ul/li[5]")
     static WebElement pagginationArrow;
@@ -183,13 +186,16 @@ public class BaseClass {
     }
 
     @Step("Перейти на последнюю страницу")
-    protected void goToLastPage( ) {
+    protected int goToLastPage( ) {
+        int k=countRowsOnEachPage.size();
         //Классно! если только не 100500 страниц надо будет перелистывать....
         if (pagginationArrow.getAttribute( "aria-disabled" ) != null) {
             while (pagginationArrow.getAttribute( "aria-disabled" ).equals( "false" )) {
                 pagginationArrow.click( );
+                k+=countRowsOnEachPage.size();
             }
         }
+        return k;
     }
 
     @Step("Получить название политики")

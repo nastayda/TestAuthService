@@ -1,60 +1,58 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Набор тестов для проверки работоспособности сервисов" verbose="1" >
+<suite name="Набор тестов для проверки работоспособности сервисов" verbose="1">
 
-   <test name="Вызов класса User.TestAuthorization" >
+    <test name="Вызов класса User.TestAuthorization">
         <classes>
-            <class name="Users.TestAuthorization" />
+            <class name="Users.TestAuthorization"/>
         </classes>
     </test>
     <test name="Вызов класса Users.CreateUser">
         <classes>
-            <class name="Users.CreateUser" />
+            <class name="Users.CreateUser"/>
         </classes>
     </test>
     <test name="Вызов класса Users.EditUser">
         <classes>
-            <class name="Users.EditUser" />
+            <class name="Users.EditUser"/>
         </classes>
     </test>
     <test name="Вызов класса Users.DeleteUser">
         <classes>
-            <class name="Users.DeleteUser" />
+            <class name="Users.DeleteUser"/>
         </classes>
     </test>
 
-
     <test name="Вызов класса Politics.CreatePolitics">
         <classes>
-            <class name="Politics.CreatePolitics" />
+            <class name="Politics.CreatePolitics"/>
         </classes>
     </test>
 
     <test name="Вызов класса Politics.EditPolitics">
         <classes>
-            <class name="Politics.EditPolitics" />
+            <class name="Politics.EditPolitics"/>
         </classes>
     </test>
-    <test name="Вызов класса Politics.DeletePolitics" >
+    <test name="Вызов класса Politics.DeletePolitics">
         <classes>
-            <class name="Politics.DeletePolitics" />
+            <class name="Politics.DeletePolitics"/>
         </classes>
     </test>
 
-
-    <test name="Вызов класса Modules.CreateModule" >
+    <test name="Вызов класса Modules.CreateModule">
         <classes>
-            <class name="Modules.CreateModule" />
+            <class name="Modules.CreateModule"/>
         </classes>
     </test>
-    <test name="Вызов класса Modules.EditModule" >
+    <test name="Вызов класса Modules.EditModule">
         <classes>
-            <class name="Modules.EditModule" />
+            <class name="Modules.EditModule"/>
         </classes>
     </test>
-    <test name="Вызов класса Modules.DeleteModule" >
+    <test name="Вызов класса Modules.DeleteModule">
         <classes>
-            <class name="Modules.DeleteModule" />
+            <class name="Modules.DeleteModule"/>
         </classes>
     </test>
 </suite>
