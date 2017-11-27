@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Users.DeleteUser" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-11-27T11:40:30" hostname="Danilkina-as" time="4.042">
+  <properties/>
+  <testcase name="deleteUser" classname="Users.DeleteUser" time="4.042"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1511782830453	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782830738	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782830995	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782831734	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+JavaScript error: http://vm-auth-dev.ursip.ru/auth/static/js/main.433d63e1.js, line 10: TypeError: o.json is not a function
+JavaScript error: http://vm-auth-dev.ursip.ru/auth/static/js/main.433d63e1.js, line 10: TypeError: o.json is not a function
+1511782831747	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+1511782831748	Marionette	DEBUG	Received DOM event "unload" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+1511782832115	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+1511782832350	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+1511782832818	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782833100	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782833413	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782833453	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+1511782833472	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+1511782833472	Marionette	DEBUG	Received DOM event "unload" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+1511782833838	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+1511782834077	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+]]></system-err>
+</testsuite>

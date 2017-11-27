@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Modules.CreateModule" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-11-27T11:41:29" hostname="Danilkina-as" time="5.819">
+  <properties/>
+  <testcase name="createModule" classname="Modules.CreateModule" time="5.819"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1511782890075	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782890346	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782890611	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782891278	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+JavaScript error: http://vm-auth-dev.ursip.ru/auth/static/js/main.433d63e1.js, line 10: TypeError: o.json is not a function
+JavaScript error: http://vm-auth-dev.ursip.ru/auth/static/js/main.433d63e1.js, line 10: TypeError: o.json is not a function
+1511782891290	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+1511782891290	Marionette	DEBUG	Received DOM event "unload" for "http://vm-auth-dev.ursip.ru/auth/admin/"
+1511782891719	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-auth-dev.ursip.ru/policy-manager/"
+1511782891727	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-auth-dev.ursip.ru/policy-manager/"
+1511782892385	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782892755	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782892974	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782893421	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782893804	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782894232	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782894246	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-auth-dev.ursip.ru/policy-manager/"
+1511782894265	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-auth-dev.ursip.ru/policy-manager/"
+1511782894265	Marionette	DEBUG	Received DOM event "unload" for "http://vm-auth-dev.ursip.ru/policy-manager/"
+1511782894785	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-auth-dev.ursip.ru/policy-manager/"
+1511782895095	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-auth-dev.ursip.ru/policy-manager/"
+]]></system-err>
+</testsuite>

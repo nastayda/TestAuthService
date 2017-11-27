@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1511782884097" stop="1511782895963">
+    <name>Набор тестов для проверки работоспособности сервисов</name>
+    <test-cases>
+        <test-case start="1511782889836" stop="1511782895655" status="passed">
+            <name>createModule</name>
+            <title>Создание модуля</title>
+            <steps>
+                <step start="1511782889836" stop="1511782891264" status="passed">
+                    <name>login</name>
+                    <title>Ввод логина и пароля</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1511782889837" stop="1511782890129" status="passed">
+                            <name>enterLogin</name>
+                            <title>Ввод логина</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1511782890129" stop="1511782890393" status="passed">
+                            <name>enterPassword</name>
+                            <title>Ввод пароля</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1511782890393" stop="1511782890617" status="passed">
+                            <name>signInClick</name>
+                            <title>Нажать на Войти</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1511782890617" stop="1511782891264" status="passed">
+                            <name>waitTable</name>
+                            <title>Ждем пока появится таблица</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1511782891731" stop="1511782892757" status="passed">
+                    <name>clickToAddBtn</name>
+                    <title> Нажатие на кнокпу добавления модуля</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782892757" stop="1511782893197" status="passed">
+                    <name>setKeyName</name>
+                    <title> Ввод ключевого названия testModuleKey2017-11-27T14_41_31.730</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782893197" stop="1511782893586" status="passed">
+                    <name>setName</name>
+                    <title> Ввод названия testModule2017-11-27T14_41_31.730</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782893586" stop="1511782893994" status="passed">
+                    <name>setAddress</name>
+                    <title> Ввод адреса testAddress2017-11-27T14_41_31.730</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782893994" stop="1511782894234" status="passed">
+                    <name>clickToSaveBtn</name>
+                    <title> Нажать на сохранение</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>

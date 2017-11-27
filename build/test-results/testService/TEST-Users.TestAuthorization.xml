@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Users.TestAuthorization" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-11-27T11:39:45" hostname="Danilkina-as" time="1.791">
+  <properties/>
+  <testcase name="TestAuthorization" classname="Users.TestAuthorization" time="1.791"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1511782785933	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782786216	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511782786480	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+]]></system-err>
+</testsuite>

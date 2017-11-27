@@ -23,10 +23,9 @@ dependencies{
 task testService(type: Test){
     useTestNG{
         suites 'src/test/resources/testng-services.xml'
-
     }
 }
 
-testAuth.doFirst {
+testService.doFirst {
     jvmArgs "-javaagent:${configurations.agent.singleFile}"
 }

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1511782834578" stop="1511782846807">
+    <name>Набор тестов для проверки работоспособности сервисов</name>
+    <test-cases>
+        <test-case start="1511782839568" stop="1511782846554" status="passed">
+            <name>createPolitics</name>
+            <steps>
+                <step start="1511782839568" stop="1511782840999" status="passed">
+                    <name>login</name>
+                    <title>Ввод логина и пароля</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1511782839569" stop="1511782839871" status="passed">
+                            <name>enterLogin</name>
+                            <title>Ввод логина</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1511782839871" stop="1511782840136" status="passed">
+                            <name>enterPassword</name>
+                            <title>Ввод пароля</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1511782840136" stop="1511782840356" status="passed">
+                            <name>signInClick</name>
+                            <title>Нажать на Войти</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1511782840356" stop="1511782840999" status="passed">
+                            <name>waitTable</name>
+                            <title>Ждем пока появится таблица</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1511782841339" stop="1511782842169" status="passed">
+                    <name>clickToAddBtn</name>
+                    <title>Клик на кнопку Добавить политику</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782842169" stop="1511782842629" status="passed">
+                    <name>choseParameter</name>
+                    <title>Выбрать параметр Фамилия</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782842629" stop="1511782842938" status="passed">
+                    <name>choseSign</name>
+                    <title>Выбрать знак</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782842938" stop="1511782843227" status="passed">
+                    <name>setMeaning</name>
+                    <title>Установить значение 123</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782843227" stop="1511782843801" status="passed">
+                    <name>setPoliticsName</name>
+                    <title>Заполнить название политики testPolitics2017-11-27T14_40_41.339</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782843801" stop="1511782844206" status="passed">
+                    <name>setDescription</name>
+                    <title>Заполнить описание test description</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782844206" stop="1511782844612" status="passed">
+                    <name>setServiceName</name>
+                    <title>Заполнить название сервиса Авторизация</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782844612" stop="1511782845585" status="passed">
+                    <name>chooseSetting</name>
+                    <title>Выбрать настройку {0}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782845585" stop="1511782845852" status="passed">
+                    <name>clickSave</name>
+                    <title>Сохранить</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1511782845852" stop="1511782846539" status="passed">
+                    <name>goToLastPage</name>
+                    <title>1. Перейти на последнюю страницу</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>
