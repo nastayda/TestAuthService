@@ -1,6 +1,7 @@
 package HelpClass;
 
 import Politics.DeletePolitics;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -36,6 +37,36 @@ public class BaseClass {
     static WebElement roleTB;
     @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[3]/div/button[2]")
     static WebElement saveBTN;
+    @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[3]/div/button[2]")
+    static WebElement savePoliticsBTN;
+    @FindBy(xpath = "//ul[@class='ant-select-tree']/li[1]/ul/li[2]/span[2]/span")
+    static WebElement expandMenu;
+    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[4]/div/div[2]/div[2]/div/div/div/div")
+    static WebElement dropdownMenuSign;
+    @FindBy(xpath = "//div[4]/div/div/div/ul/li[1]")
+    static WebElement elementSign;
+    @FindBy(id = "serviceName")
+    static WebElement chooseINPT;
+    @FindBy(id = "policyName")
+    static WebElement policyNameINPT;
+    @FindBy(id = "policyDescription")
+    static WebElement policyDescriptionINPT;
+    @FindBy(css = "ul.ant-select-selection__rendered")
+    static WebElement menuItem;
+    @FindBy(css = "span.ant-select-tree-switcher.ant-select-tree-switcher_close")
+    static WebElement chooseServiceSetting;
+    @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div[1]/span[2]/button")
+    static WebElement controlModuleBTN;
+    @FindBy(xpath = "//div[1]/div[2]/div/span/input")
+    static WebElement keyNameModuleINPT;
+    @FindBy(xpath = "//div[2]/div[2]/div/input")
+    static WebElement nameModuleINPT;
+    @FindBy(xpath = "//div[3]/div[2]/div/span/input")
+    static WebElement addressINPT;
+    @FindBy(xpath = "//div[3]/div/div[2]/div/div[1]/div[3]/div/button[2]")
+    static WebElement saveModuleBTN;
+    @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[1]/ul/li[last()]")
+    public static WebElement lastMenuItem;
 
     public FirefoxDriver wd;
     WriteReadFromFile readData;
@@ -199,7 +230,7 @@ public class BaseClass {
     }
 
 
-    //Edit, delete users methods
+    //Edit, create users methods
     @Step("9. Сохранине")
     public void clickToSave( ) {
         waitUntilElementBeClickable( saveBTN );
@@ -240,5 +271,79 @@ public class BaseClass {
         lastNameTB.click( );
         lastNameTB.clear( );
         lastNameTB.sendKeys( surname );
+    }
+
+    //Edit, create politics methods
+    @Step("Сохранить")
+    public void clickSave( ) {
+        savePoliticsBTN.click( );
+    }
+    @Step("Выбрать настройку {0}")
+    public void chooseSetting( ) {
+        menuItem.click( );
+        chooseServiceSetting.click( );
+        expandMenu.click( );
+        policyDescriptionINPT.click( );
+    }
+    @Step("Заполнить название сервиса {0}")
+    public void setServiceName( String serviceName ) {
+        chooseINPT.click( );
+        chooseINPT.clear( );
+        chooseINPT.sendKeys( serviceName );
+    }
+    @Step("Заполнить описание {0}")
+    public void setDescription( String decription ) {
+        policyDescriptionINPT.click( );
+        policyDescriptionINPT.clear( );
+        policyDescriptionINPT.sendKeys( decription );
+    }
+    @Step("Заполнить название политики {0}")
+    public void setPoliticsName( String politicsName ) {
+        policyNameINPT.click( );
+        policyNameINPT.clear( );
+        policyNameINPT.sendKeys( politicsName );
+    }
+    @Step("Установить значение {0}")
+    public void setMeaning( String meaning, WebElement valueINPT ) {
+        valueINPT.click( );
+        valueINPT.sendKeys( meaning );
+    }
+    @Step("Выбрать знак")
+    public void choseSign( ) {
+        dropdownMenuSign.click( );
+        ( (JavascriptExecutor) wd ).executeScript( "arguments[0].click();", elementSign );
+    }
+    @Step("Выбрать параметр {0}")
+    public void choseParameter( String parameter, WebElement parametrINPT ) {
+        parametrINPT.click( );
+        parametrINPT.clear( );
+        parametrINPT.sendKeys( parameter );
+    }
+
+    //Edit, create modules methods
+    @Step(" Нажать на сохранение")
+    public void clickToSaveBtn( ) {
+        saveModuleBTN.click( );
+    }
+    @Step(" Ввод адреса {0}")
+    public void setAddress( String address ) {
+        addressINPT.click( );
+        addressINPT.clear( );
+        addressINPT.sendKeys( address );
+    }
+    @Step(" Ввод названия {0}")
+    public void setName( String name ) {
+        nameModuleINPT.click( );
+        nameModuleINPT.clear( );
+        nameModuleINPT.sendKeys( name );
+    }
+    @Step(" Ввод ключевого названия {0}")
+    public void setKeyName( String keyName ) {
+        keyNameModuleINPT.click( );
+        keyNameModuleINPT.clear( );
+        keyNameModuleINPT.sendKeys( keyName );
+    }
+    public void clickControlBtn( ) {
+        controlModuleBTN.click( );
     }
 }

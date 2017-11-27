@@ -1,5 +1,6 @@
 package Politics;
 
+import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
@@ -11,7 +12,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class EditPolitics extends CreatePolitics {
+public class EditPolitics extends BaseClass {
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div[1]/span[4]/button")
     static WebElement editBTN;
     @FindBy(xpath = "//table/tbody/tr[last()]/td[2]")

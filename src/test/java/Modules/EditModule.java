@@ -1,5 +1,6 @@
 package Modules;
 
+import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
@@ -10,7 +11,7 @@ import java.time.LocalDateTime;
 
 import static org.testng.Assert.assertEquals;
 
-public class EditModule extends CreateModule {
+public class EditModule extends BaseClass {
     @FindBy(xpath = "//div[@class='ant-modal-body']/div[2]/div/div/div/div/div/table/tbody/tr[last()]/td[1]")
     static WebElement rowNameModuleTD;
     @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[2]/div[1]/span[2]/button")
