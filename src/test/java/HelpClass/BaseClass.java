@@ -27,9 +27,10 @@ public class BaseClass {
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/ul/li[1]")
     static public WebElement countRowsText;
     @FindBy(xpath = "//table/tbody/tr")
-    static List<WebElement> countRowsOnEachPage;
+    public static List<WebElement> countRowsOnEachPage;
 ////*[@id="authorization"]/div/div[2]/div[2]/div/div/div/ul
     //html/body/div[3]/div/div[2]/div/div[1]/div[2]/div[2]/div/div/ul/li[3]
+    //html/body/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div/div/ul/li[3]
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/ul/li[last()-1]")
     public static WebElement pagginationArrow;
     @FindBy(css = "input.ant-input.ant-select-search__field")

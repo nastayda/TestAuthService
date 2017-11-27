@@ -31,8 +31,6 @@ public class CreateModule extends BaseClass {
         wd.navigate( ).refresh( );
         waitSomeMillisec( 500 );
         assertEquals( lastMenuItem.getText( ), moduleName );
-
-
     }
 
     @Step(" Нажатие на кнокпу добавления модуля")
