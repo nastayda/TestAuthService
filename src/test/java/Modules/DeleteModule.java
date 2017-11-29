@@ -21,7 +21,6 @@ public class DeleteModule extends BaseClass {
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[1]/ul/li")
     static List<WebElement> menuItems;
     @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div/div/ul/li[last()]")
-    //html/body/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div/div/ul/li[3]
     static WebElement pagginationArrowModule;
     @Test
     @Title("Удаление модуля")
