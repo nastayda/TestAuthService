@@ -46,9 +46,8 @@ public class CreateUser extends BaseClass {
         wd.navigate( ).refresh( );
     }
 
-    @Step("2. Ввод пароля {0}")
+    @Step("Ввод пароля {0}")
     public void setPassword( String password ) {
-
         passwordTB.click( );
         passwordTB.clear( );
         passwordTB.sendKeys( password );

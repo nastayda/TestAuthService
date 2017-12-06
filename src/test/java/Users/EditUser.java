@@ -70,7 +70,7 @@ public class EditUser extends BaseClass {
         clickToSave( );
     }
 
-    @Step("2. Ввод пароля {0}")
+    @Step(" Ввод пароля {0}")
     public void setNewPasswordTB( String newPassword ) {
         newPasswordTB.click( );
         newPasswordTB.clear( );

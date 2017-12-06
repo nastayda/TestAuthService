@@ -48,7 +48,7 @@ public class DeletePolitics extends BaseClass {
         softAssert.assertAll();
     }
 
-    @Step("3. Удалить и подтвердить удаление")
+    @Step("Удалить и подтвердить удаление")
     public void clickToDeleteBtn( boolean flag ) {
         if (flag) {
             waitUntilElementBeClickable( deleteBTN );
