@@ -72,13 +72,15 @@ public class SearchBase extends BaseClass {
 
     public void getCriteriaFromMenu( ) {
         menu.click( );
-        // menuPoint.get( 2 ).click();
+        //Удалить пустые элементы
         menuPoint.removeAll( Collections.singleton( "" ) );
         tableHeader.removeAll( Collections.singleton( "" ) );
-        System.out.println( menuPoint.size( ) + " " + tableHeader.size( ) );
+
+        System.out.println("Size "+ tableRow.size() );
         //Цикл по элементам меню
-        for (int i = 1; i < menuPoint.size( ); i++) {
+        for (int i = 0; i < menuPoint.size( ); i++) {
             //Нажать на выбранный пункт меню
+            waitSomeMillisec( 500 );
             menuPoint.get( i ).click( );
             //Цикл по заголовкам таблицы
             for (int j = 0; j < tableHeader.size( ); j++) {
@@ -93,12 +95,14 @@ public class SearchBase extends BaseClass {
                         criteriaText = Arrays.asList( tableRow.get( k ).getText( ).split( " " ) ).get( j );
                         //Если текст  не пуст
                         if (!criteriaText.isEmpty( )) {
-                            //тогда вставляем текст в строку поиска и выходим из цикла? -не
+                            //тогда вставляем текст в строку поиска
                             serachAreaTB.clear( );
                             serachAreaTB.click( );
                             serachAreaTB.sendKeys( criteriaText );
+                            System.out.println("Size "+ tableRow.size() );
                             //Сюда впихнуть ассерт
                         }
+                        //Иначе проверить есть ли пагинация и если есть перейти на вторую страницу и попытаться поискать там
                     }
 
                 }
