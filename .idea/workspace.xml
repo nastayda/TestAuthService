@@ -36,8 +36,8 @@
       <file leaf-file-name="SearchBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="29" column="121" lean-forward="false" selection-start-line="29" selection-start-column="121" selection-end-line="29" selection-end-column="121" />
+            <state relative-caret-position="372">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1043,34 +1043,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SearchBase_search - 2017.12.06 at 16h 47m 59s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 11h 03m 41s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.06 at 16h 49m 07s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 11h 04m 15s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.06 at 16h 49m 39s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 11h 05m 29s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.06 at 16h 50m 56s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 11h 05m 54s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.06 at 16h 51m 30s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 11h 06m 47s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.06 at 16h 59m 43s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 11h 07m 28s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.06 at 17h 00m 23s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 11h 09m 18s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.06 at 18h 20m 06s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 11h 09m 56s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.06 at 18h 22m 58s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 11h 10m 50s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.06 at 18h 28m 37s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 11h 22m 49s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1086,7 +1086,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25865802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37662336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1112,7 +1112,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="101" />
+      <option name="time" value="103" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1570,8 +1570,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="29" column="121" lean-forward="false" selection-start-line="29" selection-start-column="121" selection-end-line="29" selection-end-column="121" />
+        <state relative-caret-position="372">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
