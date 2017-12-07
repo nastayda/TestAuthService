@@ -5,13 +5,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
+import javax.sound.midi.Soundbank;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 @Test
 public class SearchBase extends BaseClass {
-    @FindBy(xpath = "//div[@class='ant-select-selection-selected-value']")
+    @FindBy(xpath = "//div[@class='ant-select-selection\n" +
+            "            ant-select-selection--single']")
     WebElement menu;
-    @FindBy(xpath = "//div[3]/descendant::li")
+    @FindBy(xpath = "//ul[@class='ant-select-dropdown-menu ant-select-dropdown-menu-vertical  ant-select-dropdown-menu-root']/li")
     List<WebElement> menuPoint;
     @FindBy(xpath = "//span[@class='ant-input-group-wrapper']/span/input")
     WebElement serachAreaTB;
@@ -23,7 +28,6 @@ public class SearchBase extends BaseClass {
     List<WebElement> tableHeader;
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/span[3]/button")
     WebElement addBTN;
-    ///html/body/div[3]/div/div[2]/div/div[1]/div[3]/div/button[1]
     @FindBy(xpath = "//div[@class='ant-modal-footer']//button[1]")
     WebElement cancelBTN;
     //Суть проверки по шагам:
@@ -42,33 +46,72 @@ public class SearchBase extends BaseClass {
 
     public void search( ) {
         login( );
-        addBTN.click( );
-        for (int i = 0; i < labelList.size( ); i++) {
-            System.out.println( labelList.get( i ).getText( ) );
-        }
-        cancelBTN.click( );
         //Разбить полученную строку на массив и из полученного массива получить нужный элемент
         // System.out.println( Arrays.asList( tableRow.get( 0 ).getText( ).split( " " ) ).get( 0 ) );
-        waitSomeMillisec( 500 );
-        menu.click( );
-        waitSomeMillisec( 500 );
+        //menu.click();
+        getCriteriaFromMenu( );
+
+        //getCriterianFromForm( );
+        //compareData( );
+        // menuPoint.get( 6 ).click( );
+        // serachAreaTB.click( );
+        //serachAreaTB.clear( );
+        //serachAreaTB.sendKeys( "test" );
+    }
+
+    public void compareData( ) {
         for (int i = 0; i < menuPoint.size( ); i++) {
-            for (int j =0; j< tableHeader.size(); j++){
-               /* if (menuPoint.get( i ).getText().equals( tableHeader.get( j ).getText() )){
-                    tableRow.get( j ).getText();
-                }*/
+            for (int j = 0; j < tableHeader.size( ); j++) {
+                if (menuPoint.contains( tableHeader.get( j ).getText( ) )) {
+                    tableRow.get( j ).getText( );
+                }
             }
             //System.out.println( "Text i=" + i + " " + menuPoint.get( i ).getText( ) );
         }
-        for (int j =0; j< tableHeader.size(); j++){
-               /* if (menuPoint.get( i ).getText().equals( tableHeader.get( j ).getText() )){
-                    tableRow.get( j ).getText();
-                }*/
-            System.out.println( "Text i=" + j + " " + tableHeader.get( j ).getText( ) );
+    }
+
+    public void getCriteriaFromMenu( ) {
+        menu.click( );
+        // menuPoint.get( 2 ).click();
+        menuPoint.removeAll( Collections.singleton( "" ) );
+        tableHeader.removeAll( Collections.singleton( "" ) );
+        System.out.println( menuPoint.size( ) + " " + tableHeader.size( ) );
+        //Цикл по элементам меню
+        for (int i = 1; i < menuPoint.size( ); i++) {
+            //Нажать на выбранный пункт меню
+            menuPoint.get( i ).click( );
+            //Цикл по заголовкам таблицы
+            for (int j = 0; j < tableHeader.size( ); j++) {
+                //Переменная поиска текста для вставки в строку поиска
+                String criteriaText ="";
+                //Если есть заголовок меню = заголовку таблицы
+                if (menuPoint.get( i ).getText( ).equals( tableHeader.get( j ).getText( ) )) {
+                    //Ищем текст для вставки в строку поиска
+                    //Цикл по всем строкам таблицы
+                    for (int k = 1; k < tableRow.size( ); k++) {
+                        //Получаем текст
+                        criteriaText = Arrays.asList( tableRow.get( k ).getText( ).split( " " ) ).get( j );
+                        //Если текст  не пуст
+                        if (!criteriaText.isEmpty( )) {
+                            //тогда вставляем текст в строку поиска и выходим из цикла? -не
+                            serachAreaTB.clear( );
+                            serachAreaTB.click( );
+                            serachAreaTB.sendKeys( criteriaText );
+                            //Сюда впихнуть ассерт
+                        }
+                    }
+
+                }
+            }
+            //System.out.println( "Text from menu i=" + i + " " + menuPoint.get( i ).getText( ) );
         }
-        // menuPoint.get( 6 ).click( );
-        serachAreaTB.click( );
-        serachAreaTB.clear( );
-        serachAreaTB.sendKeys( "test" );
+    }
+
+    public void getCriterianFromForm( ) {
+        addBTN.click( );
+        /*for (int i = 0; i < labelList.size( ); i++) {
+            System.out.println( labelList.get( i ).getText( ) );
+        }*/
+        cancelBTN.click( );
     }
 }

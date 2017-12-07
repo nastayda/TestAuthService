@@ -36,8 +36,8 @@
       <file leaf-file-name="SearchBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="99" column="50" lean-forward="false" selection-start-line="99" selection-start-column="50" selection-end-line="99" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1043,34 +1043,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SearchBase_search - 2017.12.07 at 11h 03m 41s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 12h 19m 12s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 11h 04m 15s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 12h 20m 29s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 11h 05m 29s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 12h 20m 52s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 11h 05m 54s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 12h 59m 40s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 11h 06m 47s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 13h 03m 45s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 11h 07m 28s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 13h 04m 30s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 11h 09m 18s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 13h 05m 08s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 11h 09m 56s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 13h 06m 23s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 11h 10m 50s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 13h 14m 13s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 11h 22m 49s.xml">
+    <history-entry file="SearchBase_search - 2017.12.07 at 13h 26m 04s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1112,7 +1112,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="103" />
+      <option name="time" value="106" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1570,8 +1570,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="99" column="50" lean-forward="false" selection-start-line="99" selection-start-column="50" selection-end-line="99" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
