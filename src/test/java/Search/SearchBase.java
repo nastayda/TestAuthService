@@ -20,6 +20,8 @@ public class SearchBase extends BaseClass {
     WebElement serachAreaTB;
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")
     List<WebElement> tableRow;
+    @FindBy(xpath = "//table/tbody/tr/td")
+    List<WebElement> tableCol;
     @FindBy(xpath = "//div[@class='ant-modal-body']/form/div/descendant::label")
     List<WebElement> labelList;
     @FindBy(xpath = "//*[@id=\"authorization\"]//table/thead/tr/th")
@@ -42,12 +44,18 @@ public class SearchBase extends BaseClass {
     // 7. Считать всего в таблице - учесть перход на вторую страницу
     // 8. Написать два варианта проверок позитивные тесты и негативные
 
+    // План такой: выгрузить все содержание колонок в лист и выбирать ту которая нужна
     public void search( ) {
         login( );
         //Разбить полученную строку на массив и из полученного массива получить нужный элемент
         // System.out.println( Arrays.asList( tableRow.get( 0 ).getText( ).split( " " ) ).get( 0 ) );
         //menu.click();
-        getCriteriaFromMenu( );
+        //getCriteriaFromMenu( );
+        for (int i=0; i<tableCol.size();i++) {
+            //проанализировать массив и взять каждый житый ненулевой элемент
+            if (i==2)
+            System.out.println( tableCol.get( i ).getText());
+        }
 
         //getCriterianFromForm( );
         //compareData( );
@@ -70,11 +78,11 @@ public class SearchBase extends BaseClass {
 
     public void getCriteriaFromMenu( ) {
         menu.click( );
-        //Удалить пустые элементы
+        //Удалить пустые элементы ? Получить будем столбцы а е строки и дулять пустые - каквариант...
         menuPoint.removeAll( Collections.singleton( "" ) );
         tableHeader.removeAll( Collections.singleton( "" ) );
 
-       // System.out.println("Size table"+ tableRow.size() );
+        // System.out.println("Size table"+ tableRow.size() );
         //Цикл по элементам меню
         for (int i = 0; i < menuPoint.size( ); i++) {
             waitSomeMillisec( 1000 );
@@ -89,12 +97,12 @@ public class SearchBase extends BaseClass {
             //Цикл по заголовкам таблицы
             for (int j = 0; j < tableHeader.size( ); j++) {
                 //Переменная поиска текста для вставки в строку поиска
-                String criteriaText ="";
-                System.out.println("menuPoint.get( i ).getText( )=" +menuPointText +
-                       // "\n criteriaText="+criteriaText+
-                        "\n tableHeader.get( j ).getText( ) )="+tableHeader.get( j ).getText( )  );
+                String criteriaText = "";
+                System.out.println( "menuPoint.get( i ).getText( )=" + menuPointText +
+                        // "\n criteriaText="+criteriaText+
+                        "\n tableHeader.get( j ).getText( ) )=" + tableHeader.get( j ).getText( ) );
                 //Если есть заголовок меню = заголовку таблицы
-                if (!tableHeader.get( j ).getText( ).isEmpty() &
+                if (!tableHeader.get( j ).getText( ).isEmpty( ) &
                         menuPointText.equals( tableHeader.get( j ).getText( ) )) {
                     //Ищем текст для вставки в строку поиска
                     //Цикл по всем строкам таблицы
@@ -109,11 +117,11 @@ public class SearchBase extends BaseClass {
                             serachAreaTB.click( );
                             serachAreaTB.clear( );
                             serachAreaTB.sendKeys( criteriaText );
-                            System.out.println("Size "+ tableRow.size() );
+                            System.out.println( "Size " + tableRow.size( ) );
                             waitSomeMillisec( 1000 );
                             serachAreaTB.click( );
                             serachAreaTB.clear( );
-                            k=tableRow.size( );
+                            k = tableRow.size( );
                             //Сюда впихнуть ассерт
                         }
                         //Иначе проверить есть ли пагинация и если есть перейти на вторую страницу и попытаться поискать там
