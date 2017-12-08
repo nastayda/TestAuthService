@@ -76,31 +76,46 @@ public class SearchBase extends BaseClass {
         menuPoint.removeAll( Collections.singleton( "" ) );
         tableHeader.removeAll( Collections.singleton( "" ) );
 
-        System.out.println("Size "+ tableRow.size() );
+        System.out.println("Size table"+ tableRow.size() );
         //Цикл по элементам меню
         for (int i = 0; i < menuPoint.size( ); i++) {
+            waitSomeMillisec( 1000 );
             menu.click( );
+            //System.out.println("before click menuPoint.get( i ).getText( )=" +menuPoint.get( i ).getText( ));
             //Нажать на выбранный пункт меню
-            waitSomeMillisec( 500 );
             menuPoint.get( i ).click( );
+            //Ощущение что после создания нового объекта я создаю ссылку на него...мэджик вобщем...
+            String menuPointText = menuPoint.get( i ).getText( );
+            waitSomeMillisec( 500 );
+            //System.out.println("after click menuPoint.get( i ).getText( )=" +menuPoint.get( i ).getText( ));
             //Цикл по заголовкам таблицы
             for (int j = 0; j < tableHeader.size( ); j++) {
                 //Переменная поиска текста для вставки в строку поиска
                 String criteriaText ="";
+               System.out.println("menuPoint.get( i ).getText( )=" +menuPointText +
+                        "\n criteriaText="+criteriaText+
+                        "\n tableHeader.get( j ).getText( ) )="+tableHeader.get( j ).getText( )  );
                 //Если есть заголовок меню = заголовку таблицы
-                if (menuPoint.get( i ).getText( ).equals( tableHeader.get( j ).getText( ) )) {
+                if (!tableHeader.get( j ).getText( ).isEmpty() &
+                        menuPointText.equals( tableHeader.get( j ).getText( ) )) {
                     //Ищем текст для вставки в строку поиска
                     //Цикл по всем строкам таблицы
                     for (int k = 1; k < tableRow.size( ); k++) {
+
                         //Получаем текст
                         criteriaText = Arrays.asList( tableRow.get( k ).getText( ).split( " " ) ).get( j );
                         //Если текст  не пуст
                         if (!criteriaText.isEmpty( )) {
+
                             //тогда вставляем текст в строку поиска
-                            serachAreaTB.clear( );
                             serachAreaTB.click( );
+                            serachAreaTB.clear( );
                             serachAreaTB.sendKeys( criteriaText );
                             System.out.println("Size "+ tableRow.size() );
+                            waitSomeMillisec( 1000 );
+                            serachAreaTB.click( );
+                            serachAreaTB.clear( );
+                            k=tableRow.size( );
                             //Сюда впихнуть ассерт
                         }
                         //Иначе проверить есть ли пагинация и если есть перейти на вторую страницу и попытаться поискать там
