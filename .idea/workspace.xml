@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Search/SearchBase.java" afterPath="$PROJECT_DIR$/src/test/java/Search/SearchBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" afterPath="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -48,10 +48,11 @@
       <file leaf-file-name="SettingLogo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state relative-caret-position="219">
+              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#setLogoUrl#0;class#SettingLogo#0" expanded="false" />
                 <element signature="method#saveNewUrl#0;class#SettingLogo#0" expanded="false" />
                 <element signature="method#goToChangeLogoUrlForm#0;class#SettingLogo#0" expanded="false" />
               </folding>
@@ -1285,7 +1286,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java</url>
-          <line>25</line>
+          <line>23</line>
           <properties />
           <option name="timeStamp" value="119" />
         </line-breakpoint>
@@ -1749,10 +1750,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        <state relative-caret-position="219">
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setLogoUrl#0;class#SettingLogo#0" expanded="false" />
             <element signature="method#saveNewUrl#0;class#SettingLogo#0" expanded="false" />
             <element signature="method#goToChangeLogoUrlForm#0;class#SettingLogo#0" expanded="false" />
           </folding>
