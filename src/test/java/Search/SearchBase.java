@@ -5,9 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
-import javax.sound.midi.Soundbank;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -76,7 +74,7 @@ public class SearchBase extends BaseClass {
         menuPoint.removeAll( Collections.singleton( "" ) );
         tableHeader.removeAll( Collections.singleton( "" ) );
 
-        System.out.println("Size table"+ tableRow.size() );
+       // System.out.println("Size table"+ tableRow.size() );
         //Цикл по элементам меню
         for (int i = 0; i < menuPoint.size( ); i++) {
             waitSomeMillisec( 1000 );
@@ -92,8 +90,8 @@ public class SearchBase extends BaseClass {
             for (int j = 0; j < tableHeader.size( ); j++) {
                 //Переменная поиска текста для вставки в строку поиска
                 String criteriaText ="";
-               System.out.println("menuPoint.get( i ).getText( )=" +menuPointText +
-                        "\n criteriaText="+criteriaText+
+                System.out.println("menuPoint.get( i ).getText( )=" +menuPointText +
+                       // "\n criteriaText="+criteriaText+
                         "\n tableHeader.get( j ).getText( ) )="+tableHeader.get( j ).getText( )  );
                 //Если есть заголовок меню = заголовку таблицы
                 if (!tableHeader.get( j ).getText( ).isEmpty() &
@@ -103,7 +101,7 @@ public class SearchBase extends BaseClass {
                     for (int k = 1; k < tableRow.size( ); k++) {
 
                         //Получаем текст
-                        criteriaText = Arrays.asList( tableRow.get( k ).getText( ).split( " " ) ).get( j );
+                        //criteriaText = Arrays.asList( tableRow.get( k ).getText( ).split( " " ) ).get( j );
                         //Если текст  не пуст
                         if (!criteriaText.isEmpty( )) {
 
