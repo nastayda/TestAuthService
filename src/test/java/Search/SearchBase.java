@@ -79,6 +79,7 @@ public class SearchBase extends BaseClass {
         System.out.println("Size "+ tableRow.size() );
         //Цикл по элементам меню
         for (int i = 0; i < menuPoint.size( ); i++) {
+            menu.click( );
             //Нажать на выбранный пункт меню
             waitSomeMillisec( 500 );
             menuPoint.get( i ).click( );

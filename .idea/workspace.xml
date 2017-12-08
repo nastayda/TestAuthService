@@ -33,13 +33,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SearchBase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SearchBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="401">
+              <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingLogo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#saveNewUrl#0;class#SettingLogo#0" expanded="false" />
+                <element signature="method#goToChangeLogoUrlForm#0;class#SettingLogo#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -48,7 +62,7 @@
       <file leaf-file-name="Invoker.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="189">
               <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
               <folding />
             </state>
@@ -58,7 +72,7 @@
       <file leaf-file-name="MethodInvocationHelper.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
+            <state relative-caret-position="-7">
               <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
               <folding />
             </state>
@@ -68,7 +82,7 @@
       <file leaf-file-name="TestAuthorization.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="-7">
               <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
@@ -638,14 +652,103 @@
         <option value="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Data flow issuesJava</id>
+          </State>
+          <State>
+            <id>Encapsulation issuesJava</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>RegExp</id>
+          </State>
+          <State>
+            <id>Resource management issuesJava</id>
+          </State>
+          <State>
+            <id>Security issuesJava</id>
+          </State>
+          <State>
+            <id>Style issuesKotlin</id>
+          </State>
+          <State>
+            <id>StyleGroovy</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -695,6 +798,14 @@
               <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SettingLogo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -711,7 +822,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="SearchEverywhereHistoryKey" value="sout&#9;PSI&#9;JAVA://javax.sound.midi.Soundbank" />
@@ -736,7 +847,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.SearchBase.search">
+  <component name="RunManager" selected="TestNG.SettingLogo.setLogoUrl">
     <configuration name="CreateModule.createModule" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -865,10 +976,10 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="DeleteUser.deleteUser" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchBase.search" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Users.*" />
+          <option name="PATTERN" value="Search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -876,9 +987,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="Users" />
-      <option name="MAIN_CLASS_NAME" value="Users.DeleteUser" />
-      <option name="METHOD_NAME" value="deleteUser" />
+      <option name="PACKAGE_NAME" value="Search" />
+      <option name="MAIN_CLASS_NAME" value="Search.SearchBase" />
+      <option name="METHOD_NAME" value="search" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -897,10 +1008,10 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="SearchBase.search" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SettingLogo.setLogoUrl" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Search.*" />
+          <option name="PATTERN" value="SettingLogo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -908,9 +1019,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="Search" />
-      <option name="MAIN_CLASS_NAME" value="Search.SearchBase" />
-      <option name="METHOD_NAME" value="search" />
+      <option name="PACKAGE_NAME" value="SettingLogo" />
+      <option name="MAIN_CLASS_NAME" value="SettingLogo.SettingLogo" />
+      <option name="METHOD_NAME" value="setLogoUrl" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1024,19 +1135,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.CreateUser.createUser" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.DeleteUser.deleteUser" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.DeletePolitics.deletePolitics" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.DeleteModule.deleteModule" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.CreateModule.createModule" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.SearchBase.search" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.DeletePolitics.deletePolitics" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.DeleteModule.deleteModule" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.CreateModule.createModule" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.SearchBase.search" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.SettingLogo.setLogoUrl" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.SearchBase.search" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.DeleteModule.deleteModule" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.CreateModule.createModule" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.DeletePolitics.deletePolitics" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.DeleteUser.deleteUser" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.SettingLogo.setLogoUrl" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.SearchBase.search" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.DeleteModule.deleteModule" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.CreateModule.createModule" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.DeletePolitics.deletePolitics" />
       </list>
     </recent_temporary>
   </component>
@@ -1054,39 +1165,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SearchBase_search - 2017.12.07 at 13h 14m 13s.xml">
+    <history-entry file="SearchBase_search - 2017.12.08 at 09h 04m 43s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 13h 26m 04s.xml">
+    <history-entry file="SearchBase_search - 2017.12.08 at 09h 06m 20s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 13h 47m 21s.xml">
+    <history-entry file="SearchBase_search - 2017.12.08 at 09h 07m 31s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 13h 48m 30s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
+    <history-entry file="SettingLogo_setLogoUrl - 2017.12.08 at 09h 30m 37s.xml">
+      <configuration name="SettingLogo.setLogoUrl" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 13h 48m 44s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
+    <history-entry file="SettingLogo_setLogoUrl - 2017.12.08 at 09h 34m 55s.xml">
+      <configuration name="SettingLogo.setLogoUrl" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 13h 49m 20s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
+    <history-entry file="SettingLogo_setLogoUrl - 2017.12.08 at 09h 37m 37s.xml">
+      <configuration name="SettingLogo.setLogoUrl" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 13h 50m 15s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
+    <history-entry file="SettingLogo_setLogoUrl - 2017.12.08 at 09h 38m 16s.xml">
+      <configuration name="SettingLogo.setLogoUrl" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 13h 53m 52s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
+    <history-entry file="SettingLogo_setLogoUrl - 2017.12.08 at 09h 42m 19s.xml">
+      <configuration name="SettingLogo.setLogoUrl" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 13h 54m 28s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
+    <history-entry file="SettingLogo_setLogoUrl - 2017.12.08 at 09h 43m 06s.xml">
+      <configuration name="SettingLogo.setLogoUrl" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.07 at 14h 07m 40s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
+    <history-entry file="SettingLogo_setLogoUrl - 2017.12.08 at 09h 44m 40s.xml">
+      <configuration name="SettingLogo.setLogoUrl" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1096,7 +1208,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37662336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37662336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1107,7 +1219,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37878788" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1125,35 +1237,64 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
-          <line>80</line>
+          <line>102</line>
           <properties />
-          <option name="timeStamp" value="106" />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
           <line>75</line>
           <properties />
-          <option name="timeStamp" value="107" />
+          <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
           <line>76</line>
           <properties />
-          <option name="timeStamp" value="108" />
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="119" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="109" />
+      <option name="time" value="120" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="58" column="100" lean-forward="true" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Politics/DeletePolitics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -1543,7 +1684,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="-7">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
@@ -1564,7 +1705,7 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
+        <state relative-caret-position="-7">
           <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding />
         </state>
@@ -1590,7 +1731,7 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="189">
           <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
           <folding />
         </state>
@@ -1598,10 +1739,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="401">
+          <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#saveNewUrl#0;class#SettingLogo#0" expanded="false" />
+            <element signature="method#goToChangeLogoUrlForm#0;class#SettingLogo#0" expanded="false" />
           </folding>
         </state>
       </provider>
