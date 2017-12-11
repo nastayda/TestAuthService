@@ -37,8 +37,8 @@
       <file leaf-file-name="SearchBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="54" column="76" lean-forward="false" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
+            <state relative-caret-position="-460">
+              <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#compareData#0;class#SearchBase#0" expanded="false" />
@@ -1108,24 +1108,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SearchBase_search - 2017.12.08 at 12h 10m 43s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.08 at 12h 12m 27s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.08 at 12h 13m 40s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.08 at 12h 40m 55s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.08 at 12h 42m 11s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchBase_search - 2017.12.08 at 12h 42m 41s.xml">
-      <configuration name="SearchBase.search" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="SearchBase_search - 2017.12.08 at 12h 44m 12s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
@@ -1136,6 +1118,24 @@
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
     <history-entry file="SearchBase_search - 2017.12.08 at 12h 46m 20s.xml">
+      <configuration name="SearchBase.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchBase_search - 2017.12.11 at 09h 35m 11s.xml">
+      <configuration name="SearchBase.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchBase_search - 2017.12.11 at 09h 44m 39s.xml">
+      <configuration name="SearchBase.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchBase_search - 2017.12.11 at 09h 50m 29s.xml">
+      <configuration name="SearchBase.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchBase_search - 2017.12.11 at 09h 51m 01s.xml">
+      <configuration name="SearchBase.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchBase_search - 2017.12.11 at 09h 54m 16s.xml">
+      <configuration name="SearchBase.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchBase_search - 2017.12.11 at 09h 55m 55s.xml">
       <configuration name="SearchBase.search" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1151,7 +1151,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21969697" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30411255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1180,45 +1180,33 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
-          <line>119</line>
+          <line>111</line>
           <properties />
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
-          <line>118</line>
+          <line>110</line>
           <properties />
           <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
-          <line>117</line>
+          <line>109</line>
           <properties />
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
-          <line>91</line>
+          <line>90</line>
           <properties />
           <option name="timeStamp" value="115" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
-          <line>79</line>
+          <line>83</line>
           <properties />
           <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
-          <line>81</line>
-          <properties />
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
-          <line>82</line>
-          <properties />
-          <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java</url>
@@ -1228,19 +1216,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
-          <line>108</line>
-          <properties />
-          <option name="timeStamp" value="120" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
-          <line>104</line>
+          <line>103</line>
           <properties />
           <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java</url>
-          <line>99</line>
+          <line>98</line>
           <properties />
           <option name="timeStamp" value="123" />
         </line-breakpoint>
@@ -1707,8 +1689,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="54" column="76" lean-forward="false" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
+        <state relative-caret-position="-460">
+          <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#compareData#0;class#SearchBase#0" expanded="false" />
@@ -1768,7 +1750,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>GitHub-TestAuthService</last-edited>
+          <last-edited>TestAuthServiceNew</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1780,6 +1762,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Gradle: com.beust:jcommander:1.64</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

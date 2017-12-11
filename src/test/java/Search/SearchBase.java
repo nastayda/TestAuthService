@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 @Test
@@ -47,15 +45,9 @@ public class SearchBase extends BaseClass {
     // План такой: выгрузить все содержание колонок в лист и выбирать ту которая нужна
     public void search( ) {
         login( );
-        //Разбить полученную строку на массив и из полученного массива получить нужный элемент
-        // System.out.println( Arrays.asList( tableRow.get( 0 ).getText( ).split( " " ) ).get( 0 ) );
         //menu.click();
-        //getCriteriaFromMenu( );
-        for (int i=0; i<tableCol.size();i++) {
-            //проанализировать массив и взять каждый житый ненулевой элемент
-            if (i==2)
-            System.out.println( tableCol.get( i ).getText());
-        }
+        getCriteriaFromMenu( );
+        //System.out.println( getNotNullValueFromColumn( 1 ) );
 
         //getCriterianFromForm( );
         //compareData( );
@@ -63,6 +55,18 @@ public class SearchBase extends BaseClass {
         // serachAreaTB.click( );
         //serachAreaTB.clear( );
         //serachAreaTB.sendKeys( "test" );
+    }
+
+    public String getNotNullValueFromColumn( int numelement ) {
+        for (int i = numelement; i < tableCol.size( ); i += tableHeader.size( )) {
+            //проанализировать массив и взять каждый житый ненулевой элемент
+            //System.out.println( tableCol.get( i ).getText());
+            if (!tableCol.get( i ).getText( ).isEmpty( )) {
+                return tableCol.get( i ).getText( );
+            }
+            //Иначе проверить есть ли пагинация и если есть перейти на вторую страницу и попытаться поискать там
+        }
+        return "";
     }
 
     public void compareData( ) {
@@ -78,11 +82,6 @@ public class SearchBase extends BaseClass {
 
     public void getCriteriaFromMenu( ) {
         menu.click( );
-        //Удалить пустые элементы ? Получить будем столбцы а е строки и дулять пустые - каквариант...
-        menuPoint.removeAll( Collections.singleton( "" ) );
-        tableHeader.removeAll( Collections.singleton( "" ) );
-
-        // System.out.println("Size table"+ tableRow.size() );
         //Цикл по элементам меню
         for (int i = 0; i < menuPoint.size( ); i++) {
             waitSomeMillisec( 1000 );
@@ -98,38 +97,25 @@ public class SearchBase extends BaseClass {
             for (int j = 0; j < tableHeader.size( ); j++) {
                 //Переменная поиска текста для вставки в строку поиска
                 String criteriaText = "";
-                System.out.println( "menuPoint.get( i ).getText( )=" + menuPointText +
+                /*System.out.println( "menuPoint.get( i ).getText( )=" + menuPointText +
                         // "\n criteriaText="+criteriaText+
-                        "\n tableHeader.get( j ).getText( ) )=" + tableHeader.get( j ).getText( ) );
+                        "\n tableHeader.get( j ).getText( ) )=" + tableHeader.get( j ).getText( ) );*/
                 //Если есть заголовок меню = заголовку таблицы
                 if (!tableHeader.get( j ).getText( ).isEmpty( ) &
                         menuPointText.equals( tableHeader.get( j ).getText( ) )) {
                     //Ищем текст для вставки в строку поиска
-                    //Цикл по всем строкам таблицы
-                    for (int k = 1; k < tableRow.size( ); k++) {
-
-                        //Получаем текст
-                        //criteriaText = Arrays.asList( tableRow.get( k ).getText( ).split( " " ) ).get( j );
-                        //Если текст  не пуст
-                        if (!criteriaText.isEmpty( )) {
-
-                            //тогда вставляем текст в строку поиска
-                            serachAreaTB.click( );
-                            serachAreaTB.clear( );
-                            serachAreaTB.sendKeys( criteriaText );
-                            System.out.println( "Size " + tableRow.size( ) );
-                            waitSomeMillisec( 1000 );
-                            serachAreaTB.click( );
-                            serachAreaTB.clear( );
-                            k = tableRow.size( );
-                            //Сюда впихнуть ассерт
-                        }
-                        //Иначе проверить есть ли пагинация и если есть перейти на вторую страницу и попытаться поискать там
-                    }
-
+                    criteriaText = getNotNullValueFromColumn( j );
+                        //тогда вставляем текст в строку поиска
+                        serachAreaTB.click( );
+                        serachAreaTB.clear( );
+                        serachAreaTB.sendKeys( criteriaText );
+                        System.out.println( "Size " + tableRow.size( ) );
+                        waitSomeMillisec( 1000 );
+                        serachAreaTB.click( );
+                        serachAreaTB.clear( );
+                        //Сюда впихнуть ассерт
                 }
             }
-            //System.out.println( "Text from menu i=" + i + " " + menuPoint.get( i ).getText( ) );
         }
     }
 
