@@ -2,6 +2,7 @@ package HelpClass;
 
 import Politics.DeletePolitics;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,6 +17,7 @@ import org.testng.asserts.SoftAssert;
 import ru.yandex.qatools.allure.annotations.Step;
 
 import java.io.File;
+import java.security.Key;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -24,23 +26,32 @@ public class BaseClass {
 
     public SoftAssert softAssert = new SoftAssert( );
     //Всего элементов в таблице
-    @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/ul/li[1]")
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div/div/ul/li[1]")
     static public WebElement countRowsText;
     @FindBy(xpath = "//table/tbody/tr")
     public static List<WebElement> countRowsOnEachPage;
-    @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/ul/li[last()-1]")
+    ////*[@id="root"]/div/div[2]/div[2]/div/div/div/ul/li[4]
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div/div/ul/li[last()-1]")
     public static WebElement pagginationArrow;
     @FindBy(css = "input.ant-input.ant-select-search__field")
     static WebElement loginNameTB;
-    @FindBy(id = "lastName")
+    @FindBy(id = "nameLast")
     static WebElement lastNameTB;
-    @FindBy(id = "firstName")
+    @FindBy(id = "customParam1")
+    static WebElement orgTypeTB;
+    @FindBy(id = "customParam2")
+    static WebElement orgNameTB;
+    @FindBy(id = "customParam3")
+    static WebElement orgSubunitTB;
+    @FindBy(id = "customParam4")
+    static WebElement orgGroupTB;
+    @FindBy(id = "nameFirst")
     static WebElement firstNameTB;
-    @FindBy(id = "middleName")
+    @FindBy(id = "nameMiddle")
     static WebElement middleNameTB;
-    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[4]/div[1]/div[2]/div/div[1]/div/div/ul/li/div/input")
+    @FindBy(id = "email")
     static WebElement emailTB;
-    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[4]/div[2]/div[2]/div/div/div/div/ul/li/div/input")
+    @FindBy(id = "phone")
     static WebElement phoneNumberTB;
     @FindBy(id = "role")
     static WebElement roleTB;
@@ -80,7 +91,7 @@ public class BaseClass {
     public FirefoxDriver wd;
     WriteReadFromFile readData;
 
-    @FindBy(xpath = "//*[@id=\"authorization\"]/div/form/button/span")
+    @FindBy(xpath = "//*[@id=\"root\"]/div/form/button")
     static WebElement buttonSignin;
     @FindBy(id = "password")
     static WebElement passwordTB;
@@ -103,7 +114,7 @@ public class BaseClass {
         }
     }
 
-    @Step("1. Ввод логина {0}")
+    @Step(" Ввод логина {0}")
     public static void setLogin( String login ) {
         loginNameTB.clear( );
         loginNameTB.clear( );
@@ -241,48 +252,82 @@ public class BaseClass {
         WebElement element = wait.until( ExpectedConditions.elementToBeClickable( clickableElement ) );
     }
 
-
     //Edit, create users methods
-    @Step("9. Сохранине")
+    @Step(" Сохранине")
     public void clickToSave( ) {
         waitUntilElementBeClickable( saveBTN );
         saveBTN.click();
     }
-    @Step("8. Ввод роли {0}")
+    @Step(" Ввод роли {0}")
     public void setRole( String role ) {
         roleTB.click( );
-        roleTB.clear( );
+        //roleTB.clear( );
+        roleTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "" );
         roleTB.sendKeys( role );
     }
-    @Step("7. Ввод номера телефона {0}")
+    @Step(" Ввод номера телефона {0}")
     public void setPhoneNumber( String phoneNumber ) {
         phoneNumberTB.click( );
-        phoneNumberTB.clear( );
+        //phoneNumberTB.clear( );
+        phoneNumberTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
         phoneNumberTB.sendKeys( phoneNumber );
     }
-    @Step("6. Ввод email {0}")
+    @Step(" Ввод email {0}")
     public void setEmail( String email ) {
         emailTB.click( );
-        emailTB.clear( );
-        emailTB.sendKeys( email );
+        //emailTB.clear( );
+        emailTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
+        emailTB.sendKeys( email);
     }
-    @Step("5. Ввод отчества {0}")
+    @Step(" Ввод отчества {0}")
     public void setMiddleName( String middleName ) {
         middleNameTB.click( );
-        middleNameTB.clear( );
+        //middleNameTB.clear( );
+        middleNameTB.sendKeys(  Keys.chord(Keys.CONTROL, "a"), "");
         middleNameTB.sendKeys( middleName );
     }
-    @Step("4. Ввод имени {0}")
+    @Step(" Ввод имени {0}")
     public void setFirstName( String firstName ) {
         firstNameTB.click( );
-        firstNameTB.clear( );
+        //firstNameTB.clear( );
+        firstNameTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
         firstNameTB.sendKeys( firstName );
     }
-    @Step("3. Ввод фамилии {0}")
+    @Step(" Ввод фамилии {0}")
     public void setSurname( String surname ) {
         lastNameTB.click( );
-        lastNameTB.clear( );
+        lastNameTB.sendKeys( Keys.chord(Keys.CONTROL, "a"),"" );
+        //lastNameTB.clear( );
         lastNameTB.sendKeys( surname );
+    }
+    @Step(" Ввод типа организации {0}")
+    public void setOrgType( String orgType ) {
+        orgTypeTB.click( );
+        orgTypeTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
+        //lastNameTB.clear( );
+        orgTypeTB.sendKeys( orgType );
+    }
+    @Step(" Ввод названия организации {0}")
+    public void setOrgName( String orgName ) {
+        orgNameTB.click( );
+        orgNameTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
+        //lastNameTB.clear( );
+        orgNameTB.sendKeys( orgName );
+    }
+    @Step(" Ввод подразделения организации {0}")
+    public void setOrgSubunit( String orgSubunit ) {
+        orgSubunitTB.click( );
+        orgSubunitTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
+        //lastNameTB.clear( );
+        orgSubunitTB.sendKeys( orgSubunit );
+    }
+
+    @Step(" Ввод группы {0}")
+    public void setOrgGroup( String orgGroup ) {
+        orgGroupTB.click( );
+        orgGroupTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
+        //lastNameTB.clear( );
+        orgGroupTB.sendKeys( orgGroup );
     }
 
     //Edit, create politics methods

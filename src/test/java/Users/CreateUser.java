@@ -12,13 +12,13 @@ import java.time.LocalDateTime;
 import static org.testng.Assert.assertEquals;
 
 public class CreateUser extends BaseClass {
-    @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/span[3]/button")
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div[1]/div/div[1]/div/div[2]/span[2]/button")
     static WebElement buttonAddBTN;
     @FindBy(id = "password")
     static WebElement passwordTB;
     @FindBy(id = "passwordRepeat")
     static WebElement passwordRepeatTB;
-    @FindBy(xpath = "//table/tbody/tr[last()]/td[2]")
+    @FindBy(xpath = "//table/tbody/tr[last()]/td[5]")
     static WebElement nameLoginObject;
 
     @Title("Создание пользователя")
@@ -27,13 +27,15 @@ public class CreateUser extends BaseClass {
         login( );
         String loginName = "testUser" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
         clickAddBtn( );
-        createNewUser( loginName, "test", "Testov", "Test", "Testovich", "test@test.ru", "+79999999999", "Tester" );
+        createNewUser( loginName, "test", "Testov", "Test", "Testovich",
+                "test@test.ru", "+79999999999", "Tester", "TestType", "TestName", "TestSubunit","TestGroup");
         assertEquals( nameLoginObject.getText(), loginName );
         //проверить авторизацию созданным пользователем
     }
 
     @Step("Создание новго пользователя")
-    public void createNewUser( String login, String password, String surname, String firstName, String middleName, String email, String phoneNumber, String role ) {
+    public void createNewUser( String login, String password, String surname, String firstName, String middleName,
+                               String email, String phoneNumber, String role, String orgType, String orgName, String orgSubunit, String orgGroup ) {
         setLogin( login );
         setPassword( password );
         setSurname( surname );
@@ -42,6 +44,10 @@ public class CreateUser extends BaseClass {
         setEmail( email );
         setPhoneNumber( phoneNumber );
         setRole( role );
+        setOrgType( orgType);
+        setOrgName( orgName );
+        setOrgSubunit( orgSubunit );
+        setOrgGroup( orgGroup );
         clickToSave( );
         wd.navigate( ).refresh( );
     }

@@ -17,11 +17,12 @@ public class DeleteUser extends BaseClass {
     static List<WebElement> table;
     @FindBy(xpath = "//table/tbody/tr[last()]/td[1]")
     static WebElement checkB;
-    @FindBy(xpath = "//table/tbody/tr[last()]/td[2]")
+    @FindBy(xpath = "//table/tbody/tr[last()]/td[5]")
     static WebElement userLoginT;
-    @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[1]/button")
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div[1]/div/div[1]/div/div[2]/div/span/button")
     static WebElement deleteBTN;
-    @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[3]/button[2]")
+
+    @FindBy(xpath = "//div[@class='ant-modal-footer']//button[2]")
     static WebElement confirmDeletionBTN;
 
     @Test
