@@ -65,5 +65,4 @@ public class DeleteUser extends BaseClass {
         return table.size( );
         // return  countAfter;
     }
-
 }

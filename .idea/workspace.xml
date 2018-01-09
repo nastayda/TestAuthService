@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Modules/DeleteModule.class" afterPath="$PROJECT_DIR$/out/test/classes/Modules/DeleteModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Politics/CreatePolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/Politics/CreatePolitics.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" afterPath="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Modules/DeleteModule.java" afterPath="$PROJECT_DIR$/src/test/java/Modules/DeleteModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java" afterPath="$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Users/DeleteUser.java" afterPath="$PROJECT_DIR$/src/test/java/Users/DeleteUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Users/EditUser.java" afterPath="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -37,48 +39,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SearchBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchBase.java">
+      <file leaf-file-name="DeleteModule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Modules/DeleteModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="105" column="24" lean-forward="true" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#compareData#0;class#SearchBase#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Users/CreateUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-              <folding>
-                <element signature="e#2545#2546#0" expanded="true" />
-                <element signature="e#2579#2580#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Users/EditUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="938">
-              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteUser.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Users/DeleteUser.java">
+      <file leaf-file-name="CreatePolitics.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="490">
+              <caret line="79" column="24" lean-forward="true" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+              <folding>
+                <element signature="e#2868#2869#0" expanded="true" />
+                <element signature="e#2899#2900#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,21 +65,21 @@
       <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="33" column="74" lean-forward="false" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
+            <state relative-caret-position="188">
+              <caret line="61" column="22" lean-forward="false" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
               <folding>
-                <element signature="e#15235#15236#0" expanded="true" />
-                <element signature="e#15276#15277#0" expanded="true" />
+                <element signature="e#9458#9459#0" expanded="true" />
+                <element signature="e#9549#9550#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Modules/DeleteModule.java">
+      <file leaf-file-name="Invoker.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+            <state relative-caret-position="184">
+              <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -648,7 +627,6 @@
         <option value="$PROJECT_DIR$/src/test/java/AuthService/EditeUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/AuthService/CreateUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/AuthService/EditUser.java" />
-        <option value="$PROJECT_DIR$/src/help-files/auth-info.txt" />
         <option value="$PROJECT_DIR$/src/test/java/AuthService/DeleteUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/ControleModule/DeleteModule.java" />
         <option value="$PROJECT_DIR$/src/test/java/ControleModule/CreateModule.java" />
@@ -661,20 +639,21 @@
         <option value="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Modules/EditModule.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java" />
         <option value="$PROJECT_DIR$/src/test/java/Modules/CreateModule.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Modules/DeleteModule.java" />
         <option value="$PROJECT_DIR$/src/test/java/Politics/DeletePolitics.java" />
         <option value="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/DeleteUser.java" />
+        <option value="$PROJECT_DIR$/src/help-files/auth-info.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/Modules/DeleteModule.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
@@ -835,14 +814,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Politics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -860,14 +831,6 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="SettingLogo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
@@ -911,11 +874,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DeleteUser.deleteUser">
-    <configuration name="CreateUser" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CreatePolitics.createPolitics">
+    <configuration name="CreateModule.createModule" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Users.*" />
+          <option name="PATTERN" value="Modules.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -923,11 +886,43 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="Users" />
-      <option name="MAIN_CLASS_NAME" value="Users.CreateUser" />
-      <option name="METHOD_NAME" />
+      <option name="PACKAGE_NAME" value="Modules" />
+      <option name="MAIN_CLASS_NAME" value="Modules.CreateModule" />
+      <option name="METHOD_NAME" value="createModule" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="CreatePolitics.createPolitics" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Politics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TestAuthServiceNew_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="Politics" />
+      <option name="MAIN_CLASS_NAME" value="Politics.CreatePolitics" />
+      <option name="METHOD_NAME" value="createPolitics" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -976,10 +971,10 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="DeleteUser.deleteUser" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteModule.deleteModule" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Users.*" />
+          <option name="PATTERN" value="Modules.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -987,9 +982,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="Users" />
-      <option name="MAIN_CLASS_NAME" value="Users.DeleteUser" />
-      <option name="METHOD_NAME" value="deleteUser" />
+      <option name="PACKAGE_NAME" value="Modules" />
+      <option name="MAIN_CLASS_NAME" value="Modules.DeleteModule" />
+      <option name="METHOD_NAME" value="deleteModule" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1008,10 +1003,10 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="EditUser" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EditModule.editModule" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Users.*" />
+          <option name="PATTERN" value="Modules.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1019,41 +1014,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="Users" />
-      <option name="MAIN_CLASS_NAME" value="Users.EditUser" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="EditUser.editUser" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Users.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TestAuthServiceNew_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="Users" />
-      <option name="MAIN_CLASS_NAME" value="Users.EditUser" />
-      <option name="METHOD_NAME" value="editUser" />
+      <option name="PACKAGE_NAME" value="Modules" />
+      <option name="MAIN_CLASS_NAME" value="Modules.EditModule" />
+      <option name="METHOD_NAME" value="editModule" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1199,19 +1162,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.CreateUser.createUser" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TestAuthorization.TestAuthorization" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.CreateUser" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.EditUser" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.EditUser.editUser" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.DeleteUser.deleteUser" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.CreateModule.createModule" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.EditModule.editModule" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.DeleteModule.deleteModule" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.TestAuthorization.TestAuthorization" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.CreatePolitics.createPolitics" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.DeleteUser.deleteUser" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.EditUser.editUser" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.EditUser" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.CreateUser" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.TestAuthorization.TestAuthorization" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.CreatePolitics.createPolitics" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.DeleteModule.deleteModule" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TestAuthorization.TestAuthorization" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.EditModule.editModule" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.CreateModule.createModule" />
       </list>
     </recent_temporary>
   </component>
@@ -1229,39 +1192,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DeleteUser_deleteUser - 2018.01.09 at 15h 30m 00s.xml">
-      <configuration name="DeleteUser.deleteUser" configurationId="TestNG" />
+    <history-entry file="CreatePolitics_createPolitics - 2018.01.09 at 16h 45m 21s.xml">
+      <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteUser_deleteUser - 2018.01.09 at 15h 31m 27s.xml">
-      <configuration name="DeleteUser.deleteUser" configurationId="TestNG" />
+    <history-entry file="CreatePolitics_createPolitics - 2018.01.09 at 17h 10m 30s.xml">
+      <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteUser_deleteUser - 2018.01.09 at 15h 32m 57s.xml">
-      <configuration name="DeleteUser.deleteUser" configurationId="TestNG" />
+    <history-entry file="CreatePolitics_createPolitics - 2018.01.09 at 17h 12m 20s.xml">
+      <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteUser_deleteUser - 2018.01.09 at 15h 35m 11s.xml">
-      <configuration name="DeleteUser.deleteUser" configurationId="TestNG" />
+    <history-entry file="CreatePolitics_createPolitics - 2018.01.09 at 17h 13m 20s.xml">
+      <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteUser_deleteUser - 2018.01.09 at 15h 50m 59s.xml">
-      <configuration name="DeleteUser.deleteUser" configurationId="TestNG" />
+    <history-entry file="CreatePolitics_createPolitics - 2018.01.09 at 17h 17m 57s.xml">
+      <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteUser_deleteUser - 2018.01.09 at 15h 52m 14s.xml">
-      <configuration name="DeleteUser.deleteUser" configurationId="TestNG" />
+    <history-entry file="CreatePolitics_createPolitics - 2018.01.09 at 17h 36m 32s.xml">
+      <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="DeleteUser_deleteUser - 2018.01.09 at 15h 54m 15s.xml">
-      <configuration name="DeleteUser.deleteUser" configurationId="TestNG" />
+    <history-entry file="CreatePolitics_createPolitics - 2018.01.09 at 17h 38m 30s.xml">
+      <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EditUser_editUser - 2018.01.09 at 15h 23m 56s.xml">
-      <configuration name="EditUser.editUser" configurationId="TestNG" />
+    <history-entry file="CreatePolitics_createPolitics - 2018.01.09 at 17h 39m 24s.xml">
+      <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EditUser_editUser - 2018.01.09 at 15h 24m 44s.xml">
-      <configuration name="EditUser.editUser" configurationId="TestNG" />
+    <history-entry file="CreatePolitics_createPolitics - 2018.01.09 at 17h 41m 54s.xml">
+      <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EditUser_editUser - 2018.01.09 at 15h 26m 30s.xml">
-      <configuration name="EditUser.editUser" configurationId="TestNG" />
+    <history-entry file="CreatePolitics_createPolitics - 2018.01.09 at 17h 44m 10s.xml">
+      <configuration name="CreatePolitics.createPolitics" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1272,7 +1235,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30411255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30411255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1349,7 +1312,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java</url>
-          <line>278</line>
+          <line>276</line>
           <properties />
           <option name="timeStamp" value="124" />
         </line-breakpoint>
@@ -1359,8 +1322,26 @@
           <properties />
           <option name="timeStamp" value="125" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java</url>
+          <line>373</line>
+          <properties />
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="129" />
+      <option name="time" value="134" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1507,14 +1488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/allure-results/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1540,27 +1513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Modules/CreateModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="60" lean-forward="false" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Modules/EditModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1599,31 +1551,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Users/EditUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setLogoUrl#0;class#SettingLogo#0" expanded="false" />
-            <element signature="method#saveNewUrl#0;class#SettingLogo#0" expanded="false" />
-            <element signature="method#goToChangeLogoUrlForm#0;class#SettingLogo#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/help-files/auth-info.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="33" />
+        <state relative-caret-position="938">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Users/CreateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+          <folding>
+            <element signature="e#2545#2546#0" expanded="true" />
+            <element signature="e#2579#2580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Users/DeleteUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1639,13 +1589,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Users/CreateUser.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state relative-caret-position="408">
+          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
           <folding>
-            <element signature="e#2545#2546#0" expanded="true" />
-            <element signature="e#2579#2580#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#setLogoUrl#0;class#SettingLogo#0" expanded="false" />
+            <element signature="method#saveNewUrl#0;class#SettingLogo#0" expanded="false" />
+            <element signature="method#goToChangeLogoUrlForm#0;class#SettingLogo#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Modules/CreateModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Modules/EditModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/help-files/auth-info.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Modules/DeleteModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="61" column="22" lean-forward="false" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+          <folding>
+            <element signature="e#9458#9459#0" expanded="true" />
+            <element signature="e#9549#9550#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1658,38 +1661,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Modules/DeleteModule.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+        <state relative-caret-position="493">
+          <caret line="29" column="59" lean-forward="true" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="33" column="74" lean-forward="false" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
+        <state relative-caret-position="490">
+          <caret line="79" column="24" lean-forward="true" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
           <folding>
-            <element signature="e#15235#15236#0" expanded="true" />
-            <element signature="e#15276#15277#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Users/EditUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="938">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Users/DeleteUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>

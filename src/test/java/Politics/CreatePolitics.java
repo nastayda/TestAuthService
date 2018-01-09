@@ -17,7 +17,8 @@ public class CreatePolitics extends BaseClass {
     static WebElement addBTN;
     @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[5]/div/div[2]/div[2]/div/div/div/div")
     static WebElement dropdownMenuSign1;
-    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[4]/div/div[4]/div[2]/div/div/div/span")
+    //*[@id="2"]/div/div[2]/div/div/div
+    @FindBy(xpath = "//*[@id=\"2\"]/div/div[2]/div/div/div")
     static WebElement dropdownMenuCondition;
     @FindBy(xpath = "//div[6]/div/div/div/ul/li[1]")
     static WebElement elementCondition;
@@ -33,6 +34,8 @@ public class CreatePolitics extends BaseClass {
     static WebElement dropdownMenuService;
     @FindBy(xpath = "//table/tbody/tr[last()]/td[2]")
     static WebElement lastRow;
+    @FindBy(xpath = "//div[@class='adding-object-block']/i")
+    static WebElement plus;
 
     @Test
     @Title("Создание политики")
@@ -47,20 +50,21 @@ public class CreatePolitics extends BaseClass {
 
     public void createNewPolitics( String politicsName, String parameter, String meaning, String description, String serviceName ) {
         clickToAddBtn( );
+
+        //заполенение информации о модулее
+        setServiceName( serviceName );
+
+        setPoliticsName( politicsName );
+        setDescription( description );
+
+        plus.click();
+
         //Заполнить первую строку
         choseParameter( parameter, parametrINPT0 );
         choseSign( );
         setMeaning( meaning, valueINPT0 );
-        /*chooseCondition( );
-        //Заполнить вторую строку
-        choseParameter( "Фамилия", parametrINPT1 );
-        choseSign( );
-        setMeaning( "123", valueINPT1 );*/
-        setPoliticsName( politicsName );
-        setDescription( description );
-        setServiceName( serviceName );
-        chooseSetting( );
-        clickSave( );
+        //chooseSetting( );
+        //clickSave( );
     }
 
     @Step("Условие И/ИЛИ")

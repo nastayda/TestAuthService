@@ -70,7 +70,6 @@ public class DeleteModule extends BaseClass {
             confirmDeletionBTN.click( );
         }
     }
-
     @Step("Нажать на кнопку Управление модулями")
     public void clickControlModule( ) {
         controlModuleBTN.click( );

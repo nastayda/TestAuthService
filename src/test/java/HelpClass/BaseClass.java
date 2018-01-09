@@ -1,10 +1,7 @@
 package HelpClass;
 
 import Politics.DeletePolitics;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.FindBy;
@@ -63,7 +60,8 @@ public class BaseClass {
     static WebElement expandMenu;
     @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[4]/div/div[2]/div[2]/div/div/div/div")
     static WebElement dropdownMenuSign;
-    @FindBy(xpath = "//div[4]/div/div/div/ul/li[1]")
+    //div[5]/div/div[2]/div[2]/div/div/div/ul/li[1]
+    @FindBy(xpath = "//div[5]/div/div[2]/div[2]/div/div/div/ul/li[1]")
     static WebElement elementSign;
     @FindBy(id = "serviceName")
     static WebElement chooseINPT;
@@ -344,9 +342,15 @@ public class BaseClass {
     }
     @Step("Заполнить название сервиса {0}")
     public void setServiceName( String serviceName ) {
-        chooseINPT.click( );
+        /*chooseINPT.click( );
         chooseINPT.clear( );
-        chooseINPT.sendKeys( serviceName );
+        chooseINPT.sendKeys( serviceName );*/
+        wd.findElement(By.id("serviceName")).click();
+        wd.findElement(By.cssSelector("li.ant-select-dropdown-menu-item-active.ant-select-dropdown-menu-item")).click();
+
+        wd.findElement(By.cssSelector("ul.ant-select-selection__rendered")).click();
+        wd.findElement(By.cssSelector("span.ant-select-tree-switcher.ant-select-tree-switcher_close")).click();
+        wd.findElement(By.xpath("//ul[@class='ant-select-tree']/li[1]/ul/li[2]/span[2]/span")).click();
     }
     @Step("Заполнить описание {0}")
     public void setDescription( String decription ) {
