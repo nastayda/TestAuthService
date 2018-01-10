@@ -4,12 +4,10 @@ import HelpClass.BaseClass;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static org.testng.AssertJUnit.assertEquals;
 
 @Test
 public class SearchBase extends BaseClass {
@@ -18,15 +16,12 @@ public class SearchBase extends BaseClass {
     WebElement menu;
     @FindBy(xpath = "//ul[@class='ant-select-dropdown-menu ant-select-dropdown-menu-vertical  ant-select-dropdown-menu-root']/li")
     List<WebElement> menuPoint;
-    //*[@id="root"]/div/div[1]/div/div[1]/div/div[2]/span[1]/span/span/span[2]/input
     @FindBy(xpath = "//*[@id=\"root\"]/div/div[1]/div/div[1]/div/div[2]/span[1]/span/span/span[2]/input")
-    WebElement serachAreaTB;
-    @FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")
+    WebElement searchAreaTB;
+    @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr")
     List<WebElement> tableRow;
-    @FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr/td")
+    @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr/td")
     List<WebElement> tableCol;
-    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div/descendant::label")
-    List<WebElement> labelList;
     @FindBy(xpath = "//*[@id=\"root\"]//table/thead/tr/th")
     List<WebElement> tableHeader;
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/span[3]/button")
@@ -52,43 +47,21 @@ public class SearchBase extends BaseClass {
 
     public void search( ) {
         login( );
-        getCriteriaFromMenu( );
+        getCriteriaFromMenu(  );
         softAssert.assertAll( );
-    }
-
-    public String getNotNullValueFromColumn( int numElement ) {
-        for (int i = numElement; i < tableCol.size( ); i += tableHeader.size( )) {
-            //проанализировать массив и взять каждый житый ненулевой элемент
-            System.out.println( "From table " + tableCol.get( i ).getText( ) );
-            if (!tableCol.get( i ).getText( ).isEmpty( )) {
-                return tableCol.get( i ).getText( );
-            }
-            //Иначе проверить есть ли пагинация и если есть перейти на вторую страницу и попытаться поискать там
-        }
-        return "";
-    }
-
-    public void compareData( ) {
-        for (int i = 0; i < menuPoint.size( ); i++) {
-            for (int j = 0; j < tableHeader.size( ); j++) {
-                if (menuPoint.contains( tableHeader.get( j ).getText( ) )) {
-                    tableRow.get( j ).getText( );
-                }
-            }
-            //System.out.println( "Text i=" + i + " " + menuPoint.get( i ).getText( ) );
-        }
     }
 
     public void getCriteriaFromMenu( ) {
         menu.click( );
+        //System.out.println(menu.getText() );
         //Цикл по элементам меню
         for (int i = 0; i < menuPoint.size( ); i++) {
             //Ждем появления подменю
-            waitSomeMillisec( 1000 );
+            //waitSomeMillisec( 1000 );
             //Если подменю не появилось, т.е. текст пункта пуст, то еще раз нажмем на меню
             if (menuPoint.get( i ).getText( ).isEmpty( )) {
                 menu.click( );
-                waitSomeMillisec( 1000 );
+                //waitSomeMillisec( 1000 );
             }
             //прокрутить до конца выпадающего меню, чтобы получить самый последний элемент
             WebElement target = menuPoint.get( i );
@@ -110,31 +83,49 @@ public class SearchBase extends BaseClass {
                     criteriaText = getNotNullValueFromColumn( j );
                     int countBeforeSearch = countByCriterion( criteriaText, j );
                     //тогда вставляем текст в строку поиска
-                    serachAreaTB.click( );
-                    serachAreaTB.clear( );
-                    serachAreaTB.sendKeys( criteriaText );
+                    searchAreaTB.click( );
+                    searchAreaTB.clear( );
+                    searchAreaTB.sendKeys( criteriaText );
                     //System.out.println( "Size " + tableRow.size( ) );
-                    waitSomeMillisec( 1000 );
+                    waitSomeMillisec( 500 );
                     int countAfterSearch = tableRow.size( );
                     softAssert.assertEquals( countBeforeSearch, countAfterSearch );
-                    serachAreaTB.click( );
-                    serachAreaTB.clear( );
-
+                    searchAreaTB.click( );
+                    searchAreaTB.clear( );
                 }
             }
         }
     }
 
+    public String getNotNullValueFromColumn( int numElement ) {
+        for (int i = numElement; i < tableCol.size( ); i += tableHeader.size( )) {
+            //проанализировать массив и взять каждый житый ненулевой элемент
+            System.out.println( "From table " + tableCol.get( i ).getText( ) );
+            if (!tableCol.get( i ).getText( ).isEmpty( )) {
+                return tableCol.get( i ).getText( );
+            }
+            //Иначе проверить есть ли пагинация и если есть перейти на вторую страницу и попытаться поискать там
+            else {
+                if (pagginationArrow.getAttribute( "aria-disabled" ) != null) {
+                    while (pagginationArrow.getAttribute( "aria-disabled" ).equals( "false" )) {
+                        pagginationArrow.click( );
+                        if (!tableCol.get( i ).getText( ).isEmpty( )) {
+                            return tableCol.get( i ).getText( );
+                        }
+                    }
+                }
+            }
+        }
+        return "";
+    }
+
     private int countByCriterion( String searchCriterion, int startJ ) {
         int k = 0;
-        //System.out.println(tableCol.size( ) );
         for (int j = startJ; j < tableCol.size( ); j = j + tableHeader.size( )) {
-            //System.out.println( tableCol.get( j ).getText( ) );
             if (tableCol.get( j ).getText( ).contains( searchCriterion )) {
                 k++;
             }
         }
-        //}
         return k;
     }
 }
