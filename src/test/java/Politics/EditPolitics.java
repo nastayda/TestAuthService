@@ -31,19 +31,20 @@ public class EditPolitics extends BaseClass {
         goToPolicyPage( );
         goToLastPage( );
         String politicsName = "editPolitics" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
-        String[] massData = { "Имя", "Алексей", politicsName, "edited description", "Управление политиками"};
+        String[] massData = { "Имя", "Алексей", politicsName, "edited description" };
         //Заполнить первую строку
         editNewPolitics( massData );
-        compareDataFromTable(massData,politicsName);
+        compareDataFromTable( massData, politicsName );
     }
+
     @Step("Сравнние введенных данных и тех, что отображаются в таблице")
-    public void compareDataFromTable( String[] dataForEdite , String politicsName) {
+    public void compareDataFromTable( String[] dataForEdite, String politicsName ) {
         goToLastPage( );
         //Выбрать только то, что отображается в таблице
-        String[] dataFromMass = { politicsName, dataForEdite[ 3 ], dataForEdite[ 4 ] };
+        String[] dataFromMass = { politicsName, dataForEdite[ 3 ] };
         //Выбрать из таблицы то, с чем будем сравнивать
-        String[] dataFromTable = new String[ tableColums.size( ) - 3 ];
-        for (int i = 1; i < tableColums.size( ) - 2 ; i++) {
+        String[] dataFromTable = new String[ tableColums.size( ) - 4 ];
+        for (int i = 1; i < tableColums.size( ) - 3; i++) {
             dataFromTable[ i - 1 ] = tableColums.get( i ).getText( );
         }
         assertEquals( dataFromMass, dataFromTable );
@@ -53,12 +54,12 @@ public class EditPolitics extends BaseClass {
     public void editNewPolitics( String[] massData ) {
         politicsNameRow.click( );
         editBTN.click( );
-        choseParameter( massData[0], parametrINPT0 );
+        choseParameter( massData[ 0 ], parametrINPT0 );
         choseSign( );
-        setMeaning( massData[1], valueINPT0 );
-        setPoliticsName( massData[2] );
-        setDescription( massData[3] );
-        setServiceName( massData[4] );
+        setMeaning( massData[ 1 ], valueINPT0 );
+        setPoliticsName( massData[ 2 ] );
+        setDescription( massData[ 3 ] );
+        setServiceName( );
         chooseSetting( );
         clickSave( );
     }

@@ -14,7 +14,6 @@ import org.testng.asserts.SoftAssert;
 import ru.yandex.qatools.allure.annotations.Step;
 
 import java.io.File;
-import java.security.Key;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -23,12 +22,13 @@ public class BaseClass {
 
     public SoftAssert softAssert = new SoftAssert( );
     //Всего элементов в таблице
-    @FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div/div/ul/li[1]")
+    @FindBy(xpath = "//div/div[2]/div[2]/div/div/div/ul/li[1]")
     static public WebElement countRowsText;
     @FindBy(xpath = "//table/tbody/tr")
     public static List<WebElement> countRowsOnEachPage;
     ////*[@id="root"]/div/div[2]/div[2]/div/div/div/ul/li[4]
-    @FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div/div/ul/li[last()-1]")
+    //*[@id="authorization"]/div/div[2]/div[2]/div/div/div/ul/li[5]
+    @FindBy(xpath = "//div/div[2]/div[2]/div/div/div/ul/li[last()-1]")
     public static WebElement pagginationArrow;
     @FindBy(css = "input.ant-input.ant-select-search__field")
     static WebElement loginNameTB;
@@ -58,13 +58,16 @@ public class BaseClass {
     static WebElement savePoliticsBTN;
     @FindBy(xpath = "//ul[@class='ant-select-tree']/li[1]/ul/li[2]/span[2]/span")
     static WebElement expandMenu;
-    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[4]/div/div[2]/div[2]/div/div/div/div")
+    //*[@id="2"]/div[1]/div[2]/div/div/div/div
+    @FindBy(xpath = "//*[@id=\"2\"]/div[1]/div[2]/div/div/div/div")
     static WebElement dropdownMenuSign;
     //div[5]/div/div[2]/div[2]/div/div/div/ul/li[1]
     @FindBy(xpath = "//div[5]/div/div[2]/div[2]/div/div/div/ul/li[1]")
     static WebElement elementSign;
     @FindBy(id = "serviceName")
-    static WebElement chooseINPT;
+    static WebElement serviceNameINPT;
+    @FindBy(css = "li.ant-select-dropdown-menu-item-active.ant-select-dropdown-menu-item")
+    static WebElement modulDropMenu;
     @FindBy(id = "policyName")
     static WebElement policyNameINPT;
     @FindBy(id = "policyDescription")
@@ -341,16 +344,24 @@ public class BaseClass {
         policyDescriptionINPT.click( );
     }
     @Step("Заполнить название сервиса {0}")
-    public void setServiceName( String serviceName ) {
-        /*chooseINPT.click( );
-        chooseINPT.clear( );
-        chooseINPT.sendKeys( serviceName );*/
-        wd.findElement(By.id("serviceName")).click();
-        wd.findElement(By.cssSelector("li.ant-select-dropdown-menu-item-active.ant-select-dropdown-menu-item")).click();
+    public void setServiceName(  ) {
+        //заполнить модуль
+        serviceNameINPT.click( );
+        modulDropMenu.click();
 
-        wd.findElement(By.cssSelector("ul.ant-select-selection__rendered")).click();
-        wd.findElement(By.cssSelector("span.ant-select-tree-switcher.ant-select-tree-switcher_close")).click();
-        wd.findElement(By.xpath("//ul[@class='ant-select-tree']/li[1]/ul/li[2]/span[2]/span")).click();
+        //заполнить объект
+        menuItem.click();
+        chooseServiceSetting.click();
+        expandMenu.click();
+        //serviceNameINPT.clear( );
+        //serviceNameINPT.sendKeys( serviceName );
+
+        //wd.findElement(By.id("serviceName")).click();
+       // wd.findElement(By.cssSelector("li.ant-select-dropdown-menu-item-active.ant-select-dropdown-menu-item")).click();
+
+        //wd.findElement(By.cssSelector("ul.ant-select-selection__rendered")).click();
+        //wd.findElement(By.cssSelector("span.ant-select-tree-switcher.ant-select-tree-switcher_close")).click();
+        //wd.findElement(By.xpath("//ul[@class='ant-select-tree']/li[1]/ul/li[2]/span[2]/span")).click();
     }
     @Step("Заполнить описание {0}")
     public void setDescription( String decription ) {
