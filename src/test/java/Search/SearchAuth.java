@@ -10,25 +10,25 @@ import java.util.List;
 
 
 @Test
-public class SearchBase extends BaseClass {
+public class SearchAuth extends BaseClass {
     @FindBy(xpath = "//div[@class='ant-select-selection\n" +
             "            ant-select-selection--single']")
-    WebElement menu;
+    private WebElement menu;
     @FindBy(xpath = "//ul[@class='ant-select-dropdown-menu ant-select-dropdown-menu-vertical  ant-select-dropdown-menu-root']/li")
-    List<WebElement> menuPoint;
+    private List<WebElement> menuPoint;
     @FindBy(xpath = "//*[@id=\"root\"]/div/div[1]/div/div[1]/div/div[2]/span[1]/span/span/span[2]/input")
-    WebElement searchAreaTB;
+    private WebElement searchAreaTB;
     @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr")
-    List<WebElement> tableRow;
+    private List<WebElement> tableRow;
     @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr/td")
-    List<WebElement> tableCol;
+    private List<WebElement> tableCol;
     @FindBy(xpath = "//*[@id=\"root\"]//table/thead/tr/th")
-    List<WebElement> tableHeader;
+    private List<WebElement> tableHeader;
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/span[3]/button")
-    WebElement addBTN;
+    private WebElement addBTN;
     @FindBy(xpath = "//div[@class='ant-modal-footer']//button[1]")
-    WebElement cancelBTN;
-    // Пояснение почему не сделала декомпозицию: вся логика+проверки в лодном методе, что плохо,
+    private WebElement cancelBTN;
+    // Пояснение почему не сделала декомпозицию: вся логика+проверки в одном методе, что плохо,
     // НО! если разнести на несколько методов, класс растянется в два раза, т.к. все составленные списки критериев поиска придется снова прогонять в интерфейсе,
     // поэтому мне показалось проще оставить получение криетриев поиска, взаимодествие с интерфейсом и проверку оставить в одном методе
     //Суть проверки по шагам:
@@ -69,7 +69,7 @@ public class SearchBase extends BaseClass {
             //Нажать на выбранный пункт меню
             target.click( );
             //System.out.println( "after click menu.getText( )=" + menu.getText( ) );
-            //Получить
+            //Получить название пункта подменю
             String menuPointText = menuPoint.get( i ).getText( );
             waitSomeMillisec( 500 );
             //Цикл по заголовкам таблицы
