@@ -12,6 +12,8 @@ import static org.apache.http.util.TextUtils.isEmpty;
 
 @Test
 public class FilterAndSort extends BaseClass {
+    //Проблдема с суммированием количествоа потомков списка, поч после закрытия подменю не чистится страница я хз.
+    // Как вариант решения на кажном шаге цикла запоминать количество и затем вычитать его из текущего
     //*[@id="root"]/div/div[2]/div[2]/div/div[1]/div/div/div/div/div[1]/table/thead/tr/th[3]/span/i
     //*[@id="root"]/div/div[2]/div[2]/div/div[1]/div/div/div/div/div[1]/table/thead/tr/th[4]/span/i
     //*[@id="root"]/div/div[2]/div[2]/div/div[1]/div/div/div/div/div[1]/table/thead/tr/th[8]/span/i
