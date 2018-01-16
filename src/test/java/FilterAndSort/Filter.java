@@ -42,15 +42,13 @@ public class Filter extends BaseClass {
 
     public void applyFilterTest( ) {
         login( );
-        // Развернуть окно до размеров 1920 х 1080, чтобы добраться до последнего элемента
-        wd.manage( ).window( ).setSize( new Dimension( 1920, 1080 ) );
+        resizeWindow( 1920, 1080 );
         //System.out.println(filter.size() );
         applyFilter( );
         softAssert.assertAll( );
     }
 
     int index = 0, indexCur = 0, indexPre = 0;
-
     public void applyFilter( ) {
         //Внешний цикл по колонкам
         for (int i = 0; i < filter.size( ); i++) {

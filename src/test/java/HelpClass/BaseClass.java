@@ -418,4 +418,9 @@ public class BaseClass {
     public void clickControlBtn( ) {
         controlModuleBTN.click( );
     }
+
+    public void resizeWindow( int width, int height ) {
+        // Развернуть окно до размеров 1920 х 1080, чтобы добраться до последнего элемента
+        wd.manage( ).window( ).setSize( new Dimension( width, height ) );
+    }
 }
