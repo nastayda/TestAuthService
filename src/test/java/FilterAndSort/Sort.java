@@ -48,13 +48,7 @@ public class Sort extends BaseClass {
             waitSomeMillisec( 1000 );
             //с какой колонки начинаем
             for (int k = i + 1; k < i + 2; k++) {
-                List<String> sortedByInterface = new ArrayList<>( );
-                //какой конкретно эелемент брать
-                for (int j = k; j < tableCol.size( ); j = j + tableCol.size( ) / tableRow.size( )) {
-                    if (!isEmpty( tableCol.get( j ).getText( ) )) {
-                        sortedByInterface.add( tableCol.get( j ).getText( ) );
-                    }
-                }
+                List<String> sortedByInterface = createSortedByInterfaceList( k );
                 ArrayList<String> sortedByRule = new ArrayList<>( sortedByInterface );
                 //сортировка по алфавиту
                 sortList( sortedByRule );
@@ -65,18 +59,23 @@ public class Sort extends BaseClass {
             //По возрастанию
             upArrow.get( i ).click( );
             for (int k = i + 1; k < i + 2; k++) {
-                List<String> sortedByInterface = new ArrayList<>( );
-                //какой конкретно эелемент брать
-                for (int j = k; j < tableCol.size( ); j = j + tableCol.size( ) / tableRow.size( )) {
-                    if (!isEmpty( tableCol.get( j ).getText( ) )) {
-                        sortedByInterface.add( tableCol.get( j ).getText( ) );
-                    }
-                }
+                List<String> sortedByInterface = createSortedByInterfaceList( k );
                 ArrayList<String> sortedByRule = new ArrayList<>( sortedByInterface );
                 //сортировка по алфавиту
                 sortList( sortedByRule );
                 softAssert.assertEquals( sortedByRule, sortedByInterface, "Проверка по возрастанию провалилась." );
             }
         }
+    }
+
+    public List<String> createSortedByInterfaceList( int k ) {
+        List<String> sortedByInterface = new ArrayList<>( );
+        //какой конкретно эелемент брать
+        for (int j = k; j < tableCol.size( ); j = j + tableCol.size( ) / tableRow.size( )) {
+            if (!isEmpty( tableCol.get( j ).getText( ) )) {
+                sortedByInterface.add( tableCol.get( j ).getText( ) );
+            }
+        }
+        return sortedByInterface;
     }
 }
