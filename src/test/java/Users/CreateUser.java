@@ -25,10 +25,10 @@ public class CreateUser extends BaseClass {
     @Test
     public void createUser( ) {
         login( );
-        String loginName = "testUser" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
+        String loginName = "TestUser" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
         clickAddBtn( );
-        createNewUser( loginName, "test", "Testov", "Test", "Testovich",
-                "test@test.ru", "+79999999999", "Tester", "TestType", "TestName", "TestSubunit","TestGroup");
+        createNewUser( loginName, "Test", "Testov", "Test", "Testovich",
+                "Test@test.ru", "+79999999999", "Tester", "TestType", "TestName", "TestSubunit","TestGroup");
         assertEquals( nameLoginObject.getText(), loginName );
         //проверить авторизацию созданным пользователем
     }

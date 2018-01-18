@@ -10,8 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
+import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 
@@ -52,42 +52,44 @@ public class SearchAuth extends BaseClass {
     // 7. Написать два варианта проверок позитивные тесты и негативные
 
     public void search( ) throws Exception {
-        //login( );
-        //getCriteriaFromMenu(  );
-        //softAssert.assertAll( );
-        getRowsFromDB(new ArrayList<>( Arrays.asList( 193 ) ));
+        login( );
+        getCriteriaFromMenu( );
+        softAssert.assertAll( );
     }
-    public List<UserTable> getRowsFromDB( ArrayList<Integer> numbersFromTable ) throws Exception {
+
+    public List<String> getRowsFromDB( String criterion, String param ) throws Exception {
         ConnectionHB conDB = new ConnectionHB( );
         SessionFactory sessionFactory = conDB.setUp( );
 
         Session session = sessionFactory.openSession( );
         session.beginTransaction( );
 
-        List<Integer> idList = numbersFromTable;
+        //List<Integer> idList = numbersFromTable;
 
-        String hql = "from UserTable where id IN :id and ";
-        List result = session.createQuery( hql ).setParameter( "id", idList ).list( );
+        String hql = "from UserTable " + param + criterion;
+        List result = session.createQuery( hql ).list( );
         session.getTransaction( ).commit( );
         session.close( );
-       /* for (UserTable item: (List<UserTable>) result
-             ) {
-            System.out.println( item.getNameFirst() );
-        }*/
-        return result;
+        List<String> newStringResult = new ArrayList<>( );
+        for (UserTable item : (List<UserTable>) result) {
+            //System.out.println( item.getNameFirst( ) );
+            newStringResult.add( item.getId( ) + item.getEmail( ) + item.getLogin( ) + item.getNameFirst( ) + item.getNameLast( ) + item.getNameMiddle( ) +
+                    item.getPhone( ) + item.getRole( ) + item.getParam1( ) + item.getParam2( ) + item.getParam3( ) + item.getParam4( )
+            );
+        }
+        return newStringResult;
     }
 
-    public void getCriteriaFromMenu( ) {
+    public void getCriteriaFromMenu( ) throws Exception {
         menu.click( );
         //System.out.println(menu.getText() );
         //Цикл по элементам меню
         for (int i = 0; i < menuPoint.size( ); i++) {
             //Ждем появления подменю
-            //waitSomeMillisec( 1000 );
+            waitSomeMillisec( 1000 );
             //Если подменю не появилось, т.е. текст пункта пуст, то еще раз нажмем на меню
             if (menuPoint.get( i ).getText( ).isEmpty( )) {
                 menu.click( );
-                //waitSomeMillisec( 1000 );
             }
             //прокрутить до конца выпадающего меню, чтобы получить самый последний элемент
             WebElement target = menuPoint.get( i );
@@ -95,37 +97,71 @@ public class SearchAuth extends BaseClass {
             //Нажать на выбранный пункт меню
             target.click( );
             //Получить название пункта подменю
-            String menuPointText = menuPoint.get( i ).getText( );
-            System.out.println( "after click menu.getText( )=" + menuPointText );
-            waitSomeMillisec( 500 );
-            //Цикл по заголовкам таблицы
-            for (int j = 0; j < tableHeader.size( ); j++) {
-                //Переменная поиска текста для вставки в строку поиска
-                String criteriaText = "";
-                //Если есть заголовок меню = заголовку таблицы
-                if (!tableHeader.get( j ).getText( ).isEmpty( ) & menuPointText.equals( tableHeader.get( j ).getText( ) )) {
-                    System.out.println( "table header " + tableHeader.get( j ).getText( ) );
-                    //Ищем текст для вставки в строку поиска
-                    criteriaText = getNotNullValueFromColumn( j );
-                    int countBeforeSearch = countByCriterion( criteriaText, j );
-                    //тогда вставляем текст в строку поиска
-                    searchAreaTB.click( );
-                    searchAreaTB.clear( );
-                    searchAreaTB.sendKeys( criteriaText );
-                    waitSomeMillisec( 1500 );
+            String menuPointText = menu.getText( ); //target.getText();//menuPoint.get( i ).getText( );
+            //Если пункт меню != шапке таблицы
+            if (i < 5) {
+                if (i == 0) {
+                    int countBeforeSearch = getCountRepeatedElementsFromList( getRowsFromDB( "", "" ) );
+                    sendTextToTB( "Test" );
+                    int countAfterSearch = tableRow.size();
+                    softAssert.assertEquals(  countBeforeSearch, countAfterSearch, "Проверка провалена. По критерию Везде параметру Test");
+                    clearTB( );
+                    //System.out.println( countBeforeSearch );
+                } else {
+                    int countBeforeSearch = getRowsFromDB( " like 'Test%'", " where customParam" + i ).size( );
+                    sendTextToTB( "Test" );
                     int countAfterSearch = tableRow.size( );
-                    softAssert.assertEquals( countBeforeSearch, countAfterSearch );
-                    searchAreaTB.click( );
-                    searchAreaTB.clear( );
+                    softAssert.assertEquals( countBeforeSearch, countAfterSearch, "Проверка провалена. По критерию " + menuPointText + " параметру Test" );
+                    clearTB( );
+                }
+            } else {
+                // System.out.println( "i=" + i + "after click menu.getText( )=" + menu.getText( ) );
+                //Цикл по заголовкам таблицы
+                for (int j = 0; j < tableHeader.size( ); j++) {
+                    //Переменная поиска текста для вставки в строку поиска
+                    String criteriaText = "";
+                    //Если есть заголовок меню = заголовку таблицы
+                    if (!tableHeader.get( j ).getText( ).isEmpty( ) & menuPointText.equals( tableHeader.get( j ).getText( ) )) {
+                        // System.out.println( "table header " + tableHeader.get( j ).getText( ) );
+                        //Ищем текст для вставки в строку поиска
+                        criteriaText = getNotNullValueFromColumn( j );
+                        int countBeforeSearch = countByCriterion( criteriaText, j );
+                        //тогда вставляем текст в строку поиска
+                        sendTextToTB( criteriaText );
+                       // waitSomeMillisec( 1500 );
+                        int countAfterSearch = tableRow.size( );
+                        softAssert.assertEquals( countBeforeSearch, countAfterSearch, "Проверка провалена. По критерию " + menuPointText + " параметру " + criteriaText );
+                        clearTB();
+                    }
                 }
             }
         }
     }
 
+    public void clearTB( ) {
+        searchAreaTB.click( );
+        searchAreaTB.clear( );
+    }
+
+    public void sendTextToTB( String test ) {
+        clearTB( );
+        searchAreaTB.sendKeys( test );
+    }
+
+    private int getCountRepeatedElementsFromList( List<String> rowsFromDB ) {
+        int count = 0;
+        for (String item : rowsFromDB) {
+            if (item.contains( "Test" ) || item.contains( "test" )) {
+                count++;
+            }
+        }
+        return count;
+    }
+
     public String getNotNullValueFromColumn( int numElement ) {
         for (int i = numElement; i < tableCol.size( ); i += tableHeader.size( )) {
             //проанализировать массив и взять каждый житый ненулевой элемент
-            System.out.println( "From table " + tableCol.get( i ).getText( ) );
+            // System.out.println( "From table " + tableCol.get( i ).getText( ) );
             if (!tableCol.get( i ).getText( ).isEmpty( )) {
                 return tableCol.get( i ).getText( );
             }

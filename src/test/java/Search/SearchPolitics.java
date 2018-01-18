@@ -5,6 +5,7 @@ import HelpClass.UserTable;
 import com.sun.jna.platform.win32.Netapi32Util;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -51,7 +52,10 @@ public class SearchPolitics extends SearchAuth {
         menu.click( );
         //System.out.println(menu.getText() );
         //Цикл по элементам меню
-        for (int i = 0; i < menuPoint.size( ); i++) {
+        int countMenuPoint = menuPoint.size( );
+        for (int i = 0; i < countMenuPoint; i++) {
+            wd.navigate().refresh();
+            menu.click( );
             //Ждем появления подменю
             //waitSomeMillisec( 1000 );
             //Если подменю не появилось, т.е. текст пункта пуст, то еще раз нажмем на меню
@@ -66,7 +70,8 @@ public class SearchPolitics extends SearchAuth {
             target.click( );
             //System.out.println( "after click menu.getText( )=" + menu.getText( ) );
             //Получить название пункта подменю
-            String menuPointText = menuPoint.get( i ).getText( );
+            //String menuPointText = menuPoint.get( i ).getText( );
+            String menuPointText = menu.getText( );
             waitSomeMillisec( 500 );
             //Цикл по заголовкам таблицы
             for (int j = 0; j < tableHeader.size( ); j++) {
@@ -79,24 +84,27 @@ public class SearchPolitics extends SearchAuth {
                     criteriaText = getNotNullValueFromColumn( j );
                     int countBeforeSearch = countByCriterion( criteriaText, j );
                     //тогда вставляем текст в строку поиска
-                    searchAreaTB.click( );
-                    searchAreaTB.clear( );
+                    creatTB( );
                     searchAreaTB.sendKeys( criteriaText );
                     //System.out.println( "Size " + tableRow.size( ) );
-                    waitSomeMillisec( 500 );
+                    waitSomeMillisec( 1500 );
                     int countAfterSearch = tableRow.size( );
-                    softAssert.assertEquals( countBeforeSearch, countAfterSearch, "Проверка по параметру " + menuPointText + " провалена по критерию "+criteriaText );
-                    searchAreaTB.click( );
-                    searchAreaTB.clear( );
+                    softAssert.assertEquals( countAfterSearch, countBeforeSearch,  "Проверка по параметру " + menuPointText + " провалена по критерию " + criteriaText );
+                    creatTB( );
                 }
             }
         }
     }
 
+    public void creatTB( ) {
+        searchAreaTB.click( );
+        searchAreaTB.clear( );
+    }
+
     public String getNotNullValueFromColumn( int numElement ) {
         for (int i = numElement; i < tableCol.size( ); i += tableHeader.size( )) {
             //проанализировать массив и взять каждый житый ненулевой элемент
-            System.out.println( "From table " + tableCol.get( i ).getText( ) );
+            //System.out.println( "From table " + tableCol.get( i ).getText( ) );
             if (!tableCol.get( i ).getText( ).isEmpty( )) {
                 return tableCol.get( i ).getText( );
             }
@@ -116,12 +124,40 @@ public class SearchPolitics extends SearchAuth {
     }
 
     private int countByCriterion( String searchCriterion, int startJ ) {
-        int k = 0;
-        for (int j = startJ; j < tableCol.size( ); j = j + tableHeader.size( )) {
-            if (tableCol.get( j ).getText( ).contains( searchCriterion )) {
-                k++;
+        int k=0;
+        //System.out.println( tableRow.size() );
+        //Классно! если только не 100500 страниц надо будет перелистывать....
+        if (pagginationArrow.getAttribute( "aria-disabled" ) != null) {
+            resizeAreaWithTable( );
+            for (int j = startJ; j < tableCol.size( ); j = j + tableHeader.size( )) {
+                if (tableCol.get( j ).getText( ).equals( searchCriterion )) {
+                    k++;
+                }
+            }
+            while (pagginationArrow.getAttribute( "aria-disabled" ).equals( "false" )) {
+                pagginationArrow.click( );
+                for (int j = startJ; j < tableCol.size( ); j = j + tableHeader.size( )) {
+                    if (tableCol.get( j ).getText( ).equals( searchCriterion )) {
+                        k++;
+                    }
+                }
+                waitSomeMillisec( 1500 );
+            }
+        }
+        else{
+            for (int j = startJ; j < tableCol.size( ); j = j + tableHeader.size( )) {
+                if (tableCol.get( j ).getText( ).contains( searchCriterion )) {
+                    k++;
+                }
             }
         }
         return k;
+    }
+
+    private void resizeAreaWithTable( ) {
+        WebElement target = wd.findElement( By.xpath( "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]") );
+        ( (JavascriptExecutor) wd ).executeScript( "arguments[0].setAttribute('style', 'max-height: 4205px;')", target );
+        //Нажать на выбранный пункт
+        target.click( );
     }
 }
