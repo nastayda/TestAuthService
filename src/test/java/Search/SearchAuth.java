@@ -21,21 +21,21 @@ import java.util.List;
 public class SearchAuth extends BaseClass {
     @FindBy(xpath = "//div[@class='ant-select-selection\n" +
             "            ant-select-selection--single']")
-    private WebElement menu;
+    static WebElement menu;
     @FindBy(xpath = "//ul[@class='ant-select-dropdown-menu ant-select-dropdown-menu-vertical  ant-select-dropdown-menu-root']/li")
-    private List<WebElement> menuPoint;
+    static List<WebElement> menuPoint;
     @FindBy(xpath = "//*[@id=\"root\"]/div/div[1]/div/div[1]/div/div[2]/span[1]/span/span/span[2]/input")
-    private WebElement searchAreaTB;
+    static WebElement searchAreaTB;
     @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr")
-    private List<WebElement> tableRow;
+    static List<WebElement> tableRow;
     @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr/td")
-    private List<WebElement> tableCol;
+    static List<WebElement> tableCol;
     @FindBy(xpath = "//*[@id=\"root\"]//table/thead/tr/th")
-    private List<WebElement> tableHeader;
+    static List<WebElement> tableHeader;
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/span[3]/button")
-    private WebElement addBTN;
+    static WebElement addBTN;
     @FindBy(xpath = "//div[@class='ant-modal-footer']//button[1]")
-    private WebElement cancelBTN;
+    static WebElement cancelBTN;
     // Пояснение почему не сделала декомпозицию: вся логика+проверки в одном методе, что плохо,
     // НО! если разнести на несколько методов, класс растянется в два раза, т.к. все составленные списки критериев поиска придется снова прогонять в интерфейсе,
     // поэтому мне показалось проще оставить получение криетриев поиска, взаимодествие с интерфейсом и проверку оставить в одном методе
