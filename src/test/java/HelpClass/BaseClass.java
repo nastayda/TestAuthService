@@ -423,4 +423,11 @@ public class BaseClass {
         // Развернуть окно до размеров 1920 х 1080, чтобы добраться до последнего элемента
         wd.manage( ).window( ).setSize( new Dimension( width, height ) );
     }
+
+    protected void resizeAreaWithTable( String xpathExpression ) {
+        WebElement target = wd.findElement( By.xpath( xpathExpression ) );
+        ( (JavascriptExecutor) wd ).executeScript( "arguments[0].setAttribute('style', 'max-height: 4205px;')", target );
+        //Нажать на выбранный пункт
+        target.click( );
+    }
 }

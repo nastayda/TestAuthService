@@ -1,22 +1,16 @@
 package Search;
 
-import HelpClass.ConnectionHB;
-import HelpClass.UserTable;
-import com.sun.jna.platform.win32.Netapi32Util;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-@Test
+
 public class SearchPolitics extends SearchAuth {
     //Вариантов переопределения xpath нет, либо он оч сложный и малоиспользуемый
     // потом есть две альтернативы:
@@ -40,6 +34,9 @@ public class SearchPolitics extends SearchAuth {
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div[1]/span[1]/span/span/input")
     WebElement searchAreaTB;
 
+    @Title("Проверка поиска политик")
+    @Test
+    @Step("Вызов метода поиска ")
     public void searchPolitic( ) throws Exception {
         login( );
         goToPolicyPage( );
@@ -128,7 +125,7 @@ public class SearchPolitics extends SearchAuth {
         //System.out.println( tableRow.size() );
         //Классно! если только не 100500 страниц надо будет перелистывать....
         if (pagginationArrow.getAttribute( "aria-disabled" ) != null) {
-            resizeAreaWithTable( );
+            resizeAreaWithTable( "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]" );
             for (int j = startJ; j < tableCol.size( ); j = j + tableHeader.size( )) {
                 if (tableCol.get( j ).getText( ).equals( searchCriterion )) {
                     k++;
@@ -152,12 +149,5 @@ public class SearchPolitics extends SearchAuth {
             }
         }
         return k;
-    }
-
-    private void resizeAreaWithTable( ) {
-        WebElement target = wd.findElement( By.xpath( "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]") );
-        ( (JavascriptExecutor) wd ).executeScript( "arguments[0].setAttribute('style', 'max-height: 4205px;')", target );
-        //Нажать на выбранный пункт
-        target.click( );
     }
 }
