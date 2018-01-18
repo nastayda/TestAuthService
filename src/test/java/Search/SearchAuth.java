@@ -24,7 +24,8 @@ public class SearchAuth extends BaseClass {
     static WebElement menu;
     @FindBy(xpath = "//ul[@class='ant-select-dropdown-menu ant-select-dropdown-menu-vertical  ant-select-dropdown-menu-root']/li")
     static List<WebElement> menuPoint;
-    @FindBy(xpath = "//*[@id=\"root\"]/div/div[1]/div/div[1]/div/div[2]/span[1]/span/span/span[2]/input")
+    @FindBy(css = "input.ant-input.ant-input-lg")
+    //*[@id="root"]/div/div[1]/div/div[1]/div/div[2]/span[1]/span/span/span[2]/input
     static WebElement searchAreaTB;
     @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr")
     static List<WebElement> tableRow;

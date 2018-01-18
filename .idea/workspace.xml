@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Search/SearchAuth.class" afterPath="$PROJECT_DIR$/out/test/classes/Search/SearchAuth.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Search/SearchPolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/Search/SearchPolitics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Users/CreateUser.class" afterPath="$PROJECT_DIR$/out/test/classes/Users/CreateUser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" afterPath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
@@ -44,11 +42,10 @@
       <file leaf-file-name="SearchAuth.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            <state relative-caret-position="-255">
+              <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
               <folding>
                 <element signature="method#getRowsFromDB#0;class#SearchAuth#0" expanded="false" />
-                <element signature="method#clearTB#0;class#SearchAuth#0" expanded="false" />
                 <element signature="method#sendTextToTB#0;class#SearchAuth#0" expanded="false" />
                 <element signature="method#getCountRepeatedElementsFromList#0;class#SearchAuth#0" expanded="false" />
                 <element signature="method#getNotNullValueFromColumn#0;class#SearchAuth#0" expanded="false" />
@@ -1264,12 +1261,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EditUser_editUser - 2018.01.18 at 16h 27m 14s.xml">
-      <configuration name="EditUser.editUser" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="EditUser_editUser - 2018.01.18 at 16h 28m 44s.xml">
-      <configuration name="EditUser.editUser" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="EditUser_editUser - 2018.01.18 at 16h 29m 11s.xml">
       <configuration name="EditUser.editUser" configurationId="TestNG" />
     </history-entry>
@@ -1285,13 +1276,19 @@
     <history-entry file="EditUser_editUser - 2018.01.18 at 16h 35m 25s.xml">
       <configuration name="EditUser.editUser" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchAuth_search - 2018.01.18 at 16h 22m 20s.xml">
-      <configuration name="SearchAuth.search" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="SearchAuth_search - 2018.01.18 at 16h 53m 52s.xml">
       <configuration name="SearchAuth.search" configurationId="TestNG" />
     </history-entry>
     <history-entry file="SearchAuth_search - 2018.01.18 at 16h 56m 43s.xml">
+      <configuration name="SearchAuth.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchAuth_search - 2018.01.18 at 17h 07m 04s.xml">
+      <configuration name="SearchAuth.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchAuth_search - 2018.01.18 at 17h 08m 05s.xml">
+      <configuration name="SearchAuth.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchAuth_search - 2018.01.18 at 17h 09m 23s.xml">
       <configuration name="SearchAuth.search" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1355,13 +1352,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java</url>
-          <line>96</line>
+          <line>97</line>
           <properties />
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java</url>
-          <line>67</line>
+          <line>68</line>
           <properties />
           <option name="timeStamp" value="155" />
         </line-breakpoint>
@@ -1743,11 +1740,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        <state relative-caret-position="-255">
+          <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
           <folding>
             <element signature="method#getRowsFromDB#0;class#SearchAuth#0" expanded="false" />
-            <element signature="method#clearTB#0;class#SearchAuth#0" expanded="false" />
             <element signature="method#sendTextToTB#0;class#SearchAuth#0" expanded="false" />
             <element signature="method#getCountRepeatedElementsFromList#0;class#SearchAuth#0" expanded="false" />
             <element signature="method#getNotNullValueFromColumn#0;class#SearchAuth#0" expanded="false" />
