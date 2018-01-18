@@ -1,11 +1,17 @@
 package Search;
 
 import HelpClass.BaseClass;
+import HelpClass.ConnectionHB;
+import HelpClass.UserTable;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -45,10 +51,30 @@ public class SearchAuth extends BaseClass {
     // 6. Считать всего в таблице - учесть перход на вторую страницу
     // 7. Написать два варианта проверок позитивные тесты и негативные
 
-    public void search( ) {
-        login( );
-        getCriteriaFromMenu(  );
-        softAssert.assertAll( );
+    public void search( ) throws Exception {
+        //login( );
+        //getCriteriaFromMenu(  );
+        //softAssert.assertAll( );
+        getRowsFromDB(new ArrayList<>( Arrays.asList( 193 ) ));
+    }
+    public List<UserTable> getRowsFromDB( ArrayList<Integer> numbersFromTable ) throws Exception {
+        ConnectionHB conDB = new ConnectionHB( );
+        SessionFactory sessionFactory = conDB.setUp( );
+
+        Session session = sessionFactory.openSession( );
+        session.beginTransaction( );
+
+        List<Integer> idList = numbersFromTable;
+
+        String hql = "from UserTable where id IN :id and ";
+        List result = session.createQuery( hql ).setParameter( "id", idList ).list( );
+        session.getTransaction( ).commit( );
+        session.close( );
+       /* for (UserTable item: (List<UserTable>) result
+             ) {
+            System.out.println( item.getNameFirst() );
+        }*/
+        return result;
     }
 
     public void getCriteriaFromMenu( ) {
@@ -68,9 +94,9 @@ public class SearchAuth extends BaseClass {
             ( (JavascriptExecutor) wd ).executeScript( "arguments[0].scrollIntoView(true);", target );
             //Нажать на выбранный пункт меню
             target.click( );
-            //System.out.println( "after click menu.getText( )=" + menu.getText( ) );
             //Получить название пункта подменю
             String menuPointText = menuPoint.get( i ).getText( );
+            System.out.println( "after click menu.getText( )=" + menuPointText );
             waitSomeMillisec( 500 );
             //Цикл по заголовкам таблицы
             for (int j = 0; j < tableHeader.size( ); j++) {
@@ -78,7 +104,7 @@ public class SearchAuth extends BaseClass {
                 String criteriaText = "";
                 //Если есть заголовок меню = заголовку таблицы
                 if (!tableHeader.get( j ).getText( ).isEmpty( ) & menuPointText.equals( tableHeader.get( j ).getText( ) )) {
-                    //System.out.println( "table header " + tableHeader.get( j ).getText( ) );
+                    System.out.println( "table header " + tableHeader.get( j ).getText( ) );
                     //Ищем текст для вставки в строку поиска
                     criteriaText = getNotNullValueFromColumn( j );
                     int countBeforeSearch = countByCriterion( criteriaText, j );
@@ -86,8 +112,7 @@ public class SearchAuth extends BaseClass {
                     searchAreaTB.click( );
                     searchAreaTB.clear( );
                     searchAreaTB.sendKeys( criteriaText );
-                    //System.out.println( "Size " + tableRow.size( ) );
-                    waitSomeMillisec( 500 );
+                    waitSomeMillisec( 1500 );
                     int countAfterSearch = tableRow.size( );
                     softAssert.assertEquals( countBeforeSearch, countAfterSearch );
                     searchAreaTB.click( );

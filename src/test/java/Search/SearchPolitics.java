@@ -1,10 +1,18 @@
 package Search;
 
+import HelpClass.ConnectionHB;
+import HelpClass.UserTable;
+import com.sun.jna.platform.win32.Netapi32Util;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Test
@@ -31,11 +39,12 @@ public class SearchPolitics extends SearchAuth {
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div[1]/span[1]/span/span/input")
     WebElement searchAreaTB;
 
-    public void searchPolitic( ) {
+    public void searchPolitic( ) throws Exception {
         login( );
         goToPolicyPage( );
-        //getCriteriaFromMenu( );
-        //softAssert.assertAll( );
+        getCriteriaFromMenu( );
+        softAssert.assertAll( );
+        //getRowsFromDB(new ArrayList<>( Arrays.asList( 193 ) ));
     }
 
     public void getCriteriaFromMenu( ) {

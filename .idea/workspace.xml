@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/FilterAndSort/Sort.class" afterPath="$PROJECT_DIR$/out/test/classes/FilterAndSort/Sort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FilterAndSort/Sort.java" afterPath="$PROJECT_DIR$/src/test/java/FilterAndSort/Sort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Search/SearchPolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/Search/SearchPolitics.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/TestAuthServiceNew_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/TestAuthServiceNew_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/TestAuthServiceNew_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/TestAuthServiceNew_test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" afterPath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java" afterPath="$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
@@ -43,8 +48,8 @@
       <file leaf-file-name="SearchAuth.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="91" column="83" lean-forward="true" selection-start-line="91" selection-start-column="83" selection-end-line="91" selection-end-column="83" />
+            <state relative-caret-position="163">
+              <caret line="57" column="45" lean-forward="false" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -53,33 +58,12 @@
       <file leaf-file-name="SearchPolitics.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/FilterAndSort/Sort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="65" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Filter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/FilterAndSort/Filter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
-              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="24" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#checkCountInTAbleAfterAppyFilter#0;class#Filter#0" expanded="false" />
+                <element signature="method#getCriteriaFromMenu#0;class#SearchPolitics#0" expanded="false" />
+                <element signature="method#getNotNullValueFromColumn#0;class#SearchPolitics#0" expanded="false" />
+                <element signature="method#countByCriterion#0;class#SearchPolitics#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -411,8 +395,8 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/Desktop/TestAuthService" value="0" />
-        <entry key="$PROJECT_DIR$" value="1511782767354" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1461533625" />
+        <entry key="$PROJECT_DIR$" value="1516257958981" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="4067427500" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -639,7 +623,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ControleModule/EditPolitics.java" />
         <option value="$PROJECT_DIR$/src/test/java/Modules/EditeModule.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-auth.xml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Modules/EditModule.java" />
         <option value="$PROJECT_DIR$/src/test/java/Modules/CreateModule.java" />
@@ -656,17 +639,23 @@
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Politics/Elements.java" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAndSort.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/Filter.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/Sort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HelpClass/UserTable.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/HelpClass/ConnectionHB.java" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="718" />
-    <option name="height" value="900" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -816,6 +805,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="HelpClass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Politics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -844,12 +841,16 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/my-app/my-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FunctionalTests/autotests" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="SearchEverywhereHistoryKey" value="sout&#9;PSI&#9;JAVA://javax.sound.midi.Soundbank" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="HelpClass" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danilkinaas\Documents\GitHub\TestAuthServiceNew\src\test\resources" />
       <recent name="C:\Users\danilkinaas\Documents\GitHub\TestAuthServiceNew\build\allure-results" />
       <recent name="C:\Users\danilkinaas\Documents\GitHub\TestAuthServiceNew\src\test" />
       <recent name="C:\Users\danilkinaas\Documents\GitHub\TestAuthServiceNew\src\test\java\testPacage" />
@@ -868,7 +869,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.SearchPolitics.searchPolitic">
+  <component name="RunManager" selected="TestNG.SearchAuth.search">
     <configuration name="CreateUser.createUser" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -901,7 +902,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Filter.applyFilter" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Filter.applyFilterTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="FilterAndSort.*" />
@@ -914,7 +915,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="FilterAndSort" />
       <option name="MAIN_CLASS_NAME" value="FilterAndSort.Filter" />
-      <option name="METHOD_NAME" value="applyFilter" />
+      <option name="METHOD_NAME" value="applyFilterTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -933,10 +934,10 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Filter.applyFilterTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchAuth.search" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="FilterAndSort.*" />
+          <option name="PATTERN" value="Search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -944,9 +945,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="FilterAndSort" />
-      <option name="MAIN_CLASS_NAME" value="FilterAndSort.Filter" />
-      <option name="METHOD_NAME" value="applyFilterTest" />
+      <option name="PACKAGE_NAME" value="Search" />
+      <option name="MAIN_CLASS_NAME" value="Search.SearchAuth" />
+      <option name="METHOD_NAME" value="search" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1156,19 +1157,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.CreateUser.createUser" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.Filter.applyFilter" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.Filter.applyFilterTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.Sort.sort" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.Sort.sortByAlphabet" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.SearchPolitics.searchPolitic" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.Filter.applyFilterTest" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.Sort.sort" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.Sort.sortByAlphabet" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.SearchPolitics.searchPolitic" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.SearchAuth.search" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.SearchPolitics.searchPolitic" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.Sort.sort" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.Sort.sortByAlphabet" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.Filter.applyFilterTest" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.Filter.applyFilter" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.SearchAuth.search" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.SearchPolitics.searchPolitic" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.Sort.sort" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.Sort.sortByAlphabet" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.Filter.applyFilterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1186,35 +1187,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SearchPolitics_searchPolitic - 2018.01.17 at 12h 20m 53s.xml">
+    <history-entry file="SearchAuth_search - 2018.01.18 at 10h 15m 47s.xml">
+      <configuration name="SearchAuth.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchAuth_search - 2018.01.18 at 10h 27m 49s.xml">
+      <configuration name="SearchAuth.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchAuth_search - 2018.01.18 at 10h 28m 33s.xml">
+      <configuration name="SearchAuth.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchAuth_search - 2018.01.18 at 10h 29m 50s.xml">
+      <configuration name="SearchAuth.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchAuth_search - 2018.01.18 at 10h 30m 35s.xml">
+      <configuration name="SearchAuth.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchAuth_search - 2018.01.18 at 10h 32m 10s.xml">
+      <configuration name="SearchAuth.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchAuth_search - 2018.01.18 at 10h 36m 08s.xml">
+      <configuration name="SearchAuth.search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchPolitics_searchPolitic - 2018.01.18 at 10h 03m 19s.xml">
       <configuration name="SearchPolitics.searchPolitic" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchPolitics_searchPolitic - 2018.01.17 at 12h 48m 04s.xml">
+    <history-entry file="SearchPolitics_searchPolitic - 2018.01.18 at 10h 08m 49s.xml">
       <configuration name="SearchPolitics.searchPolitic" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SearchPolitics_searchPolitic - 2018.01.17 at 12h 52m 24s.xml">
+    <history-entry file="SearchPolitics_searchPolitic - 2018.01.18 at 10h 15m 14s.xml">
       <configuration name="SearchPolitics.searchPolitic" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchPolitics_searchPolitic - 2018.01.17 at 12h 55m 06s.xml">
-      <configuration name="SearchPolitics.searchPolitic" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Sort_sort - 2018.01.17 at 11h 47m 07s.xml">
-      <configuration name="Sort.sort" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Sort_sort - 2018.01.17 at 11h 48m 07s.xml">
-      <configuration name="Sort.sort" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Sort_sort - 2018.01.17 at 11h 50m 03s.xml">
-      <configuration name="Sort.sort" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Sort_sort - 2018.01.17 at 11h 52m 14s.xml">
-      <configuration name="Sort.sort" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Sort_sort - 2018.01.17 at 11h 52m 56s.xml">
-      <configuration name="Sort.sort" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Sort_sort - 2018.01.17 at 11h 58m 13s.xml">
-      <configuration name="Sort.sort" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1229,7 +1230,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1504329" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3181818" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3008658" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1281,20 +1282,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Users/CreateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Auth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1352,7 +1339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
     <entry file="file://$PROJECT_DIR$/target/allure-results/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1495,14 +1481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="59" lean-forward="true" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1585,13 +1563,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FilterAndSort/Filter.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="24" selection-end-column="28" />
+        <state relative-caret-position="340">
+          <caret line="20" column="75" lean-forward="false" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/UserTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#checkCountInTAbleAfterAppyFilter#0;class#Filter#0" expanded="false" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1629#1630#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1599,26 +1616,49 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/FilterAndSort/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
-          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FilterAndSort/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkCountInTAbleAfterAppyFilter#0;class#Filter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="91" column="83" lean-forward="true" selection-start-line="91" selection-start-column="83" selection-end-line="91" selection-end-column="83" />
+        <state relative-caret-position="163">
+          <caret line="57" column="45" lean-forward="false" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/ConnectionHB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="65" />
+          <folding>
+            <element signature="method#getCriteriaFromMenu#0;class#SearchPolitics#0" expanded="false" />
+            <element signature="method#getNotNullValueFromColumn#0;class#SearchPolitics#0" expanded="false" />
+            <element signature="method#countByCriterion#0;class#SearchPolitics#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
