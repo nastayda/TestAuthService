@@ -5,6 +5,8 @@ import com.google.common.collect.Lists;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +16,6 @@ import java.util.List;
 import static org.jvnet.jaxb2_commons.lang.StringUtils.isEmpty;
 import static org.testng.AssertJUnit.assertEquals;
 
-@Test
 public class Sort extends BaseClass {
     @FindBy(xpath = "//thead[@class='ant-table-thead']/tr/th/span/div/span[2]/i")
     //*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div/div/div[1]/table/thead/tr/th[2]/span/div/span[1]/i
@@ -29,6 +30,9 @@ public class Sort extends BaseClass {
     @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr")
     List<WebElement> tableRow;
 
+    @Title("Проверка сортировки")
+    @Test
+    @Step("Вызов метода сортировки")
     public void sort( ) {
         login( );
         resizeWindow( 1920, 1080 );

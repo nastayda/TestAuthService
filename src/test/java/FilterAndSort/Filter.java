@@ -6,12 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.List;
 
 import static org.apache.http.util.TextUtils.isEmpty;
 
-@Test
 public class Filter extends BaseClass {
     //Проблдема с суммированием количествоа потомков списка, поч после закрытия подменю не чистится страница я хз.
     // Как вариант решения на кажном шаге цикла запоминать количество и затем вычитать его из текущего, но мне не нравится это вариант...
@@ -40,6 +40,9 @@ public class Filter extends BaseClass {
     @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr/td")
     private List<WebElement> tableCol;
 
+    @Title("Проверка фильтрации")
+    @Test
+    @Step("Вызов фильтрации")
     public void applyFilterTest( ) {
         login( );
         resizeWindow( 1920, 1080 );
