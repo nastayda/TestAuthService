@@ -33,10 +33,6 @@ public class SearchAuth extends BaseClass {
     static List<WebElement> tableCol;
     @FindBy(xpath = "//*[@id=\"root\"]//table/thead/tr/th")
     static List<WebElement> tableHeader;
-    @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[2]/div[1]/div/span[3]/button")
-    static WebElement addBTN;
-    @FindBy(xpath = "//div[@class='ant-modal-footer']//button[1]")
-    static WebElement cancelBTN;
     // Пояснение почему не сделала декомпозицию: вся логика+проверки в одном методе, что плохо,
     // НО! если разнести на несколько методов, класс растянется в два раза, т.к. все составленные списки критериев поиска придется снова прогонять в интерфейсе,
     // поэтому мне показалось проще оставить получение криетриев поиска, взаимодествие с интерфейсом и проверку оставить в одном методе

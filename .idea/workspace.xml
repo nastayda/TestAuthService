@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Search/SearchAuth.class" afterPath="$PROJECT_DIR$/out/test/classes/Search/SearchAuth.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" afterPath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
@@ -42,14 +41,12 @@
       <file leaf-file-name="SearchAuth.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+            <state relative-caret-position="-150">
+              <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
               <folding>
                 <element signature="method#getRowsFromDB#0;class#SearchAuth#0" expanded="false" />
                 <element signature="method#sendTextToTB#0;class#SearchAuth#0" expanded="false" />
                 <element signature="method#getCountRepeatedElementsFromList#0;class#SearchAuth#0" expanded="false" />
-                <element signature="method#getNotNullValueFromColumn#0;class#SearchAuth#0" expanded="false" />
-                <element signature="method#countByCriterion#0;class#SearchAuth#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -58,8 +55,8 @@
       <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+            <state relative-caret-position="68">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding>
                 <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
                 <element signature="method#setLogin#0;class#BaseClass#0" expanded="false" />
@@ -1352,13 +1349,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java</url>
-          <line>97</line>
+          <line>93</line>
           <properties />
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java</url>
-          <line>68</line>
+          <line>64</line>
           <properties />
           <option name="timeStamp" value="155" />
         </line-breakpoint>
@@ -1688,26 +1685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setLogin#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#waitSomeMillisec#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#waitUntilElementBeClickable#0;class#BaseClass#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1738,16 +1715,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setLogin#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitSomeMillisec#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitUntilElementBeClickable#0;class#BaseClass#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        <state relative-caret-position="-150">
+          <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
           <folding>
             <element signature="method#getRowsFromDB#0;class#SearchAuth#0" expanded="false" />
             <element signature="method#sendTextToTB#0;class#SearchAuth#0" expanded="false" />
             <element signature="method#getCountRepeatedElementsFromList#0;class#SearchAuth#0" expanded="false" />
-            <element signature="method#getNotNullValueFromColumn#0;class#SearchAuth#0" expanded="false" />
-            <element signature="method#countByCriterion#0;class#SearchAuth#0" expanded="false" />
           </folding>
         </state>
       </provider>
