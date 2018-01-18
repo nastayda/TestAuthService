@@ -14,7 +14,7 @@ public class TestAuthorization extends BaseClass {
     static WebElement table;
 
     @Title("Авторизация пользователя")
-    @Test
+    @Test(priority = 1)
     @Step("Вызов метода авторизации")
     public void TestAuthorization() {
         login();

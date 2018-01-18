@@ -22,7 +22,7 @@ public class CreateUser extends BaseClass {
     static WebElement nameLoginObject;
 
     @Title("Создание пользователя")
-    @Test
+    @Test(priority = 2)
     public void createUser( ) {
         login( );
         String loginName = "TestUser" + LocalDateTime.now( ).toString( ).replace( ":", "_" );

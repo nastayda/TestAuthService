@@ -54,7 +54,7 @@ public class SearchAuth extends BaseClass {
     // 7. Написать два варианта проверок позитивные тесты и негативные
 
     @Title("Проверка поиска пользователей")
-    @Test
+    @Test(priority = 3)
     @Step("Вызов метода поиска")
     public void search( ) throws Exception {
         login( );

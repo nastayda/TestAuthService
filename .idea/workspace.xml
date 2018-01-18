@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/HelpClass/BaseClass.class" afterPath="$PROJECT_DIR$/out/test/classes/HelpClass/BaseClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Search/SearchPolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/Search/SearchPolitics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java" afterPath="$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Users/EditUser.java" afterPath="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" afterPath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" afterPath="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java" afterPath="$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testng-services.xml" afterPath="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
@@ -46,8 +44,8 @@
       <file leaf-file-name="SearchAuth.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="57" selection-end-column="32" />
+            <state relative-caret-position="306">
+              <caret line="56" column="22" lean-forward="false" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
               <folding>
                 <element signature="method#getRowsFromDB#0;class#SearchAuth#0" expanded="false" />
                 <element signature="method#getCriteriaFromMenu#0;class#SearchAuth#0" expanded="false" />
@@ -61,11 +59,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestAuthorization.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateUser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Users/CreateUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -660,15 +678,16 @@
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/Filter.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/Sort.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/ConnectionHB.java" />
         <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/UserTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" />
       </list>
     </option>
   </component>
@@ -1573,14 +1592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Users/CreateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/ConnectionHB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1647,14 +1658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="17" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -1668,22 +1671,6 @@
         <state relative-caret-position="765">
           <caret line="67" column="30" lean-forward="true" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="57" selection-end-column="32" />
-          <folding>
-            <element signature="method#getRowsFromDB#0;class#SearchAuth#0" expanded="false" />
-            <element signature="method#getCriteriaFromMenu#0;class#SearchAuth#0" expanded="false" />
-            <element signature="method#clearTB#0;class#SearchAuth#0" expanded="false" />
-            <element signature="method#sendTextToTB#0;class#SearchAuth#0" expanded="false" />
-            <element signature="method#getCountRepeatedElementsFromList#0;class#SearchAuth#0" expanded="false" />
-            <element signature="method#getNotNullValueFromColumn#0;class#SearchAuth#0" expanded="false" />
-            <element signature="method#countByCriterion#0;class#SearchAuth#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1704,7 +1691,39 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="56" column="22" lean-forward="false" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+          <folding>
+            <element signature="method#getRowsFromDB#0;class#SearchAuth#0" expanded="false" />
+            <element signature="method#getCriteriaFromMenu#0;class#SearchAuth#0" expanded="false" />
+            <element signature="method#clearTB#0;class#SearchAuth#0" expanded="false" />
+            <element signature="method#sendTextToTB#0;class#SearchAuth#0" expanded="false" />
+            <element signature="method#getCountRepeatedElementsFromList#0;class#SearchAuth#0" expanded="false" />
+            <element signature="method#getNotNullValueFromColumn#0;class#SearchAuth#0" expanded="false" />
+            <element signature="method#countByCriterion#0;class#SearchAuth#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Users/CreateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding />
         </state>
       </provider>

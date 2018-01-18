@@ -39,7 +39,7 @@
             <class name="Search.SearchPolitics"/>
         </classes>
     </test>
-    
+
     <test name="Вызов класса Politics.EditPolitics">
         <classes>
             <class name="Politics.EditPolitics"/>
