@@ -9,13 +9,15 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 import java.util.List;
 
 
-@Test
+
 public class SearchAuth extends BaseClass {
     @FindBy(xpath = "//div[@class='ant-select-selection\n" +
             "            ant-select-selection--single']")
@@ -51,6 +53,9 @@ public class SearchAuth extends BaseClass {
     // 6. Считать всего в таблице - учесть перход на вторую страницу
     // 7. Написать два варианта проверок позитивные тесты и негативные
 
+    @Title("Проверка поиска пользователей")
+    @Test
+    @Step("Вызов метода поиска")
     public void search( ) throws Exception {
         login( );
         getCriteriaFromMenu( );
