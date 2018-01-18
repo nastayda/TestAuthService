@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" afterPath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testng-services.xml" afterPath="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -38,7 +39,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SearchAuth.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SearchAuth.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-150">
@@ -94,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -147,6 +148,7 @@
       <find>fro</find>
       <find>from</find>
       <find>syste</find>
+      <find>span</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -698,11 +700,11 @@
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/UserTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
       </list>
     </option>
   </component>
@@ -1677,14 +1679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1744,6 +1738,14 @@
             <element signature="method#sendTextToTB#0;class#SearchAuth#0" expanded="false" />
             <element signature="method#getCountRepeatedElementsFromList#0;class#SearchAuth#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
