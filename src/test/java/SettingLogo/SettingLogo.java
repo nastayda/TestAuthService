@@ -32,17 +32,17 @@ public class SettingLogo extends BaseClass {
         goToChangeLogoUrlForm( );
         saveNewUrl(textBefor);
     }
-    @Step("")
+    @Step("Переход на страницу с логотипом")
     public void goToLogoPage( ) {
         goToLogo.click();
     }
-    @Step("")
+    @Step("Сохранить новый URL {0}")
     public void saveNewUrl( String url ) {
         urlTB.clear();
         urlTB.sendKeys( url );
         saveBTN.click();
     }
-    @Step("")
+    @Step("Прейти по изменненому URL")
     public void goToChangeLogoUrlForm( ) {
         settingBTN.click();
         urlTB.click();
