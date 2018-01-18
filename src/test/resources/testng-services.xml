@@ -50,7 +50,7 @@
                   <class name="Politics.DeletePolitics"/>
               </classes>
           </test>
-         <!--  <test name="Вызов класса Modules.CreateModule">
+           <test name="Вызов класса Modules.CreateModule">
               <classes>
                   <class name="Modules.CreateModule"/>
               </classes>
