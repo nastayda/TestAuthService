@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" afterPath="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testng-services.xml" afterPath="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -41,8 +42,8 @@
       <file leaf-file-name="SearchAuth.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+            <state relative-caret-position="1972">
+              <caret line="164" column="21" lean-forward="true" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
               <folding>
                 <element signature="method#getRowsFromDB#0;class#SearchAuth#0" expanded="false" />
                 <element signature="method#sendTextToTB#0;class#SearchAuth#0" expanded="false" />
@@ -56,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/Users/DeleteUser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+              <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -65,8 +66,8 @@
       <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+            <state relative-caret-position="306">
+              <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -76,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
-              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="37" />
+              <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="37" />
               <folding>
                 <element signature="method#searchPolitic#0;class#SearchPolitics#0" expanded="false" />
                 <element signature="method#getCriteriaFromMenu#0;class#SearchPolitics#0" expanded="false" />
@@ -671,8 +672,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
       </list>
     </option>
   </component>
@@ -826,57 +827,25 @@
             <path>
               <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="help-files" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="test-results" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="test-results" type="462c0819:PsiDirectoryNode" />
+              <item name="testService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Politics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1305,13 +1274,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java</url>
-          <line>96</line>
+          <line>80</line>
           <properties />
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java</url>
-          <line>67</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="155" />
         </line-breakpoint>
@@ -1626,14 +1595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1680,7 +1641,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Users/DeleteUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1688,7 +1649,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="37" />
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="37" />
           <folding>
             <element signature="method#searchPolitic#0;class#SearchPolitics#0" expanded="false" />
             <element signature="method#getCriteriaFromMenu#0;class#SearchPolitics#0" expanded="false" />
@@ -1699,10 +1660,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="164" column="21" lean-forward="true" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
           <folding>
             <element signature="method#getRowsFromDB#0;class#SearchAuth#0" expanded="false" />
             <element signature="method#sendTextToTB#0;class#SearchAuth#0" expanded="false" />

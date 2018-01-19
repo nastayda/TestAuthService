@@ -17,62 +17,60 @@
             <class name="Search.SearchAuth"/>
         </classes>
     </test>
-    <test name="Вызов класса Users.EditUser">
-        <classes>
-            <class name="Users.EditUser"/>
-        </classes>
-    </test>
+    <!-- <test name="Вызов класса Users.EditUser">
+         <classes>
+             <class name="Users.EditUser"/>
+         </classes>
+     </test>
     <test name="Вызов класса Users.DeleteUser">
-        <classes>
-            <class name="Users.DeleteUser"/>
-        </classes>
-    </test>
+           <classes>
+               <class name="Users.DeleteUser"/>
+           </classes>
+       </test>
 
-    <test name="Вызов класса Politics.CreatePolitics">
-        <classes>
-            <class name="Politics.CreatePolitics"/>
-        </classes>
-    </test>
+       <test name="Вызов класса Politics.CreatePolitics">
+           <classes>
+               <class name="Politics.CreatePolitics"/>
+           </classes>   </test>
 
-    <test name="Вызов класса Search.SearchPolitics">
-        <classes>
-            <class name="Search.SearchPolitics"/>
-        </classes>
-    </test>
-
-   <!-- <test name="Вызов класса Politics.EditPolitics">
-        <classes>
-            <class name="Politics.EditPolitics"/>
-        </classes>
-    </test>
-    <test name="Вызов класса Politics.DeletePolitics">
-        <classes>
-            <class name="Politics.DeletePolitics"/>
-        </classes>
-    </test>
-    <test name="Вызов класса Modules.CreateModule">
-        <classes>
-            <class name="Modules.CreateModule"/>
-        </classes>
-    </test>
-    <test name="Вызов класса Modules.EditModule">
-        <classes>
-            <class name="Modules.EditModule"/>
-        </classes>
-    </test>
-    <test name="Вызов класса Modules.DeleteModule">
-        <classes>
-            <class name="Modules.DeleteModule"/>
-        </classes>
-    </test>
-    <test name="Вызов класса FilterAndSort.Filter">
-        <classes>
-            <class name="FilterAndSort.Filter"/>
-        </classes>
-    </test>
-    <test name="Вызов класса FilterAndSort.Sort">
-        <classes>
-            <class name="FilterAndSort.Sort"/>
-        </classes>
-    </test>-->
+        <test name="Вызов класса Search.SearchPolitics">
+            <classes>
+                <class name="Search.SearchPolitics"/>
+            </classes>
+        </test>
+        <test name="Вызов класса Politics.EditPolitics">
+            <classes>
+                <class name="Politics.EditPolitics"/>
+            </classes>
+        </test>
+        <test name="Вызов класса Politics.DeletePolitics">
+            <classes>
+                <class name="Politics.DeletePolitics"/>
+            </classes>
+        </test>
+        <test name="Вызов класса Modules.CreateModule">
+            <classes>
+                <class name="Modules.CreateModule"/>
+            </classes>
+        </test>
+        <test name="Вызов класса Modules.EditModule">
+            <classes>
+                <class name="Modules.EditModule"/>
+            </classes>
+        </test>
+        <test name="Вызов класса Modules.DeleteModule">
+            <classes>
+                <class name="Modules.DeleteModule"/>
+            </classes>
+        </test>
+        <test name="Вызов класса FilterAndSort.Filter">
+            <classes>
+                <class name="FilterAndSort.Filter"/>
+            </classes>
+        </test>
+        <test name="Вызов класса FilterAndSort.Sort">
+            <classes>
+                <class name="FilterAndSort.Sort"/>
+            </classes>
+        </test>-->
 </suite>
