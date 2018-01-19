@@ -38,10 +38,10 @@ public class EditPolitics extends BaseClass {
     }
 
     @Step("Сравнние введенных данных и тех, что отображаются в таблице")
-    public void compareDataFromTable( String[] dataForEdite, String politicsName ) {
+    public void compareDataFromTable( String[] dataForEdit, String politicsName ) {
         goToLastPage( );
         //Выбрать только то, что отображается в таблице
-        String[] dataFromMass = { politicsName, dataForEdite[ 3 ] };
+        String[] dataFromMass = { politicsName, dataForEdit[ 3 ] };
         //Выбрать из таблицы то, с чем будем сравнивать
         String[] dataFromTable = new String[ tableColums.size( ) - 4 ];
         for (int i = 1; i < tableColums.size( ) - 3; i++) {

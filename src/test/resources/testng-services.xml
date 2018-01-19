@@ -40,7 +40,7 @@
         </classes>
     </test>
 
-    <test name="Вызов класса Politics.EditPolitics">
+   <!-- <test name="Вызов класса Politics.EditPolitics">
         <classes>
             <class name="Politics.EditPolitics"/>
         </classes>
@@ -74,5 +74,5 @@
         <classes>
             <class name="FilterAndSort.Sort"/>
         </classes>
-    </test>
+    </test>-->
 </suite>

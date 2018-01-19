@@ -336,14 +336,14 @@ public class BaseClass {
     public void clickSave( ) {
         savePoliticsBTN.click( );
     }
-    @Step("Выбрать настройку {0}")
+    @Step("Выбрать настройку")
     public void chooseSetting( ) {
         menuItem.click( );
         chooseServiceSetting.click( );
         expandMenu.click( );
         policyDescriptionINPT.click( );
     }
-    @Step("Заполнить название сервиса {0}")
+    @Step("Заполнить название сервиса")
     public void setServiceName(  ) {
         //заполнить модуль
         serviceNameINPT.click( );
