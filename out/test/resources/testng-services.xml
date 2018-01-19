@@ -39,40 +39,39 @@
             <class name="Search.SearchPolitics"/>
         </classes>
     </test>
-
-    <test name="Вызов класса Politics.EditPolitics">
-        <classes>
-            <class name="Politics.EditPolitics"/>
-        </classes>
-    </test>
-    <test name="Вызов класса Politics.DeletePolitics">
-        <classes>
-            <class name="Politics.DeletePolitics"/>
-        </classes>
-    </test>
-    <test name="Вызов класса Modules.CreateModule">
-        <classes>
-            <class name="Modules.CreateModule"/>
-        </classes>
-    </test>
-    <test name="Вызов класса Modules.EditModule">
-        <classes>
-            <class name="Modules.EditModule"/>
-        </classes>
-    </test>
-    <test name="Вызов класса Modules.DeleteModule">
-        <classes>
-            <class name="Modules.DeleteModule"/>
-        </classes>
-    </test>
-    <test name="Вызов класса FilterAndSort.Filter">
-        <classes>
-            <class name="FilterAndSort.Filter"/>
-        </classes>
-    </test>
-    <test name="Вызов класса FilterAndSort.Sort">
-        <classes>
-            <class name="FilterAndSort.Sort"/>
-        </classes>
-    </test>
+    <!-- <test name="Вызов класса Politics.EditPolitics">
+         <classes>
+             <class name="Politics.EditPolitics"/>
+         </classes>
+     </test>
+     <test name="Вызов класса Politics.DeletePolitics">
+         <classes>
+             <class name="Politics.DeletePolitics"/>
+         </classes>
+     </test>
+     <test name="Вызов класса Modules.CreateModule">
+         <classes>
+             <class name="Modules.CreateModule"/>
+         </classes>
+     </test>
+     <test name="Вызов класса Modules.EditModule">
+         <classes>
+             <class name="Modules.EditModule"/>
+         </classes>
+     </test>
+     <test name="Вызов класса Modules.DeleteModule">
+         <classes>
+             <class name="Modules.DeleteModule"/>
+         </classes>
+     </test>
+     <test name="Вызов класса FilterAndSort.Filter">
+         <classes>
+             <class name="FilterAndSort.Filter"/>
+         </classes>
+     </test>
+     <test name="Вызов класса FilterAndSort.Sort">
+         <classes>
+             <class name="FilterAndSort.Sort"/>
+         </classes>
+     </test>-->
 </suite>

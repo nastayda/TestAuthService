@@ -1,5 +1,6 @@
 package Search;
 
+import HelpClass.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -13,7 +14,7 @@ import ru.yandex.qatools.allure.model.SeverityLevel;
 import java.util.List;
 
 
-public class SearchPolitics extends SearchAuth {
+public class SearchPolitics extends BaseClass {
     //Вариантов переопределения xpath нет, либо он оч сложный и малоиспользуемый
     // потом есть две альтернативы:
     // 1) Инициализировать объект класса SearchAuth со всеми веб-элементами, которые он содержит -> создавать несколько классов с одинаковым функционалом, но с разными веб-элементы
