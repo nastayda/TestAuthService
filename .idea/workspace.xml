@@ -2,7 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testng-services.xml" afterPath="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/0e447e5e-b976-4b50-a22a-469ee80fe0ec-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/14536a42-3389-4141-be2b-c3d405822151-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/16f0e86b-6cdf-451a-b4ac-c2cb2b2dd6d5-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/24eb5e09-22c8-48a5-b2f6-f7efde087c0f-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/27bba51a-b86d-4de7-b9fc-232beae1639b-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/2f0e4df4-5aeb-44f1-bae0-63b9545c0e89-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/31851a96-4527-4e9a-8708-c4103573f2a4-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/3408a96a-e0c1-46d4-9b62-24a9d0dcdb64-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/3643a632-62df-4f75-bcc7-62223494a9a9-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/38b2743a-d914-4684-a86f-d1c9b4222965-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/419453a7-9abf-470f-9d95-6e92f24481ca-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/45766ff2-a46e-4de4-9a72-b64f258267ce-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/474a4a7e-9bea-4da6-b1ff-448ff37ef67a-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/49964d21-d59d-49ca-b0a3-1e81e0780ab0-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/5c635008-0317-4f4d-aa1c-23067a7149bf-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/7ac2a878-7299-4601-9133-e75c91cb2118-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/7b9a31ff-3c1c-4d87-92b0-a0550d3f4a1c-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/85e4a32f-300e-49b3-946e-0760c4a7bc18-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/adf1acc5-9d93-4a8b-aeed-540ddd9545d0-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/b65b381d-60bf-4b82-8697-fd154c10bc13-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/b8a384c5-3e87-448c-956f-7d101588ce76-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/c724a782-e945-4d01-97bd-eb51365f8e77-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/debecb23-2089-4267-8483-c22a81d06329-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/e645bfed-988a-499b-bc40-c44bd03a9c90-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/e78599f6-fb8d-42f8-b382-5249d42c97f1-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/e85539dc-aec0-4c95-8c3d-222e46566e91-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/e85f04cf-8724-4836-aad8-942bd5fb1a02-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/f1304c31-69ae-46a4-913d-13c978c8e9a6-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/f6ae95d4-4481-4732-a80f-1985fb528e02-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/allure-results/f8550fec-3ab9-42b1-a61d-3470d73d8b25-testsuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/classes/Modules.CreateModule.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/classes/Modules.DeleteModule.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/classes/Modules.EditModule.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/classes/Politics.CreatePolitics.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/classes/Politics.DeletePolitics.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/classes/Politics.EditPolitics.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/classes/Users.CreateUser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/classes/Users.DeleteUser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/classes/Users.EditUser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/classes/Users.TestAuthorization.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/css/base-style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/js/report.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/packages/Modules.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/packages/Politics.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/testService/packages/Users.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/TEST-Modules.CreateModule.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/TEST-Modules.DeleteModule.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/TEST-Modules.EditModule.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/TEST-Politics.CreatePolitics.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/TEST-Politics.DeletePolitics.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/TEST-Politics.EditPolitics.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/TEST-Users.CreateUser.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/TEST-Users.DeleteUser.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/TEST-Users.EditUser.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/TEST-Users.TestAuthorization.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/binary/output.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/binary/output.bin.idx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/testService/binary/results.bin" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/fileContent/annotation-processors.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/fileContent/fileContent.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/jvmClassSignatures.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/jvmClassSignatures.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/HelpClass/BaseClass.class" afterPath="$PROJECT_DIR$/build/classes/test/HelpClass/BaseClass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/Modules/CreateModule.class" afterPath="$PROJECT_DIR$/build/classes/test/Modules/CreateModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/Modules/DeleteModule.class" afterPath="$PROJECT_DIR$/build/classes/test/Modules/DeleteModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/Modules/EditModule.class" afterPath="$PROJECT_DIR$/build/classes/test/Modules/EditModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/Politics/CreatePolitics.class" afterPath="$PROJECT_DIR$/build/classes/test/Politics/CreatePolitics.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/Politics/DeletePolitics.class" afterPath="$PROJECT_DIR$/build/classes/test/Politics/DeletePolitics.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/Politics/EditPolitics.class" afterPath="$PROJECT_DIR$/build/classes/test/Politics/EditPolitics.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/Users/CreateUser.class" afterPath="$PROJECT_DIR$/build/classes/test/Users/CreateUser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/Users/DeleteUser.class" afterPath="$PROJECT_DIR$/build/classes/test/Users/DeleteUser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/Users/EditUser.class" afterPath="$PROJECT_DIR$/build/classes/test/Users/EditUser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/Users/TestAuthorization.class" afterPath="$PROJECT_DIR$/build/classes/test/Users/TestAuthorization.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/test/testng-services.xml" afterPath="$PROJECT_DIR$/build/resources/test/testng-services.xml" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -42,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="627">
-              <caret line="55" column="50" lean-forward="true" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+              <caret line="55" column="50" lean-forward="false" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
               <folding>
                 <element signature="method#sendTextToTB#0;class#SearchAuth#0" expanded="false" />
                 <element signature="method#getCountRepeatedElementsFromList#0;class#SearchAuth#0" expanded="false" />
@@ -55,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <element signature="method#searchPolitic#0;class#SearchPolitics#0" expanded="false" />
                 <element signature="method#getCriteriaFromMenu#0;class#SearchPolitics#0" expanded="false" />
@@ -76,11 +157,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testng-auth.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestAuthorization.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateFileTestFunction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.897/CreateFileTestFunction.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,7 +211,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
-              <caret line="426" column="30" lean-forward="true" selection-start-line="426" selection-start-column="30" selection-end-line="426" selection-end-column="30" />
+              <caret line="426" column="30" lean-forward="false" selection-start-line="426" selection-start-column="30" selection-end-line="426" selection-end-column="30" />
               <folding>
                 <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
                 <element signature="method#setLogin#0;class#BaseClass#0" expanded="false" />
@@ -114,6 +235,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -280,6 +402,10 @@
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testAuth" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="classes" />
@@ -441,8 +567,8 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/Desktop/TestAuthService" value="0" />
-        <entry key="$PROJECT_DIR$" value="1516257958981" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="4067427500" />
+        <entry key="$PROJECT_DIR$" value="1516354567819" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="34186422" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -644,8 +770,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/TestAuthService/src/main/java/Auth.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BaseClass/Authorization.java" />
         <option value="$PROJECT_DIR$/src/test/java/BaseClass/WriteReadFromFile.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/WriteReadFromFile.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/Authorization.java" />
@@ -680,7 +804,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Politics/Elements.java" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAndSort.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/ConnectionHB.java" />
         <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/UserTable.java" />
@@ -695,6 +818,9 @@
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng-auth.fxml" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng-ath.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -859,13 +985,6 @@
             <path>
               <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="test-results" type="462c0819:PsiDirectoryNode" />
-              <item name="testService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -887,7 +1006,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="HelpClass" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
@@ -1263,7 +1389,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1279,7 +1404,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23507462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23507462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1337,15 +1462,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Auth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateUserNew.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/CreateNewUser.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/testPacage/TestAuthorization.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/testPacage/CreateUser.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/AuthService/NewUser.java" />
@@ -1609,14 +1725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -1644,14 +1752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Users/DeleteUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1671,7 +1771,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="426" column="30" lean-forward="true" selection-start-line="426" selection-start-column="30" selection-end-line="426" selection-end-column="30" />
+          <caret line="426" column="30" lean-forward="false" selection-start-line="426" selection-start-column="30" selection-end-line="426" selection-end-column="30" />
           <folding>
             <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
             <element signature="method#setLogin#0;class#BaseClass#0" expanded="false" />
@@ -1691,7 +1791,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
-          <caret line="55" column="50" lean-forward="true" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+          <caret line="55" column="50" lean-forward="false" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
           <folding>
             <element signature="method#sendTextToTB#0;class#SearchAuth#0" expanded="false" />
             <element signature="method#getCountRepeatedElementsFromList#0;class#SearchAuth#0" expanded="false" />
@@ -1702,7 +1802,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="method#searchPolitic#0;class#SearchPolitics#0" expanded="false" />
             <element signature="method#getCriteriaFromMenu#0;class#SearchPolitics#0" expanded="false" />
@@ -1712,10 +1812,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.897/CreateFileTestFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1516354640127" stop="1516354726268">
+    <name>Набор тестов для проверки работоспособности сервисов</name>
+    <test-cases>
+        <test-case start="1516354645912" stop="1516354725845" status="passed">
+            <name>applyFilterTest</name>
+            <title>Проверка фильтрации</title>
+            <steps>
+                <step start="1516354645912" stop="1516354725845" status="passed">
+                    <name>applyFilterTest</name>
+                    <title>Вызов фильтрации</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1516354645912" stop="1516354647463" status="passed">
+                            <name>login</name>
+                            <title>Ввод логина и пароля</title>
+                            <attachments/>
+                            <steps>
+<step start="1516354645913" stop="1516354646234" status="passed">
+    <name>enterLogin</name>
+    <title>Ввод логина</title>
+    <attachments/>
+    <steps/>
+</step>
+<step start="1516354646234" stop="1516354646500" status="passed">
+    <name>enterPassword</name>
+    <title>Ввод пароля</title>
+    <attachments/>
+    <steps/>
+</step>
+<step start="1516354646500" stop="1516354646719" status="passed">
+    <name>signInClick</name>
+    <title>Нажать на Войти</title>
+    <attachments/>
+    <steps/>
+</step>
+<step start="1516354646719" stop="1516354647463" status="passed">
+    <name>waitTable</name>
+    <title>Ждем пока появится таблица</title>
+    <attachments/>
+    <steps/>
+</step>
+                            </steps>
+                        </step>
+                        <step start="1516354648983" stop="1516354648992" status="passed">
+                            <name>checkCountInTAbleAfterAppyFilter</name>
+                            <title>Проверка количества по параметру Фамилия и значению Вороненков</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516354649885" stop="1516354649885" status="passed">
+                            <name>checkCountInTAbleAfterAppyFilter</name>
+                            <title>Проверка количества по параметру Имя и значению Имя админа</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516354650787" stop="1516354650787" status="passed">
+                            <name>checkCountInTAbleAfterAppyFilter</name>
+                            <title>Проверка количества по параметру Отчество и значению Алексеевич</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516354661865" stop="1516354661865" status="passed">
+                            <name>checkCountInTAbleAfterAppyFilter</name>
+                            <title>Проверка количества по параметру Логин и значению admin</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516354683156" stop="1516354683156" status="passed">
+                            <name>checkCountInTAbleAfterAppyFilter</name>
+                            <title>Проверка количества по параметру Телефон и значению Телефон админа</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516354704455" stop="1516354704455" status="passed">
+                            <name>checkCountInTAbleAfterAppyFilter</name>
+                            <title>Проверка количества по параметру Эл. почта и значению e-mail@ru.ru</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1516354725838" stop="1516354725838" status="passed">
+                            <name>checkCountInTAbleAfterAppyFilter</name>
+                            <title>Проверка количества по параметру Роль и значению Администратор</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>

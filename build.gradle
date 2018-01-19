@@ -28,6 +28,16 @@ task testService(type: Test){
     }
 }
 
+task testAuth(type: Test){
+    useTestNG{
+        suites 'src/test/resources/testng-auth.xml'
+    }
+}
+
 testService.doFirst {
+    jvmArgs "-javaagent:${configurations.agent.singleFile}"
+}
+
+testAuth.doFirst {
     jvmArgs "-javaagent:${configurations.agent.singleFile}"
 }

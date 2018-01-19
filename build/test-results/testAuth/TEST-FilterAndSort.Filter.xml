@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FilterAndSort.Filter" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-19T09:37:25" hostname="Danilkina-as" time="79.933">
+  <properties/>
+  <testcase name="applyFilterTest" classname="FilterAndSort.Filter" time="79.933"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1516354646157	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354646455	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354646718	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354647870	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354648633	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354648908	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354649223	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354649544	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354649791	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354650125	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354650528	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354650766	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354651024	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354651518	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354651776	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354662143	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354672806	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354673096	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354683399	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354694137	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354694399	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354704703	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354715513	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516354715767	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+]]></system-err>
+</testsuite>
