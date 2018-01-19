@@ -8,10 +8,7 @@ import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 import static org.jvnet.jaxb2_commons.lang.StringUtils.isEmpty;
 import static org.testng.AssertJUnit.assertEquals;
@@ -37,7 +34,7 @@ public class Sort extends BaseClass {
         login( );
         resizeWindow( 1920, 1080 );
         sortByAlphabet( );
-        softAssert.assertAll();
+        softAssert.assertAll( );
 
     }
 
@@ -52,18 +49,34 @@ public class Sort extends BaseClass {
             waitSomeMillisec( 1000 );
             //с какой колонки начинаем
             for (int k = i + 1; k < i + 2; k++) {
-                List<String> sortedByInterface = createSortedByInterfaceList( k );
+                ArrayList<String> sortedByInterface = createSortedByInterfaceList( k );
+                toLowercase( sortedByInterface );
                 ArrayList<String> sortedByRule = new ArrayList<>( sortedByInterface );
+                toLowercase(sortedByRule);
                 //сортировка по алфавиту
                 sortList( sortedByRule );
                 //реверсия т.к. тут нажат спан по убыванию
                 List<String> reverseOrder = Lists.reverse( sortedByRule );
+
+               /* System.out.println( "---------sortedByInterface" );
+                for (String item : sortedByInterface) {
+                    System.out.println( item );
+                }
+                System.out.println( "-----------sortedByRule" );
+                for (String item : sortedByRule) {
+                    System.out.println( item );
+                }
+                System.out.println( "--------------reverseOrder" );
+                for (String item : reverseOrder) {
+                    System.out.println( item );
+                }*/
                 softAssert.assertEquals( reverseOrder, sortedByInterface, "Проверка по убыванию провалилась." );
             }
             //По возрастанию
             upArrow.get( i ).click( );
             for (int k = i + 1; k < i + 2; k++) {
                 List<String> sortedByInterface = createSortedByInterfaceList( k );
+                toLowercase( sortedByInterface );
                 ArrayList<String> sortedByRule = new ArrayList<>( sortedByInterface );
                 //сортировка по алфавиту
                 sortList( sortedByRule );
@@ -72,8 +85,8 @@ public class Sort extends BaseClass {
         }
     }
 
-    public List<String> createSortedByInterfaceList( int k ) {
-        List<String> sortedByInterface = new ArrayList<>( );
+    public ArrayList<String> createSortedByInterfaceList( int k ) {
+        ArrayList<String> sortedByInterface = new ArrayList<>( );
         //какой конкретно эелемент брать
         for (int j = k; j < tableCol.size( ); j = j + tableCol.size( ) / tableRow.size( )) {
             if (!isEmpty( tableCol.get( j ).getText( ) )) {
@@ -81,5 +94,12 @@ public class Sort extends BaseClass {
             }
         }
         return sortedByInterface;
+    }
+
+    public static void toLowercase( List<String> strings ) {
+        ListIterator<String> iterator = strings.listIterator( );
+        while (iterator.hasNext( )) {
+            iterator.set( iterator.next( ).toLowerCase( ) );
+        }
     }
 }
