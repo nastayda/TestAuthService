@@ -92,21 +92,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditPolitics.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EditPolitics.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="445">
-              <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+              <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="340" column="20" lean-forward="false" selection-start-line="340" selection-start-column="20" selection-end-line="340" selection-end-column="20" />
+            <state relative-caret-position="189">
+              <caret line="358" column="37" lean-forward="false" selection-start-line="358" selection-start-column="37" selection-end-line="358" selection-end-column="37" />
               <folding>
                 <element signature="method#setLogin#0;class#BaseClass#0" expanded="false" />
                 <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
@@ -130,7 +130,6 @@
                 <element signature="method#setOrgName#0;class#BaseClass#0" expanded="false" />
                 <element signature="method#setOrgSubunit#0;class#BaseClass#0" expanded="false" />
                 <element signature="method#setOrgGroup#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#setServiceName#0;class#BaseClass#0" expanded="false" />
                 <element signature="method#setDescription#0;class#BaseClass#0" expanded="false" />
                 <element signature="method#setPoliticsName#0;class#BaseClass#0" expanded="false" />
                 <element signature="method#setMeaning#0;class#BaseClass#0" expanded="false" />
@@ -750,8 +749,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Users/DeleteUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
       </list>
     </option>
   </component>
@@ -1818,10 +1817,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="340" column="20" lean-forward="false" selection-start-line="340" selection-start-column="20" selection-end-line="340" selection-end-column="20" />
+        <state relative-caret-position="189">
+          <caret line="358" column="37" lean-forward="false" selection-start-line="358" selection-start-column="37" selection-end-line="358" selection-end-column="37" />
           <folding>
             <element signature="method#setLogin#0;class#BaseClass#0" expanded="false" />
             <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
@@ -1845,7 +1852,6 @@
             <element signature="method#setOrgName#0;class#BaseClass#0" expanded="false" />
             <element signature="method#setOrgSubunit#0;class#BaseClass#0" expanded="false" />
             <element signature="method#setOrgGroup#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setServiceName#0;class#BaseClass#0" expanded="false" />
             <element signature="method#setDescription#0;class#BaseClass#0" expanded="false" />
             <element signature="method#setPoliticsName#0;class#BaseClass#0" expanded="false" />
             <element signature="method#setMeaning#0;class#BaseClass#0" expanded="false" />
@@ -1856,14 +1862,6 @@
             <element signature="method#setKeyName#0;class#BaseClass#0" expanded="false" />
             <element signature="method#resizeWindow#0;class#BaseClass#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>

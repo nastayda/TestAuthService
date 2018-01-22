@@ -355,7 +355,9 @@ public class BaseClass {
 
         //заполнить объект
         menuItem.click();
+        waitSomeMillisec( 1000 );
         chooseServiceSetting.click();
+        waitSomeMillisec( 1000 );
         expandMenu.click();
         //serviceNameINPT.clear( );
         //serviceNameINPT.sendKeys( serviceName );
