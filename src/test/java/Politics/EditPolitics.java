@@ -31,6 +31,7 @@ public class EditPolitics extends BaseClass {
         //login( );
         PageFactory.initElements( wd, this );
         wd.navigate( ).refresh( );
+        resizeWindow( 1920, 2000 );
         goToPolicyPage( );
         goToLastPage( );
         String politicsName = "editPolitics" + LocalDateTime.now( ).toString( ).replace( ":", "_" );

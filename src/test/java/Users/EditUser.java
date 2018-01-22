@@ -35,6 +35,7 @@ public class EditUser extends BaseClass {
         //login( );
         PageFactory.initElements( wd, this );
         wd.navigate( ).refresh( );
+        resizeWindow( 1920, 2000 );
         String loginName = "editUser" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
         String[] dataForEdite = { loginName,
                 "test1",
