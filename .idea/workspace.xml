@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testng-services.xml" afterPath="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -82,22 +82,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="66" column="51" lean-forward="true" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+            <state relative-caret-position="1105">
+              <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditPolitics.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EditPolitics.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+            <state relative-caret-position="445">
+              <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="340" column="20" lean-forward="false" selection-start-line="340" selection-start-column="20" selection-end-line="340" selection-end-column="20" />
+              <folding>
+                <element signature="method#setLogin#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#login#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#goToLastPage#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#chosePolicy#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#waitSomeMillisec#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#waitUntilElementBeClickable#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#clickToSave#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setRole#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setPhoneNumber#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setEmail#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setMiddleName#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setFirstName#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setSurname#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setOrgType#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setOrgName#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setOrgSubunit#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setOrgGroup#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setServiceName#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setDescription#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setPoliticsName#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setMeaning#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#choseSign#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#choseParameter#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setAddress#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setName#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setKeyName#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#resizeWindow#0;class#BaseClass#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -691,7 +734,6 @@
         <option value="$PROJECT_DIR$/src/test/resources/testng-auth.fxml" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-ath.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/Filter.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/Sort.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/TestAuthorization.java" />
@@ -707,8 +749,9 @@
         <option value="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/DeleteUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
       </list>
     </option>
   </component>
@@ -1702,48 +1745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="427" column="19" lean-forward="false" selection-start-line="427" selection-start-column="19" selection-end-line="427" selection-end-column="19" />
-          <folding>
-            <element signature="method#setLogin#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#goToLastPage#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#chosePolicy#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#waitSomeMillisec#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#waitUntilElementBeClickable#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#clickToSave#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setRole#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setPhoneNumber#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setEmail#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setMiddleName#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setFirstName#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setSurname#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setOrgType#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setOrgName#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setOrgSubunit#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setOrgGroup#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#chooseSetting#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setServiceName#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setDescription#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setPoliticsName#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setMeaning#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#choseSign#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#choseParameter#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setAddress#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setName#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setKeyName#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#resizeWindow#0;class#BaseClass#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1809,18 +1810,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+        <state relative-caret-position="1105">
+          <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="66" column="51" lean-forward="true" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+        <state relative-caret-position="297">
+          <caret line="340" column="20" lean-forward="false" selection-start-line="340" selection-start-column="20" selection-end-line="340" selection-end-column="20" />
+          <folding>
+            <element signature="method#setLogin#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#goToLastPage#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#chosePolicy#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitSomeMillisec#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitUntilElementBeClickable#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#clickToSave#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setRole#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setPhoneNumber#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setEmail#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setMiddleName#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setFirstName#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setSurname#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setOrgType#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setOrgName#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setOrgSubunit#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setOrgGroup#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setServiceName#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setDescription#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setPoliticsName#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setMeaning#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#choseSign#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#choseParameter#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setAddress#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setName#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setKeyName#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#resizeWindow#0;class#BaseClass#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
           <folding />
         </state>
       </provider>

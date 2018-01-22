@@ -340,8 +340,11 @@ public class BaseClass {
     @Step("Выбрать настройку")
     public void chooseSetting( ) {
         menuItem.click( );
+        waitSomeMillisec( 1000 );
         chooseServiceSetting.click( );
+        waitSomeMillisec( 1000 );
         expandMenu.click( );
+        waitSomeMillisec( 1000 );
         policyDescriptionINPT.click( );
     }
     @Step("Заполнить название сервиса")
