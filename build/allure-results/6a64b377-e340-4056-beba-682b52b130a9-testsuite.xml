@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1516624880168" stop="1516624958216">
+    <name>Набор тестов для проверки работоспособности сервисов</name>
+    <test-cases>
+        <test-case start="1516624880168" stop="1516624958214" status="passed">
+            <name>applyFilterTest</name>
+            <title>Проверка фильтрации</title>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>

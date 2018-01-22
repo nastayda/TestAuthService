@@ -3,6 +3,7 @@ package SettingLogo;
 import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 
@@ -20,7 +21,8 @@ public class SettingLogo extends BaseClass {
 
     @Test
     public void setLogoUrl(){
-        login();
+       // login();
+        PageFactory.initElements(wd, this);
         goToChangeLogoUrlForm( );
         String textBefor = urlTB.getAttribute( "value" );
         String newUrl ="https://ya.ru/";

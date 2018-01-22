@@ -3,6 +3,7 @@ package Users;
 import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
@@ -30,7 +31,8 @@ public class EditUser extends BaseClass {
     @Test
     @Title("Редактирование пользователя")
     public void editUser( ) {
-        login( );
+        //login( );
+        PageFactory.initElements(wd, this);
         String loginName = "editUser" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
         String[] dataForEdite = { loginName,
                 "test1",

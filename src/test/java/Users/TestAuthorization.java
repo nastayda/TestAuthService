@@ -3,6 +3,7 @@ package Users;
 import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
@@ -14,10 +15,11 @@ public class TestAuthorization extends BaseClass {
     static WebElement table;
 
     @Title("Авторизация пользователя")
-    @Test(priority = 1)
+    @Test
     @Step("Вызов метода авторизации")
     public void TestAuthorization() {
-        login();
+        //login();
+        PageFactory.initElements(wd, this);
         //Завязываемся на отображение таблицы
         assertTrue(table.isEnabled());
     }

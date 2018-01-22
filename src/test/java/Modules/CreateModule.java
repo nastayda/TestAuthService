@@ -3,6 +3,7 @@ package Modules;
 import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
@@ -18,7 +19,8 @@ public class CreateModule extends BaseClass {
     @Test
     @Title("Создание модуля")
     public void createModule( ) {
-        login( );
+        //login( );
+        PageFactory.initElements(wd, this);
         goToPolicyPage( );
         String moduleName = "testModule" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
         String moduleKeyName = "testModuleKey" + LocalDateTime.now( ).toString( ).replace( ":", "_" );

@@ -8,6 +8,7 @@ import org.hibernate.SessionFactory;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Severity;
 import ru.yandex.qatools.allure.annotations.Step;
@@ -41,7 +42,8 @@ public class SearchAuth extends BaseClass {
     @Severity(SeverityLevel.CRITICAL)
     @Step("Вызов метода поиска")
     public void search( ) throws Exception {
-        login( );
+        //login( );
+        PageFactory.initElements(wd, this);
         getCriteriaFromMenu( );
         softAssert.assertAll( );
     }

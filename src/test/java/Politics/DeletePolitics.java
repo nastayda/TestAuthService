@@ -3,6 +3,7 @@ package Politics;
 import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import ru.yandex.qatools.allure.annotations.Step;
@@ -28,7 +29,8 @@ public class DeletePolitics extends BaseClass {
     @Test
     @Title("Удаление политики")
     public void deletePolitics( ) {
-        login( );
+        //login( );
+        PageFactory.initElements(wd, this);
         goToPolicyPage( );
         System.out.println(pagginationArrow.getText());
         int countBeforeFromEachPage = goToLastPage( );

@@ -4,6 +4,7 @@ import HelpClass.BaseClass;
 import com.google.common.collect.Lists;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
@@ -16,22 +17,23 @@ import static org.testng.AssertJUnit.assertEquals;
 public class Sort extends BaseClass {
     @FindBy(xpath = "//thead[@class='ant-table-thead']/tr/th/span/div/span[2]/i")
     //*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div/div/div[1]/table/thead/tr/th[2]/span/div/span[1]/i
-            List<WebElement> downArrow;
+    static List<WebElement> downArrow;
     @FindBy(xpath = "//*[@id=\"root\"]//table/thead/tr/th/span/div/span[1]/i")
-    List<WebElement> upArrow;
+    static List<WebElement> upArrow;
     @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr/td")
-    List<WebElement> tableCol;
+    static List<WebElement> tableCol;
     //*[@id="root"]//table/thead/tr/th
     @FindBy(xpath = "//*[@id=\"root\"]//table/thead/tr/th")
-    List<WebElement> filter;
+    static List<WebElement> filter;
     @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr")
-    List<WebElement> tableRow;
+    static List<WebElement> tableRow;
 
     @Title("Проверка сортировки")
     @Test
     @Step("Вызов метода сортировки")
     public void sort( ) {
-        login( );
+        //login( );
+        PageFactory.initElements(wd, this);
         resizeWindow( 1920, 1080 );
         sortByAlphabet( );
         softAssert.assertAll( );
@@ -52,7 +54,7 @@ public class Sort extends BaseClass {
                 ArrayList<String> sortedByInterface = createSortedByInterfaceList( k );
                 toLowercase( sortedByInterface );
                 ArrayList<String> sortedByRule = new ArrayList<>( sortedByInterface );
-                toLowercase(sortedByRule);
+                toLowercase( sortedByRule );
                 //сортировка по алфавиту
                 sortList( sortedByRule );
                 //реверсия т.к. тут нажат спан по убыванию

@@ -4,6 +4,7 @@ import HelpClass.BaseClass;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
@@ -22,7 +23,7 @@ public class Filter extends BaseClass {
     List<WebElement> headers;
     //*[@id="root"]/div/div[2]/div[2]/div/div[1]/div/div/div/div/div[1]/table/thead/tr/th
     @FindBy(xpath = "//thead[@class='ant-table-thead']/tr/th/span/i")
-    List<WebElement> filter;
+     List<WebElement> filter;
     //div[@class='ant-table-filter-dropdown']/ul/li[2]/label/span/input
     //*[@id="root"]/div/div[2]/div[2]/div/div[2]/div/div/div/ul/li[1]
     //*[@id="root"]/div/div[2]/div[2]/div/div[3]/div/div/div/ul/li[1]
@@ -44,7 +45,8 @@ public class Filter extends BaseClass {
     @Test
     @Step("Вызов фильтрации")
     public void applyFilterTest( ) {
-        login( );
+       // login( );
+        PageFactory.initElements(wd, this);
         resizeWindow( 1920, 1080 );
         //System.out.println(filter.size() );
         applyFilter( );

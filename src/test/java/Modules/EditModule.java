@@ -3,6 +3,7 @@ package Modules;
 import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
@@ -20,7 +21,8 @@ public class EditModule extends BaseClass {
     @Test
     @Title("Редактирование модуля")
     public void editModule( ) {
-        login( );
+        PageFactory.initElements(wd, this);
+        //login( );
         goToPolicyPage( );
         clickControlBtn( );
         selectedModule( );

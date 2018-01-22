@@ -8,8 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
 import ru.yandex.qatools.allure.annotations.Step;
 
@@ -89,8 +89,6 @@ public class BaseClass {
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[1]/ul/li[last()]")
     public static WebElement lastMenuItem;
 
-    public FirefoxDriver wd;
-    WriteReadFromFile readData;
 
     @FindBy(xpath = "//*[@id=\"root\"]/div/form/button")
     static WebElement buttonSignin;
@@ -122,7 +120,11 @@ public class BaseClass {
         loginNameTB.sendKeys( login );
     }
 
-    @BeforeMethod
+
+    public static FirefoxDriver wd;
+    public static WriteReadFromFile readData;
+
+    @BeforeSuite
     public void setUp( ) throws Exception {
         //Получить реальный путь к geco
         File gecoFile = new File( "src/help-files/geckodriver.exe" );
@@ -131,20 +133,19 @@ public class BaseClass {
         System.setProperty( "webdriver.gecko.driver", pathToGeckoDriver );
         DesiredCapabilities capabilities = DesiredCapabilities.firefox( );
         capabilities.setCapability( "marionette", true );
-
         //Получить путь к тестовым файлам
         File testFile = new File( "src/help-files/auth-info.txt" );
-
         wd = new FirefoxDriver( );
         wd.manage( ).timeouts( ).implicitlyWait( 10, TimeUnit.SECONDS );
         //C:\Users\danilkinaas\Documents\GitHub\TestAuthServiceNew\src\help-files\geckodriver.exe
         //Читаем из файла адрес сервера
         readData = new WriteReadFromFile( testFile.getAbsolutePath( ) );
         wd.get( readData.readFromFile( ).get( 0 ).substring( 1 ) );
+        login();
     }
 
     @Step("Ввод логина и пароля")
-    protected void login( ) {
+    public void login( ) {
         PageFactory.initElements(wd, this);
         String elementUserName = "userName";
         String elementPassword = "password";
@@ -158,7 +159,7 @@ public class BaseClass {
     }
 
     @Step("Ждем пока появится таблица")
-    private void waitTable( ) {
+    private static void waitTable( ) {
         WebDriverWait wait = new WebDriverWait( wd, 5 );
        // wait.until( ExpectedConditions.elementToBeClickable( By.xpath( "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[1]/table" ) ) );
         wait.until( ExpectedConditions.elementToBeClickable( table ) );
@@ -194,7 +195,7 @@ public class BaseClass {
         userNameTB.sendKeys( nameLogin );
     }
 
-    @AfterMethod
+    @AfterSuite
     public void tearDown( ) {
         wd.quit( );
     }
