@@ -67,7 +67,8 @@ public class EditPolitics extends BaseClass {
         setPoliticsName( massData[ 2 ] );
         setDescription( massData[ 3 ] );
         setServiceName( );
-        chooseSetting( );
+        //placeInForm.click();
+       // chooseSetting( );
         clickSave( );
     }
 }

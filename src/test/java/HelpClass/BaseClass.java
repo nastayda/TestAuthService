@@ -20,6 +20,9 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
 
+    ////div[2]/div/div[2]/div/div[1]/div[2]/form/div[4]/h2
+    @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[2]/form/div[4]/h2")
+    public static WebElement placeInForm;
     public SoftAssert softAssert = new SoftAssert( );
     //Всего элементов в таблице
     @FindBy(xpath = "//div/div[2]/div[2]/div/div/div/ul/li[1]")
@@ -56,6 +59,8 @@ public class BaseClass {
     static WebElement saveBTN;
     @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[3]/div/button[2]")
     static WebElement savePoliticsBTN;
+    //ul[@class='ant-select-tree']/li[1]/ul/li[3]/ul/li[1]/span[2]/span
+    //ul[@class='ant-select-tree']/li[1]/ul/li[3]/ul/li[1]/span[2]/span
     @FindBy(xpath = "//ul[@class='ant-select-tree']/li[1]/ul/li[2]/span[2]/span")
     static WebElement expandMenu;
     //*[@id="2"]/div[1]/div[2]/div/div/div/div
@@ -141,12 +146,12 @@ public class BaseClass {
         //Читаем из файла адрес сервера
         readData = new WriteReadFromFile( testFile.getAbsolutePath( ) );
         wd.get( readData.readFromFile( ).get( 0 ).substring( 1 ) );
-        login();
+        login( );
     }
 
     @Step("Ввод логина и пароля")
     public void login( ) {
-        PageFactory.initElements(wd, this);
+        PageFactory.initElements( wd, this );
         String elementUserName = "userName";
         String elementPassword = "password";
         String nameLogin = readData.readFromFile( ).get( 1 );
@@ -161,15 +166,15 @@ public class BaseClass {
     @Step("Ждем пока появится таблица")
     private static void waitTable( ) {
         WebDriverWait wait = new WebDriverWait( wd, 5 );
-       // wait.until( ExpectedConditions.elementToBeClickable( By.xpath( "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[1]/table" ) ) );
+        // wait.until( ExpectedConditions.elementToBeClickable( By.xpath( "//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[1]/table" ) ) );
         wait.until( ExpectedConditions.elementToBeClickable( table ) );
     }
 
     @Step("Нажать на Войти")
     private void signInClick( ) {
-       // PageLocators pL = new PageLocators( wd );
+        // PageLocators pL = new PageLocators( wd );
         //pL.getSignInButton( ).click( );
-        buttonSignin.click();
+        buttonSignin.click( );
         //wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button/span")).click();
     }
 
@@ -179,8 +184,9 @@ public class BaseClass {
         /*wd.findElement( By.xpath( "//*[@id=\"password\"]" ) ).click( );
         wd.findElement( By.xpath( "//*[@id=\"password\"]" ) ).clear( );
         wd.findElement( By.xpath( "//*[@id=\"password\"]" ) ).sendKeys( passwordLogin );*/
-        passwordTB.click();;
-        passwordTB.clear();
+        passwordTB.click( );
+        ;
+        passwordTB.clear( );
         passwordTB.sendKeys( passwordLogin );
     }
 
@@ -190,8 +196,8 @@ public class BaseClass {
         /*wd.findElement( By.xpath( "//*[@id=\"userName\"]" ) ).click( );
         wd.findElement( By.xpath( "//*[@id=\"userName\"]" ) ).clear( );
         wd.findElement( By.xpath( "//*[@id=\"userName\"]" ) ).sendKeys( nameLogin );*/
-        userNameTB.click();
-        userNameTB.clear();
+        userNameTB.click( );
+        userNameTB.clear( );
         userNameTB.sendKeys( nameLogin );
     }
 
@@ -202,12 +208,12 @@ public class BaseClass {
 
     @Step("Перейти на последнюю страницу")
     protected int goToLastPage( ) {
-        int k=countRowsOnEachPage.size();
+        int k = countRowsOnEachPage.size( );
         //Классно! если только не 100500 страниц надо будет перелистывать....
         if (pagginationArrow.getAttribute( "aria-disabled" ) != null) {
             while (pagginationArrow.getAttribute( "aria-disabled" ).equals( "false" )) {
                 pagginationArrow.click( );
-                k+=countRowsOnEachPage.size();
+                k += countRowsOnEachPage.size( );
             }
         }
         return k;
@@ -258,68 +264,77 @@ public class BaseClass {
     @Step(" Сохранине")
     public void clickToSave( ) {
         waitUntilElementBeClickable( saveBTN );
-        saveBTN.click();
+        saveBTN.click( );
     }
+
     @Step(" Ввод роли {0}")
     public void setRole( String role ) {
         roleTB.click( );
         //roleTB.clear( );
-        roleTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "" );
+        roleTB.sendKeys( Keys.chord( Keys.CONTROL, "a" ), "" );
         roleTB.sendKeys( role );
     }
+
     @Step(" Ввод номера телефона {0}")
     public void setPhoneNumber( String phoneNumber ) {
         phoneNumberTB.click( );
         //phoneNumberTB.clear( );
-        phoneNumberTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
+        phoneNumberTB.sendKeys( Keys.chord( Keys.CONTROL, "a" ), "" );
         phoneNumberTB.sendKeys( phoneNumber );
     }
+
     @Step(" Ввод email {0}")
     public void setEmail( String email ) {
         emailTB.click( );
         //emailTB.clear( );
-        emailTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
-        emailTB.sendKeys( email);
+        emailTB.sendKeys( Keys.chord( Keys.CONTROL, "a" ), "" );
+        emailTB.sendKeys( email );
     }
+
     @Step(" Ввод отчества {0}")
     public void setMiddleName( String middleName ) {
         middleNameTB.click( );
         //middleNameTB.clear( );
-        middleNameTB.sendKeys(  Keys.chord(Keys.CONTROL, "a"), "");
+        middleNameTB.sendKeys( Keys.chord( Keys.CONTROL, "a" ), "" );
         middleNameTB.sendKeys( middleName );
     }
+
     @Step(" Ввод имени {0}")
     public void setFirstName( String firstName ) {
         firstNameTB.click( );
         //firstNameTB.clear( );
-        firstNameTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
+        firstNameTB.sendKeys( Keys.chord( Keys.CONTROL, "a" ), "" );
         firstNameTB.sendKeys( firstName );
     }
+
     @Step(" Ввод фамилии {0}")
     public void setSurname( String surname ) {
         lastNameTB.click( );
-        lastNameTB.sendKeys( Keys.chord(Keys.CONTROL, "a"),"" );
+        lastNameTB.sendKeys( Keys.chord( Keys.CONTROL, "a" ), "" );
         //lastNameTB.clear( );
         lastNameTB.sendKeys( surname );
     }
+
     @Step(" Ввод типа организации {0}")
     public void setOrgType( String orgType ) {
         orgTypeTB.click( );
-        orgTypeTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
+        orgTypeTB.sendKeys( Keys.chord( Keys.CONTROL, "a" ), "" );
         //lastNameTB.clear( );
         orgTypeTB.sendKeys( orgType );
     }
+
     @Step(" Ввод названия организации {0}")
     public void setOrgName( String orgName ) {
         orgNameTB.click( );
-        orgNameTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
+        orgNameTB.sendKeys( Keys.chord( Keys.CONTROL, "a" ), "" );
         //lastNameTB.clear( );
         orgNameTB.sendKeys( orgName );
     }
+
     @Step(" Ввод подразделения организации {0}")
     public void setOrgSubunit( String orgSubunit ) {
         orgSubunitTB.click( );
-        orgSubunitTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
+        orgSubunitTB.sendKeys( Keys.chord( Keys.CONTROL, "a" ), "" );
         //lastNameTB.clear( );
         orgSubunitTB.sendKeys( orgSubunit );
     }
@@ -327,7 +342,7 @@ public class BaseClass {
     @Step(" Ввод группы {0}")
     public void setOrgGroup( String orgGroup ) {
         orgGroupTB.click( );
-        orgGroupTB.sendKeys( Keys.chord(Keys.CONTROL, "a"), "");
+        orgGroupTB.sendKeys( Keys.chord( Keys.CONTROL, "a" ), "" );
         //lastNameTB.clear( );
         orgGroupTB.sendKeys( orgGroup );
     }
@@ -337,60 +352,71 @@ public class BaseClass {
     public void clickSave( ) {
         savePoliticsBTN.click( );
     }
+
     @Step("Выбрать настройку")
     public void chooseSetting( ) {
         menuItem.click( );
-        waitSomeMillisec( 1000 );
+        //waitSomeMillisec( 1000 );
         chooseServiceSetting.click( );
         waitSomeMillisec( 1000 );
         expandMenu.click( );
         waitSomeMillisec( 1000 );
         policyDescriptionINPT.click( );
     }
+
     @Step("Заполнить название сервиса")
-    public void setServiceName(  ) {
+    public void setServiceName( ) {
         //заполнить модуль
         serviceNameINPT.click( );
-        modulDropMenu.click();
+        modulDropMenu.click( );
 
         //заполнить объект
-        menuItem.click();
+        menuItem.click( );
         waitSomeMillisec( 1000 );
-        chooseServiceSetting.click();
+        chooseServiceSetting.click( );
         waitSomeMillisec( 1000 );
-        expandMenu.click();
+        expandMenu.click( );
+        waitSomeMillisec( 1000 );
+        placeInForm.click( );
+        menuItem.click( );
+        // waitSomeMillisec( 1000 );
         //serviceNameINPT.clear( );
         //serviceNameINPT.sendKeys( serviceName );
 
         //wd.findElement(By.id("serviceName")).click();
-       // wd.findElement(By.cssSelector("li.ant-select-dropdown-menu-item-active.ant-select-dropdown-menu-item")).click();
+        // wd.findElement(By.cssSelector("li.ant-select-dropdown-menu-item-active.ant-select-dropdown-menu-item")).click();
 
         //wd.findElement(By.cssSelector("ul.ant-select-selection__rendered")).click();
         //wd.findElement(By.cssSelector("span.ant-select-tree-switcher.ant-select-tree-switcher_close")).click();
         //wd.findElement(By.xpath("//ul[@class='ant-select-tree']/li[1]/ul/li[2]/span[2]/span")).click();
     }
+
     @Step("Заполнить описание {0}")
     public void setDescription( String decription ) {
         policyDescriptionINPT.click( );
         policyDescriptionINPT.clear( );
         policyDescriptionINPT.sendKeys( decription );
     }
+
     @Step("Заполнить название политики {0}")
     public void setPoliticsName( String politicsName ) {
         policyNameINPT.click( );
         policyNameINPT.clear( );
         policyNameINPT.sendKeys( politicsName );
     }
+
     @Step("Установить значение {0}")
     public void setMeaning( String meaning, WebElement valueINPT ) {
         valueINPT.click( );
         valueINPT.sendKeys( meaning );
     }
+
     @Step("Выбрать знак")
     public void choseSign( ) {
         dropdownMenuSign.click( );
         ( (JavascriptExecutor) wd ).executeScript( "arguments[0].click();", elementSign );
     }
+
     @Step("Выбрать параметр {0}")
     public void choseParameter( String parameter, WebElement parametrINPT ) {
         parametrINPT.click( );
@@ -403,24 +429,28 @@ public class BaseClass {
     public void clickToSaveBtn( ) {
         saveModuleBTN.click( );
     }
+
     @Step(" Ввод адреса {0}")
     public void setAddress( String address ) {
         addressINPT.click( );
         addressINPT.clear( );
         addressINPT.sendKeys( address );
     }
+
     @Step(" Ввод названия {0}")
     public void setName( String name ) {
         nameModuleINPT.click( );
         nameModuleINPT.clear( );
         nameModuleINPT.sendKeys( name );
     }
+
     @Step(" Ввод ключевого названия {0}")
     public void setKeyName( String keyName ) {
         keyNameModuleINPT.click( );
         keyNameModuleINPT.clear( );
         keyNameModuleINPT.sendKeys( keyName );
     }
+
     public void clickControlBtn( ) {
         controlModuleBTN.click( );
     }
