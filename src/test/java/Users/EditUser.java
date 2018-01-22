@@ -18,6 +18,7 @@ public class EditUser extends BaseClass {
     static List<WebElement> tableColums;
 
     //*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[8]/td[5]
+    //*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[11]/td[4]
     @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr[last()]/td[5]")
     static WebElement userLoginRow;
 
@@ -69,9 +70,12 @@ public class EditUser extends BaseClass {
 
     @Step("Редактирвоание пользователя")
     private void editUserToEdited( String[] dataForEdit ) {
+       waitSomeMillisec( 1000 );
         resizeAreaWithTable( "//*[@id=\"root\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]" );
+        waitSomeMillisec( 1000 );
         userLoginRow.click( );
         System.out.println( userLoginRow.getText( ) );
+        waitSomeMillisec( 1000 );
         editBTN.click( );
         setLogin( dataForEdit[ 0 ] );
         setNewPasswordTB( dataForEdit[ 1 ] );
