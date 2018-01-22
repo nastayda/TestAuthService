@@ -28,7 +28,7 @@
         </classes>
     </test>
 
-<!--    <test name="Вызов класса Politics.CreatePolitics">
+    <test name="Вызов класса Politics.CreatePolitics">
         <classes>
             <class name="Politics.CreatePolitics"/>
         </classes>
@@ -73,5 +73,5 @@
         <classes>
             <class name="FilterAndSort.Sort"/>
         </classes>
-    </test>-->
+    </test>
 </suite>
