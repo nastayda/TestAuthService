@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" afterPath="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Users/EditUser.java" afterPath="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
@@ -72,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditUser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EditUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Users/EditUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="77" column="33" lean-forward="false" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+            <state relative-caret-position="326">
+              <caret line="72" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditPolitics.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EditPolitics.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            <state relative-caret-position="326">
+              <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -706,9 +707,9 @@
         <option value="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/DeleteUser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
       </list>
     </option>
   </component>
@@ -1785,14 +1786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -1819,8 +1812,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Users/EditUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="77" column="33" lean-forward="false" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+        <state relative-caret-position="326">
+          <caret line="72" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -70,7 +70,7 @@ public class EditUser extends BaseClass {
 
     @Step("Редактирвоание пользователя")
     private void editUserToEdited( String[] dataForEdit ) {
-       waitSomeMillisec( 1000 );
+        waitSomeMillisec( 1000 );
         resizeAreaWithTable( "//*[@id=\"root\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]" );
         waitSomeMillisec( 1000 );
         userLoginRow.click( );
