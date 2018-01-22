@@ -33,7 +33,8 @@ public class EditUser extends BaseClass {
     @Title("Редактирование пользователя")
     public void editUser( ) {
         //login( );
-        PageFactory.initElements(wd, this);
+        PageFactory.initElements( wd, this );
+        wd.navigate( ).refresh( );
         String loginName = "editUser" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
         String[] dataForEdite = { loginName,
                 "test1",
@@ -69,7 +70,7 @@ public class EditUser extends BaseClass {
     private void editUserToEdited( String[] dataForEdit ) {
         resizeAreaWithTable( "//*[@id=\"root\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]" );
         userLoginRow.click( );
-        System.out.println(userLoginRow.getText());
+        System.out.println( userLoginRow.getText( ) );
         editBTN.click( );
         setLogin( dataForEdit[ 0 ] );
         setNewPasswordTB( dataForEdit[ 1 ] );

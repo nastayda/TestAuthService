@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Modules/CreateModule.class" afterPath="$PROJECT_DIR$/out/test/classes/Modules/CreateModule.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Modules/DeleteModule.class" afterPath="$PROJECT_DIR$/out/test/classes/Modules/DeleteModule.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Modules/EditModule.class" afterPath="$PROJECT_DIR$/out/test/classes/Modules/EditModule.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Politics/CreatePolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/Politics/CreatePolitics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Politics/DeletePolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/Politics/DeletePolitics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Politics/EditPolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/Politics/EditPolitics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Search/SearchAuth.class" afterPath="$PROJECT_DIR$/out/test/classes/Search/SearchAuth.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Search/SearchPolitics.class" afterPath="$PROJECT_DIR$/out/test/classes/Search/SearchPolitics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/SettingLogo/SettingLogo.class" afterPath="$PROJECT_DIR$/out/test/classes/SettingLogo/SettingLogo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Users/CreateUser.class" afterPath="$PROJECT_DIR$/out/test/classes/Users/CreateUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Users/DeleteUser.class" afterPath="$PROJECT_DIR$/out/test/classes/Users/DeleteUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/Users/EditUser.class" afterPath="$PROJECT_DIR$/out/test/classes/Users/EditUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Users/DeleteUser.java" afterPath="$PROJECT_DIR$/src/test/java/Users/DeleteUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" afterPath="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Users/EditUser.java" afterPath="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
@@ -85,11 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditUser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EditUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Users/EditUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+            <state relative-caret-position="122">
+              <caret line="36" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditPolitics.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="32" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -695,13 +693,13 @@
         <option value="$PROJECT_DIR$/src/test/java/Modules/EditModule.java" />
         <option value="$PROJECT_DIR$/src/test/java/Politics/CreatePolitics.java" />
         <option value="$PROJECT_DIR$/src/test/java/Politics/DeletePolitics.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchAuth.java" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java" />
         <option value="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/CreateUser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Users/DeleteUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Users/EditUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java" />
       </list>
     </option>
   </component>
@@ -866,6 +864,13 @@
             <path>
               <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="test-results" type="462c0819:PsiDirectoryNode" />
+              <item name="testAuth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -933,6 +938,12 @@
               <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="allure-results" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -953,8 +964,8 @@
       <recent name="HelpClass" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\danilkinaas\Documents\GitHub\TestAuthServiceNew\src\test\resources" />
       <recent name="C:\Users\danilkinaas\Documents\GitHub\TestAuthServiceNew\build\allure-results" />
+      <recent name="C:\Users\danilkinaas\Documents\GitHub\TestAuthServiceNew\src\test\resources" />
       <recent name="C:\Users\danilkinaas\Documents\GitHub\TestAuthServiceNew\src\test" />
       <recent name="C:\Users\danilkinaas\Documents\GitHub\TestAuthServiceNew\src\test\java\testPacage" />
       <recent name="C:\Users\danilkinaas\Documents\GitHub\TestAuthService\src\help-files" />
@@ -1367,7 +1378,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Users/EditUser.java</url>
-          <line>36</line>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="125" />
         </line-breakpoint>
@@ -1385,7 +1396,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Users/EditUser.java</url>
-          <line>70</line>
+          <line>71</line>
           <properties />
           <option name="timeStamp" value="161" />
         </line-breakpoint>
@@ -1428,13 +1439,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/allure.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/allure-results/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1708,14 +1712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="649">
@@ -1807,10 +1803,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build/allure-results/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Users/EditUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        <state relative-caret-position="122">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Politics/EditPolitics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="32" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -29,7 +29,8 @@ public class EditPolitics extends BaseClass {
     @Title("Редактирование политики")
     public void editPolitics( ) {
         //login( );
-        PageFactory.initElements(wd, this);
+        PageFactory.initElements( wd, this );
+        wd.navigate( ).refresh( );
         goToPolicyPage( );
         goToLastPage( );
         String politicsName = "editPolitics" + LocalDateTime.now( ).toString( ).replace( ":", "_" );
