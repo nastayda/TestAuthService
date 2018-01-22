@@ -23,8 +23,9 @@ public class EditUser extends BaseClass {
 
     @FindBy(xpath = "//*[@id=\"root\"]/div/div[1]/div/div[1]/div/div[2]/span[3]/button")
     static WebElement editBTN;
-
-    @FindBy(xpath = "//div[2]/div/div[2]/div/div[1]/div[2]/form/div[2]/div[2]/div/input")
+    //div[@class='ant-modal-body']/form/div[2]/div[2]/div/input
+    ////div[2]/div/div[2]/div/div[1]/div[2]/form/div[2]/div[2]/div/input
+    @FindBy(xpath = "//div[@class='ant-modal-body']/form/div[2]/div[2]/div/input")
     static WebElement newPasswordTB;
 //*[@id="root"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]
 

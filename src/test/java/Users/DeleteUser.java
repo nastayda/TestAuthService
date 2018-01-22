@@ -20,6 +20,7 @@ public class DeleteUser extends BaseClass {
     static WebElement checkB;
     @FindBy(xpath = "//table/tbody/tr[last()]/td[5]")
     static WebElement userLoginT;
+                      //*[@id="root"]/div/div[1]/div/div[1]/div/div[2]/div/span/button
     @FindBy(xpath = "//*[@id=\"root\"]/div/div[1]/div/div[1]/div/div[2]/div/span/button")
     static WebElement deleteBTN;
 
@@ -31,6 +32,7 @@ public class DeleteUser extends BaseClass {
     public void deleteUser( ) {
         //login( );
         PageFactory.initElements(wd, this);
+        resizeWindow( 1920, 2080 );
         int countRowsBefore = getCountRows( );
         int countBeforeFromEachPage = goToLastPage( );
         choseUserForDeletion( );
@@ -53,7 +55,7 @@ public class DeleteUser extends BaseClass {
 
     @Step("Получить имя пользователя")
     public void choseUserForDeletion( ) {
-        if (!checkB.isSelected( ) & ( userLoginT.getText( ).contains( "testUser" + LocalDateTime.now( ).getYear( ) ) ||
+        if (!checkB.isSelected( ) & ( userLoginT.getText( ).contains( "TestUser" + LocalDateTime.now( ).getYear( ) ) ||
                 userLoginT.getText( ).contains( "editUser" + LocalDateTime.now( ).getYear( ) ) )) {
             checkB.click( );
         }
