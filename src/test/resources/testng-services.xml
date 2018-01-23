@@ -2,7 +2,7 @@
 
 <suite name="Набор тестов для проверки работоспособности сервисов" verbose="1">
 
-  <!--  <test name="Вызов класса User.TestAuthorization">
+    <test name="Вызов класса User.TestAuthorization">
         <classes>
             <class name="Users.TestAuthorization"/>
         </classes>
@@ -73,7 +73,7 @@
         <classes>
             <class name="FilterAndSort.Sort"/>
         </classes>
-    </test>-->
+    </test>
     <test name="Вызов класса SettingLogo.SettingLogo">
         <classes>
             <class name="SettingLogo.SettingLogo"/>
