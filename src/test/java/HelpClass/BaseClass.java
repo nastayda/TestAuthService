@@ -152,7 +152,7 @@ public class BaseClass {
         readData = new WriteReadFromFile( testFile.getAbsolutePath( ) );
         wd.get( readData.readFromFile( ).get( 0 ).substring( 1 ) );
         login( );
-       // context.getAttribute(  );
+        context.setAttribute( "app", BaseClass.this);
     }
 
     @Step("Ввод логина и пароля")

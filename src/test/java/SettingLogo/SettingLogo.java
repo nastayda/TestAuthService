@@ -63,8 +63,6 @@ public class SettingLogo extends BaseClass {
         body.click();
     }
 
-
-
     @Step("Прейти по изменненому URL")
     public void goToChangeLogoUrlForm( ) {
         settingBTN.click( );
