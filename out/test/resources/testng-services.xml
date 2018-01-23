@@ -74,4 +74,9 @@
             <class name="FilterAndSort.Sort"/>
         </classes>
     </test>
+    <test name="Вызов класса SettingLogo.SettingLogo">
+        <classes>
+            <class name="SettingLogo.SettingLogo"/>
+        </classes>
+    </test>
 </suite>
