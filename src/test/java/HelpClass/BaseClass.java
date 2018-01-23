@@ -1,6 +1,7 @@
 package HelpClass;
 
 import Politics.DeletePolitics;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -8,16 +9,20 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.asserts.SoftAssert;
 import ru.yandex.qatools.allure.annotations.Step;
 
 import java.io.File;
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+@Listeners(MyTestListener.class)
 public class BaseClass {
 
     ////div[2]/div/div[2]/div/div[1]/div[2]/form/div[4]/h2
@@ -130,7 +135,7 @@ public class BaseClass {
     public static WriteReadFromFile readData;
 
     @BeforeSuite
-    public void setUp( ) throws Exception {
+    public void setUp( ITestContext context ) throws Exception {
         //Получить реальный путь к geco
         File gecoFile = new File( "src/help-files/geckodriver.exe" );
         String pathToGeckoDriver = gecoFile.getAbsolutePath( );
@@ -147,6 +152,7 @@ public class BaseClass {
         readData = new WriteReadFromFile( testFile.getAbsolutePath( ) );
         wd.get( readData.readFromFile( ).get( 0 ).substring( 1 ) );
         login( );
+       // context.getAttribute(  );
     }
 
     @Step("Ввод логина и пароля")
@@ -465,5 +471,13 @@ public class BaseClass {
         ( (JavascriptExecutor) wd ).executeScript( "arguments[0].setAttribute('style', 'max-height: 4205px;')", target );
         //Нажать на выбранный пункт
         target.click( );
+    }
+
+    public byte[] createSkreenshot( ) throws IOException {
+      return  ((TakesScreenshot)wd).getScreenshotAs( OutputType.BYTES);
+       // File scrFile = ((TakesScreenshot)wd).getScreenshotAs( OutputType.FILE);
+// Now you can do whatever you need to do with it, for example copy somewhere
+       // FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));
+
     }
 }

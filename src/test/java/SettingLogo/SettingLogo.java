@@ -63,12 +63,7 @@ public class SettingLogo extends BaseClass {
         body.click();
     }
 
-    public void createSkreenshot( ) throws IOException {
-        File scrFile = ((TakesScreenshot)wd).getScreenshotAs( OutputType.FILE);
-// Now you can do whatever you need to do with it, for example copy somewhere
-        FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));
 
-    }
 
     @Step("Прейти по изменненому URL")
     public void goToChangeLogoUrlForm( ) {
