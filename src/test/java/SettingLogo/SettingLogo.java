@@ -31,6 +31,7 @@ public class SettingLogo extends BaseClass {
     public void setLogoUrl( ) throws IOException {
         // login();
         PageFactory.initElements( wd, this );
+        wd.get( "http://vm-auth-dev.ursip.ru/auth/admin" );
         goToChangeLogoUrlForm( );
         String textBefore = urlTB.getAttribute( "value" );
         String newUrl = "https://ya.ru/";

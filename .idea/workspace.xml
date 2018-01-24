@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testng-services.xml" afterPath="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" afterPath="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -68,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
@@ -78,15 +78,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingLogo.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SettingLogo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="61" column="22" lean-forward="true" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+            <state relative-caret-position="190">
+              <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1814#1815#0" expanded="true" />
-                <element signature="e#1847#1848#0" expanded="true" />
+                <element signature="e#1874#1875#0" expanded="true" />
+                <element signature="e#1907#1908#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -689,8 +689,8 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/MyTestListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" />
       </list>
     </option>
   </component>
@@ -1297,7 +1297,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java</url>
-          <line>33</line>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="119" />
         </line-breakpoint>
@@ -1375,7 +1375,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java</url>
-          <line>50</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="177" />
         </line-breakpoint>
@@ -1741,18 +1741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="61" column="22" lean-forward="true" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1814#1815#0" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/help-files/auth-info.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1766,6 +1754,18 @@
         <state relative-caret-position="343">
           <caret line="75" column="11" lean-forward="false" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1874#1875#0" expanded="true" />
+            <element signature="e#1907#1908#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
