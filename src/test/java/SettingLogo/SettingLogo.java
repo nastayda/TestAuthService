@@ -58,7 +58,7 @@ public class SettingLogo extends BaseClass {
         urlTB.sendKeys( url );
         saveBTN.click( );
         waitSomeMillisec( 2000 );
-        createSkreenshot( );
+        //createSkreenshot( );
         body.click( );
     }
 
