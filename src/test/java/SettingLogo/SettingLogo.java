@@ -1,17 +1,13 @@
 package SettingLogo;
 
 import HelpClass.BaseClass;
-//import com.sun.jna.platform.FileUtils;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
-import java.io.File;
 import java.io.IOException;
 
 import static org.testng.Assert.assertEquals;
@@ -31,20 +27,23 @@ public class SettingLogo extends BaseClass {
     WebElement body;
 
     @Test
+    @Title("Проверка установки новой ссылки на логотип")
     public void setLogoUrl( ) throws IOException {
         // login();
         PageFactory.initElements( wd, this );
         goToChangeLogoUrlForm( );
-        String textBefor = urlTB.getAttribute( "value" );
+        String textBefore = urlTB.getAttribute( "value" );
         String newUrl = "https://ya.ru/";
         saveNewUrl( newUrl );
         waitSomeMillisec( 2000 );
         goToLogoPage( );
         assertEquals( wd.getCurrentUrl( ).toString( ), newUrl, "URL не был изменен. " );
-        //Change to the first state
-        wd.navigate( ).back( );
+        //Back to the first state
+        wd.get( "http://vm-auth-dev.ursip.ru/auth/admin" );
         goToChangeLogoUrlForm( );
-        saveNewUrl( textBefor );
+        if (!textBefore.equals( urlTB.getAttribute( "value" ) )) {
+            saveNewUrl( textBefore );
+        }
     }
 
     @Step("Переход на страницу с логотипом")
@@ -60,7 +59,7 @@ public class SettingLogo extends BaseClass {
         saveBTN.click( );
         waitSomeMillisec( 2000 );
         createSkreenshot( );
-        body.click();
+        body.click( );
     }
 
     @Step("Прейти по изменненому URL")

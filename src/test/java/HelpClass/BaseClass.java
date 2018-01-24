@@ -144,6 +144,12 @@ public class BaseClass {
         DesiredCapabilities capabilities = DesiredCapabilities.firefox( );
         capabilities.setCapability( "marionette", true );
         //Получить путь к тестовым файлам
+        goToAuthPage( );
+        login( );
+        context.setAttribute( "app", BaseClass.this);
+    }
+
+    public void goToAuthPage( ) {
         File testFile = new File( "src/help-files/auth-info.txt" );
         wd = new FirefoxDriver( );
         wd.manage( ).timeouts( ).implicitlyWait( 10, TimeUnit.SECONDS );
@@ -151,8 +157,6 @@ public class BaseClass {
         //Читаем из файла адрес сервера
         readData = new WriteReadFromFile( testFile.getAbsolutePath( ) );
         wd.get( readData.readFromFile( ).get( 0 ).substring( 1 ) );
-        login( );
-        context.setAttribute( "app", BaseClass.this);
     }
 
     @Step("Ввод логина и пароля")
