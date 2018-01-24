@@ -46,6 +46,7 @@ public class EditModule extends BaseClass {
 
     @Step("Выбрать модуль для редактирования")
     public boolean selectedModule( ) {
+        waitSomeMillisec( 2000 );
         if (rowNameModuleTD.getText( ).contains( "testModule" )) {
             rowNameModuleTD.click( );
             return true;
