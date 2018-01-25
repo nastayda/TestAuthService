@@ -78,4 +78,5 @@
             <class name="SettingLogo.SettingLogo"/>
         </classes>
     </test>
+    
 </suite>
