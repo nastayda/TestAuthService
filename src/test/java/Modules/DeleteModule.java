@@ -60,7 +60,8 @@ public class DeleteModule extends BaseClass {
     @Step("Выбрать модуль для удаления")
     public boolean selectedModule( ) {
         if (rowNameModuleTD.getText( ).contains( "testModule" )||rowNameModuleTD.getText( ).contains( "editModule" )) {
-            rowNameModuleTD.click( );
+            //rowNameModuleTD.click( );
+            clickWithExpects( rowNameModuleTD );
             return true;
         } else return false;
     }
@@ -68,12 +69,15 @@ public class DeleteModule extends BaseClass {
     @Step("Удалить модуль")
     public void clickDeleteBtn( boolean flag ) {
         if (flag) {
-            deleteBTN.click( );
-            confirmDeletionBTN.click( );
+            //deleteBTN.click( );
+            clickWithExpects( deleteBTN );
+            //confirmDeletionBTN.click( );
+            clickWithExpects( confirmDeletionBTN );
         }
     }
     @Step("Нажать на кнопку Управление модулями")
     public void clickControlModule( ) {
-        controlModuleBTN.click( );
+        //controlModuleBTN.click( );
+        clickWithExpects( controlModuleBTN );
     }
 }

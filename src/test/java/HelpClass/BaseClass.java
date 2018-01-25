@@ -98,7 +98,6 @@ public class BaseClass {
     @FindBy(xpath = "//*[@id=\"authorization\"]/div/div[1]/ul/li[last()]")
     public static WebElement lastMenuItem;
 
-
     @FindBy(xpath = "//*[@id=\"root\"]/div/form/button")
     static WebElement buttonSignin;
     @FindBy(id = "password")
@@ -125,6 +124,7 @@ public class BaseClass {
         }
     }
 
+    //Ждем пока элемент появится в течение 5 секунд
     public void clickWithExpects( WebElement element ) {
         WebDriverWait wait = new WebDriverWait( wd, 5 );
         wait.until( ExpectedConditions.elementToBeClickable( element ) );
@@ -132,7 +132,7 @@ public class BaseClass {
     }
 
     @Step(" Ввод логина {0}")
-    public static void setLogin( String login ) {
+    public void setLogin( String login ) {
         loginNameTB.clear( );
         loginNameTB.clear( );
         loginNameTB.sendKeys( login );

@@ -33,7 +33,6 @@
             <class name="Politics.CreatePolitics"/>
         </classes>
     </test>
-
     <test name="Вызов класса Search.SearchPolitics">
         <classes>
             <class name="Search.SearchPolitics"/>
@@ -79,4 +78,5 @@
             <class name="SettingLogo.SettingLogo"/>
         </classes>
     </test>
+
 </suite>

@@ -70,6 +70,7 @@ public class CreateUser extends BaseClass {
     }
 
     public void clickAddBtn( ) {
-      buttonAddBTN.click();
+      //buttonAddBTN.click();
+        clickWithExpects( buttonAddBTN );
     }
 }
