@@ -61,19 +61,22 @@ public class CreatePolitics extends BaseClass {
 
     @Step("Добавить субъект")
     public void plusClick( ) {
-        plus.click( );
+        //plus.click( );
+        clickWithExpects(plus);
     }
 
     @Step("Условие И/ИЛИ")
     public void chooseCondition( ) {
         //Сделать активным выпадающее меню
-        dropdownMenuCondition.click( );
+       // dropdownMenuCondition.click( );
+        clickWithExpects(dropdownMenuCondition);
         //Выполнить скрипт
         ( (JavascriptExecutor) wd ).executeScript( "arguments[0].click();", elementCondition );
     }
 
     @Step("Клик на кнопку Добавить политику")
     public void clickToAddBtn( ) {
-        addBTN.click( );
+        //addBTN.click( );
+        clickWithExpects( addBTN );
     }
 }

@@ -15,7 +15,6 @@ import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 import ru.yandex.qatools.allure.model.SeverityLevel;
 
-import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -77,7 +76,7 @@ public class SearchAuth extends BaseClass {
         //Цикл по элементам меню
         for (int i = 0; i < menuPoint.size( ); i++) {
             //Ждем появления подменю
-            waitSomeMillisec( 1000 );
+            waitSomeTime( 1000 );
             //Если подменю не появилось, т.е. текст пункта пуст, то еще раз нажмем на меню
             if (menuPoint.get( i ).getText( ).isEmpty( )) {
                 menu.click( );
@@ -119,7 +118,7 @@ public class SearchAuth extends BaseClass {
                         int countBeforeSearch = countByCriterion( criteriaText, j );
                         //тогда вставляем текст в строку поиска
                         sendTextToTB( criteriaText );
-                       // waitSomeMillisec( 1500 );
+                       // waitSomeTime( 1500 );
                         int countAfterSearch = tableRow.size( );
                         softAssert.assertEquals( countBeforeSearch, countAfterSearch, "Проверка провалена. По критерию " + menuPointText + " параметру " + criteriaText );
                         clearTB();

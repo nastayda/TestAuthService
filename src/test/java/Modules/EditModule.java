@@ -35,7 +35,7 @@ public class EditModule extends BaseClass {
         setAddress( moduleAddress );
         clickToSaveBtn( );
         wd.navigate( ).refresh( );
-        waitSomeMillisec( 500 );
+        waitSomeTime( 500 );
         assertEquals( lastMenuItem.getText( ), moduleName );
     }
 
@@ -46,7 +46,7 @@ public class EditModule extends BaseClass {
 
     @Step("Выбрать модуль для редактирования")
     public boolean selectedModule( ) {
-        waitSomeMillisec( 2000 );
+        waitSomeTime( 2000 );
         if (rowNameModuleTD.getText( ).contains( "testModule" )) {
             rowNameModuleTD.click( );
             return true;

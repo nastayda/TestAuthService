@@ -48,7 +48,7 @@ public class Sort extends BaseClass {
         for (int i = 0; i < downArrow.size( ); i++) {
             //По убыванию
             downArrow.get( i ).click( );
-            waitSomeMillisec( 1000 );
+            waitSomeTime( 1000 );
             //с какой колонки начинаем
             for (int k = i + 1; k < i + 2; k++) {
                 ArrayList<String> sortedByInterface = createSortedByInterfaceList( k );

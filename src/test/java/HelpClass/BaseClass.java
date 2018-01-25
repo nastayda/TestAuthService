@@ -1,7 +1,6 @@
 package HelpClass;
 
 import Politics.DeletePolitics;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -114,6 +113,9 @@ public class BaseClass {
     @FindBy(xpath = "//table/tbody/tr[last()]/td[2]")
     static public WebElement lastRowText;
 
+    public static FirefoxDriver wd;
+    public static WriteReadFromFile readData;
+
     public static boolean isAlertPresent( FirefoxDriver wd ) {
         try {
             wd.switchTo( ).alert( );
@@ -123,16 +125,18 @@ public class BaseClass {
         }
     }
 
+    public void clickWithExpects( WebElement element ) {
+        WebDriverWait wait = new WebDriverWait( wd, 5 );
+        wait.until( ExpectedConditions.elementToBeClickable( element ) );
+        element.click( );
+    }
+
     @Step(" Ввод логина {0}")
     public static void setLogin( String login ) {
         loginNameTB.clear( );
         loginNameTB.clear( );
         loginNameTB.sendKeys( login );
     }
-
-
-    public static FirefoxDriver wd;
-    public static WriteReadFromFile readData;
 
     @BeforeSuite
     public void setUp( ITestContext context ) throws Exception {
@@ -146,7 +150,12 @@ public class BaseClass {
         //Получить путь к тестовым файлам
         goToAuthPage( );
         login( );
-        context.setAttribute( "app", BaseClass.this);
+        context.setAttribute( "app", BaseClass.this );
+    }
+
+    @AfterSuite
+    public void tearDown( ) {
+        wd.quit( );
     }
 
     public void goToAuthPage( ) {
@@ -211,11 +220,6 @@ public class BaseClass {
         userNameTB.sendKeys( nameLogin );
     }
 
-    @AfterSuite
-    public void tearDown( ) {
-        wd.quit( );
-    }
-
     @Step("Перейти на последнюю страницу")
     protected int goToLastPage( ) {
         int k = countRowsOnEachPage.size( );
@@ -256,7 +260,7 @@ public class BaseClass {
         wd.navigate( ).to( getDataFromFile( "src/help-files/auth-info.txt" )[ 3 ] );
     }
 
-    public void waitSomeMillisec( int millisec ) {
+    public void waitSomeTime( int millisec ) {
         //Подождать пока прогрузится меню! Иначе он берет первый попавшися элемент списка
         try {
             Thread.sleep( millisec );
@@ -360,36 +364,44 @@ public class BaseClass {
     //Edit, create politics methods
     @Step("Сохранить")
     public void clickSave( ) {
-        savePoliticsBTN.click( );
+        //savePoliticsBTN.click( );
+        clickWithExpects( savePoliticsBTN );
     }
 
     @Step("Выбрать настройку")
     public void chooseSetting( ) {
         menuItem.click( );
-        //waitSomeMillisec( 1000 );
+        //waitSomeTime( 1000 );
         chooseServiceSetting.click( );
-        waitSomeMillisec( 1000 );
+        waitSomeTime( 1000 );
         expandMenu.click( );
-        waitSomeMillisec( 1000 );
+        waitSomeTime( 1000 );
         policyDescriptionINPT.click( );
     }
 
     @Step("Заполнить название сервиса")
     public void setServiceName( ) {
         //заполнить модуль
-        serviceNameINPT.click( );
-        modulDropMenu.click( );
+        //serviceNameINPT.click( );
+        clickWithExpects( serviceNameINPT );
+        //modulDropMenu.click( );
+        clickWithExpects( modulDropMenu );
 
         //заполнить объект
-        menuItem.click( );
-        waitSomeMillisec( 1000 );
-        chooseServiceSetting.click( );
-        waitSomeMillisec( 1000 );
-        expandMenu.click( );
-        waitSomeMillisec( 1000 );
-        placeInForm.click( );
-        menuItem.click( );
-        // waitSomeMillisec( 1000 );
+        //menuItem.click( );
+        clickWithExpects( menuItem );
+        waitSomeTime( 1000 );
+        // chooseServiceSetting.click( );
+        clickWithExpects( chooseServiceSetting );
+        waitSomeTime( 1000 );
+        //expandMenu.click( );
+        clickWithExpects( expandMenu );
+        waitSomeTime( 1000 );
+        //placeInForm.click( );
+        clickWithExpects( placeInForm );
+        //menuItem.click( );
+        clickWithExpects( menuItem );
+        // waitSomeTime( 1000 );
         //serviceNameINPT.clear( );
         //serviceNameINPT.sendKeys( serviceName );
 
@@ -403,33 +415,38 @@ public class BaseClass {
 
     @Step("Заполнить описание {0}")
     public void setDescription( String decription ) {
-        policyDescriptionINPT.click( );
+        //policyDescriptionINPT.click( );
+        clickWithExpects( policyDescriptionINPT );
         policyDescriptionINPT.clear( );
         policyDescriptionINPT.sendKeys( decription );
     }
 
     @Step("Заполнить название политики {0}")
     public void setPoliticsName( String politicsName ) {
-        policyNameINPT.click( );
+        //policyNameINPT.click( );
+        clickWithExpects( policyNameINPT );
         policyNameINPT.clear( );
         policyNameINPT.sendKeys( politicsName );
     }
 
     @Step("Установить значение {0}")
     public void setMeaning( String meaning, WebElement valueINPT ) {
-        valueINPT.click( );
+        //valueINPT.click( );
+        clickWithExpects( valueINPT );
         valueINPT.sendKeys( meaning );
     }
 
     @Step("Выбрать знак")
     public void choseSign( ) {
-        dropdownMenuSign.click( );
+        //dropdownMenuSign.click( );
+        clickWithExpects( dropdownMenuSign );
         ( (JavascriptExecutor) wd ).executeScript( "arguments[0].click();", elementSign );
     }
 
     @Step("Выбрать параметр {0}")
     public void choseParameter( String parameter, WebElement parametrINPT ) {
-        parametrINPT.click( );
+       // parametrINPT.click( );
+        clickWithExpects( parametrINPT );
         parametrINPT.clear( );
         parametrINPT.sendKeys( parameter );
     }
@@ -478,10 +495,10 @@ public class BaseClass {
     }
 
     public byte[] createSkreenshot( ) throws IOException {
-      return  ((TakesScreenshot)wd).getScreenshotAs( OutputType.BYTES);
-       // File scrFile = ((TakesScreenshot)wd).getScreenshotAs( OutputType.FILE);
+        return ( (TakesScreenshot) wd ).getScreenshotAs( OutputType.BYTES );
+        // File scrFile = ((TakesScreenshot)wd).getScreenshotAs( OutputType.FILE);
 // Now you can do whatever you need to do with it, for example copy somewhere
-       // FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));
+        // FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));
 
     }
 }

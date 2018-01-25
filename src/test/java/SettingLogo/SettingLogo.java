@@ -36,7 +36,7 @@ public class SettingLogo extends BaseClass {
         String textBefore = urlTB.getAttribute( "value" );
         String newUrl = "https://ya.ru/";
         saveNewUrl( newUrl );
-        waitSomeMillisec( 2000 );
+        waitSomeTime( 2000 );
         goToLogoPage( );
         assertEquals( wd.getCurrentUrl( ).toString( ), newUrl, "URL не был изменен. " );
         //Back to the first state
@@ -58,7 +58,7 @@ public class SettingLogo extends BaseClass {
         urlTB.clear( );
         urlTB.sendKeys( url );
         saveBTN.click( );
-        waitSomeMillisec( 2000 );
+        waitSomeTime( 2000 );
         //createSkreenshot( );
         body.click( );
     }

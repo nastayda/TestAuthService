@@ -1,7 +1,6 @@
 package Search;
 
 import HelpClass.BaseClass;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -60,11 +59,11 @@ public class SearchPolitics extends BaseClass {
             wd.navigate().refresh();
             menu.click( );
             //Ждем появления подменю
-            //waitSomeMillisec( 1000 );
+            //waitSomeTime( 1000 );
             //Если подменю не появилось, т.е. текст пункта пуст, то еще раз нажмем на меню
             if (menuPoint.get( i ).getText( ).isEmpty( )) {
                 menu.click( );
-                //waitSomeMillisec( 1000 );
+                //waitSomeTime( 1000 );
             }
             //прокрутить до конца выпадающего меню, чтобы получить самый последний элемент
             WebElement target = menuPoint.get( i );
@@ -75,7 +74,7 @@ public class SearchPolitics extends BaseClass {
             //Получить название пункта подменю
             //String menuPointText = menuPoint.get( i ).getText( );
             String menuPointText = menu.getText( );
-            waitSomeMillisec( 500 );
+            waitSomeTime( 500 );
             //Цикл по заголовкам таблицы
             for (int j = 0; j < tableHeader.size( ); j++) {
                 //Переменная поиска текста для вставки в строку поиска
@@ -90,7 +89,7 @@ public class SearchPolitics extends BaseClass {
                     creatTB( );
                     searchAreaTB.sendKeys( criteriaText );
                     //System.out.println( "Size " + tableRow.size( ) );
-                    waitSomeMillisec( 1500 );
+                    waitSomeTime( 1500 );
                     int countAfterSearch = tableRow.size( );
                     softAssert.assertEquals( countAfterSearch, countBeforeSearch,  "Проверка по параметру " + menuPointText + " провалена по критерию " + criteriaText );
                     creatTB( );
@@ -144,7 +143,7 @@ public class SearchPolitics extends BaseClass {
                         k++;
                     }
                 }
-                waitSomeMillisec( 1500 );
+                waitSomeTime( 1500 );
             }
         }
         else{

@@ -70,12 +70,12 @@ public class EditUser extends BaseClass {
 
     @Step("Редактирвоание пользователя")
     private void editUserToEdited( String[] dataForEdit ) {
-        waitSomeMillisec( 1000 );
+        waitSomeTime( 1000 );
         resizeAreaWithTable( "//*[@id=\"root\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]" );
-        waitSomeMillisec( 1000 );
+        waitSomeTime( 1000 );
         userLoginRow.click( );
         System.out.println( userLoginRow.getText( ) );
-        waitSomeMillisec( 1000 );
+        waitSomeTime( 1000 );
         editBTN.click( );
         setLogin( dataForEdit[ 0 ] );
         setNewPasswordTB( dataForEdit[ 1 ] );

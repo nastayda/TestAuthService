@@ -31,7 +31,7 @@ public class CreateModule extends BaseClass {
         setAddress( moduleAddress );
         clickToSaveBtn( );
         wd.navigate( ).refresh( );
-        waitSomeMillisec( 500 );
+        waitSomeTime( 500 );
         assertEquals( lastMenuItem.getText( ), moduleName );
     }
 

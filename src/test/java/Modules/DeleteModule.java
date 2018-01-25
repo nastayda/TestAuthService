@@ -29,14 +29,14 @@ public class DeleteModule extends BaseClass {
         //login( );
         PageFactory.initElements(wd, this);
         goToPolicyPage( );
-        waitSomeMillisec( 1500 );
+        waitSomeTime( 1500 );
         int beforeDeletion = menuItems.size( );
         clickControlModule( );
         goToLastPageForModule( );
         boolean flag = selectedModule( );
         clickDeleteBtn( flag );
         wd.navigate( ).refresh( );
-        waitSomeMillisec( 1500 );
+        waitSomeTime( 1500 );
         //int countAfterFromEachPage = goToLastPageForModule( );
         int afterDeletion = menuItems.size( );
         softAssert.assertEquals( afterDeletion, beforeDeletion - 1, "Проверка счетчика провалилась.");

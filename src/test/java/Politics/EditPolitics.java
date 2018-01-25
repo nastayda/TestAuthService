@@ -56,11 +56,11 @@ public class EditPolitics extends BaseClass {
 
     @Step("Редактирование политики")
     public void editNewPolitics( String[] massData ) {
-        waitSomeMillisec( 1000 );
+        waitSomeTime( 1000 );
         politicsNameRow.click( );
-        waitSomeMillisec( 1000 );
+        waitSomeTime( 1000 );
         editBTN.click( );
-        waitSomeMillisec( 1000 );
+        waitSomeTime( 1000 );
         choseParameter( massData[ 0 ], parametrINPT0 );
         choseSign( );
         setMeaning( massData[ 1 ], valueINPT0 );
