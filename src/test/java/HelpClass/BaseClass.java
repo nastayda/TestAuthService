@@ -43,8 +43,10 @@ public class BaseClass {
     static WebElement lastNameTB;
     @FindBy(id = "customParam1")
     static WebElement orgTypeTB;
+
     @FindBy(id = "customParam2")
     static WebElement orgNameTB;
+
     @FindBy(id = "customParam3")
     static WebElement orgSubunitTB;
     @FindBy(id = "customParam4")

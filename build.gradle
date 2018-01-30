@@ -28,15 +28,15 @@ task testService(type: Test){
         suites 'src/test/resources/testng-services.xml'
     }
 }
+testService.doFirst {
+    jvmArgs "-javaagent:${configurations.agent.singleFile}"
+}
+
 
 task testAuth(type: Test){
     useTestNG{
         suites 'src/test/resources/testng-auth.xml'
     }
-}
-
-testService.doFirst {
-    jvmArgs "-javaagent:${configurations.agent.singleFile}"
 }
 
 testAuth.doFirst {
