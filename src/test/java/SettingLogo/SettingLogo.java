@@ -34,9 +34,16 @@ public class SettingLogo extends BaseClass {
         wd.get( "http://vm-auth-dev.ursip.ru/auth/admin" );
         goToChangeLogoUrlForm( );
         String textBefore = urlTB.getAttribute( "value" );
-        String newUrl = "https://ya.ru/";
+
+        String newUrl ="";
+        if (!textBefore.contains( "ya.ru" )){
+            newUrl = "https://ya.ru/";
+        }else{
+            newUrl = "https://yandex.ru/";
+        }
+
         saveNewUrl( newUrl );
-        waitSomeTime( 2000 );
+        //waitSomeTime( 4000 );
         goToLogoPage( );
         assertEquals( wd.getCurrentUrl( ).toString( ), newUrl, "URL не был изменен. " );
         //Back to the first state
@@ -49,7 +56,8 @@ public class SettingLogo extends BaseClass {
 
     @Step("Переход на страницу с логотипом")
     public void goToLogoPage( ) {
-        goToLogo.click( );
+        //goToLogo.click( );
+        clickWithExpects( goToLogo );
     }
 
     @Step("Сохранить новый URL {0}")
