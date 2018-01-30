@@ -239,7 +239,8 @@ public class BaseClass {
     public boolean chosePolicy( String testPoliticsName, String editPoliticsName ) {
         if (!DeletePolitics.checkB.isSelected( ) & ( lastRowText.getText( ).contains( testPoliticsName + LocalDateTime.now( ).getYear( ) ) ||
                 lastRowText.getText( ).contains( editPoliticsName + LocalDateTime.now( ).getYear( ) ) )) {
-            checkB.click( );
+            //checkB.click( );
+            clickWithExpects( checkB );
             return true;
         } else return false;
     }
@@ -456,32 +457,37 @@ public class BaseClass {
     //Edit, create modules methods
     @Step(" Нажать на сохранение")
     public void clickToSaveBtn( ) {
-        saveModuleBTN.click( );
+        //saveModuleBTN.click( );
+        clickWithExpects( saveModuleBTN );
     }
 
     @Step(" Ввод адреса {0}")
     public void setAddress( String address ) {
-        addressINPT.click( );
+        //addressINPT.click( );
+        clickWithExpects( addressINPT );
         addressINPT.clear( );
         addressINPT.sendKeys( address );
     }
 
     @Step(" Ввод названия {0}")
     public void setName( String name ) {
-        nameModuleINPT.click( );
+        //nameModuleINPT.click( );
+        clickWithExpects( nameModuleINPT );
         nameModuleINPT.clear( );
         nameModuleINPT.sendKeys( name );
     }
 
     @Step(" Ввод ключевого названия {0}")
     public void setKeyName( String keyName ) {
-        keyNameModuleINPT.click( );
+        //keyNameModuleINPT.click( );
+        clickWithExpects( keyNameModuleINPT );
         keyNameModuleINPT.clear( );
         keyNameModuleINPT.sendKeys( keyName );
     }
 
     public void clickControlBtn( ) {
-        controlModuleBTN.click( );
+        //controlModuleBTN.click( );
+        clickWithExpects( controlModuleBTN );
     }
 
     public void resizeWindow( int width, int height ) {

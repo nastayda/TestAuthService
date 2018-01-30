@@ -46,7 +46,8 @@ public class Sort extends BaseClass {
     public void sortByAlphabet( ) {
         for (int i = 0; i < downArrow.size( ); i++) {
             //По убыванию
-            downArrow.get( i ).click( );
+            //downArrow.get( i ).click( );
+            clickWithExpects( downArrow.get( i ) );
             waitSomeTime( 1000 );
             //с какой колонки начинаем
             for (int k = i + 1; k < i + 2; k++) {

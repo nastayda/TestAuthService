@@ -38,7 +38,8 @@ public class CreateModule extends BaseClass {
     @Step(" Нажатие на кнокпу добавления модуля")
     public void clickToAddBtn( ) {
         clickControlBtn( );
-        addModuleBTN.click( );
+        //addModuleBTN.click( );
+        clickWithExpects( addModuleBTN );
     }
 
 }

@@ -41,14 +41,16 @@ public class EditModule extends BaseClass {
 
     @Step("Нажать на кнопку Редактировать")
     public void clickToEditBtn( ) {
-        editModuleBTN.click();
+        //editModuleBTN.click();
+        clickWithExpects( editModuleBTN );
     }
 
     @Step("Выбрать модуль для редактирования")
     public boolean selectedModule( ) {
         waitSomeTime( 2000 );
         if (rowNameModuleTD.getText( ).contains( "testModule" )) {
-            rowNameModuleTD.click( );
+            //rowNameModuleTD.click( );
+            clickWithExpects( rowNameModuleTD );
             return true;
         } else return false;
     }

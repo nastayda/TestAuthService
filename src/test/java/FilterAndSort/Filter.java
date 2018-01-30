@@ -23,7 +23,7 @@ public class Filter extends BaseClass {
     List<WebElement> headers;
     //*[@id="root"]/div/div[2]/div[2]/div/div[1]/div/div/div/div/div[1]/table/thead/tr/th
     @FindBy(xpath = "//thead[@class='ant-table-thead']/tr/th/span/i")
-     List<WebElement> filter;
+    List<WebElement> filter;
     //div[@class='ant-table-filter-dropdown']/ul/li[2]/label/span/input
     //*[@id="root"]/div/div[2]/div[2]/div/div[2]/div/div/div/ul/li[1]
     //*[@id="root"]/div/div[2]/div[2]/div/div[3]/div/div/div/ul/li[1]
@@ -45,8 +45,8 @@ public class Filter extends BaseClass {
     @Test
     @Step("Вызов фильтрации")
     public void applyFilterTest( ) {
-       // login( );
-        PageFactory.initElements(wd, this);
+        // login( );
+        PageFactory.initElements( wd, this );
         resizeWindow( 1920, 1080 );
         //System.out.println(filter.size() );
         applyFilter( );
@@ -54,10 +54,12 @@ public class Filter extends BaseClass {
     }
 
     int index = 0, indexCur = 0, indexPre = 0;
+
     public void applyFilter( ) {
         //Внешний цикл по колонкам
         for (int i = 0; i < filter.size( ); i++) {
-            filter.get( i ).click( );
+            //filter.get( i ).click( );
+            clickWithExpects( filter.get( i ) );
             //Внутренний цикл по значениям фильтра
             if (i == 0) {
                 index = 0;
@@ -72,8 +74,10 @@ public class Filter extends BaseClass {
                 if (!isEmpty( meaningFilterCHBX.get( j ).getText( ) )) {
                     String criterion = meaningFilterCHBX.get( j ).getText( );
                     int countBefore = countByCriterion( criterion, i + 1 );
-                    meaningFilterCHBX.get( j ).click( );
-                    spacePage.click( );
+                    //meaningFilterCHBX.get( j ).click( );
+                    clickWithExpects( meaningFilterCHBX.get( j ) );
+                    //spacePage.click( );
+                    clickWithExpects( spacePage );
                     int countAfter = tableRow.size( );
                     checkCountInTAbleAfterAppyFilter( criterion, countBefore, countAfter, headers.get( i + 1 ).getText( ) );
                     break;

@@ -94,14 +94,14 @@ public class SearchAuth extends BaseClass {
                     int countBeforeSearch = getCountRepeatedElementsFromList( getRowsFromDB( "", "" ) );
                     sendTextToTB( "Test" );
                     int countAfterSearch = tableRow.size();
-                    softAssert.assertEquals(  countBeforeSearch, countAfterSearch, "Проверка провалена. По критерию Везде параметру Test");
+                    assertEverywhere( countBeforeSearch, countAfterSearch );
                     clearTB( );
                     //System.out.println( countBeforeSearch );
                 } else {
                     int countBeforeSearch = getRowsFromDB( " like 'Test%'", " where customParam" + i ).size( );
                     sendTextToTB( "Test" );
                     int countAfterSearch = tableRow.size( );
-                    softAssert.assertEquals( countBeforeSearch, countAfterSearch, "Проверка провалена. По критерию " + menuPointText + " параметру Test" );
+                    searchWithParameters( menuPointText, countBeforeSearch, countAfterSearch );
                     clearTB( );
                 }
             } else {
@@ -126,6 +126,16 @@ public class SearchAuth extends BaseClass {
                 }
             }
         }
+    }
+
+    @Step("Проверка по критерию {0} параметру Test")
+    public void searchWithParameters( String menuPointText, int countBeforeSearch, int countAfterSearch ) {
+        softAssert.assertEquals( countBeforeSearch, countAfterSearch, "Проверка провалена. По критерию " + menuPointText + " параметру Test" );
+    }
+
+    @Step("Проверка по критерию Везде параметру Test")
+    public void assertEverywhere( int countBeforeSearch, int countAfterSearch ) {
+        softAssert.assertEquals(  countBeforeSearch, countAfterSearch, "Проверка провалена. По критерию Везде параметру Test");
     }
 
     public void clearTB( ) {

@@ -91,11 +91,16 @@ public class SearchPolitics extends BaseClass {
                     //System.out.println( "Size " + tableRow.size( ) );
                     waitSomeTime( 1500 );
                     int countAfterSearch = tableRow.size( );
-                    softAssert.assertEquals( countAfterSearch, countBeforeSearch,  "Проверка по параметру " + menuPointText + " провалена по критерию " + criteriaText );
+                    searchWithParameterPolitics( menuPointText, criteriaText, countBeforeSearch, countAfterSearch );
                     creatTB( );
                 }
             }
         }
+    }
+
+    @Step("Проверка по параметру {0} провалена по критерию {1}")
+    public void searchWithParameterPolitics( String menuPointText, String criteriaText, int countBeforeSearch, int countAfterSearch ) {
+        softAssert.assertEquals( countAfterSearch, countBeforeSearch,  "Проверка по параметру " + menuPointText + " провалена по критерию " + criteriaText );
     }
 
     public void creatTB( ) {

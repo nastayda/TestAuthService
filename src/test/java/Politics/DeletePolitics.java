@@ -32,7 +32,7 @@ public class DeletePolitics extends BaseClass {
         //login( );
         PageFactory.initElements(wd, this);
         goToPolicyPage( );
-        System.out.println(pagginationArrow.getText());
+       // System.out.println(pagginationArrow.getText());
         int countBeforeFromEachPage = goToLastPage( );
         //Количество элементов напротив "Всего"
         int countBefore = Integer.parseInt( countRowsText.getText( ).substring( 7 ) );
@@ -46,7 +46,7 @@ public class DeletePolitics extends BaseClass {
         //Проверка по счетчику
         softAssert.assertEquals( countAfter, countBefore - 1, "Проверка счетчика провалилась." );
         //Проверка по физическому наличию в таблице
-        System.out.println(countAfterFromEachPage +" "+countBeforeFromEachPage);
+        //System.out.println(countAfterFromEachPage +" "+countBeforeFromEachPage);
         softAssert.assertEquals( countAfterFromEachPage, countBeforeFromEachPage - 1, "Проверка физического наличия политик в таблице провалилась." );
         softAssert.assertAll();
     }
