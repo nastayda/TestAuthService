@@ -30,7 +30,6 @@ public class Sort extends BaseClass {
 
     @Title("Проверка сортировки")
     @Test
-    @Step("Вызов метода сортировки")
     public void sort( ) {
         //login( );
         PageFactory.initElements(wd, this);
@@ -43,6 +42,7 @@ public class Sort extends BaseClass {
         Collections.sort( aItems, String.CASE_INSENSITIVE_ORDER );
     }
 
+    @Step("Вызов метода сортировки")
     public void sortByAlphabet( ) {
         for (int i = 0; i < downArrow.size( ); i++) {
             //По убыванию

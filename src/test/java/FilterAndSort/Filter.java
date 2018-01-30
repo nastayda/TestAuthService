@@ -43,7 +43,6 @@ public class Filter extends BaseClass {
 
     @Title("Проверка фильтрации")
     @Test
-    @Step("Вызов фильтрации")
     public void applyFilterTest( ) {
         // login( );
         PageFactory.initElements( wd, this );
@@ -55,6 +54,7 @@ public class Filter extends BaseClass {
 
     int index = 0, indexCur = 0, indexPre = 0;
 
+    @Step("Вызов функции фильтрации")
     public void applyFilter( ) {
         //Внешний цикл по колонкам
         for (int i = 0; i < filter.size( ); i++) {
