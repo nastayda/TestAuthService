@@ -37,7 +37,6 @@ public class Sort extends BaseClass {
         resizeWindow( 1920, 1080 );
         sortByAlphabet( );
         softAssert.assertAll( );
-
     }
 
     public static void sortList( ArrayList<String> aItems ) {
