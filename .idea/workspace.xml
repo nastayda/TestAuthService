@@ -51,8 +51,8 @@
       <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="74" column="14" lean-forward="false" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+            <state relative-caret-position="391">
+              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -1790,8 +1790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="74" column="14" lean-forward="false" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+        <state relative-caret-position="391">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
           <folding />
         </state>
       </provider>
