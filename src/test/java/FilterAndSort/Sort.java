@@ -51,6 +51,8 @@ public class Sort extends BaseClass {
             waitSomeTime( 1000 );
             //с какой колонки начинаем
             for (int k = i + 1; k < i + 2; k++) {
+
+                System.out.println( filter.get( k ).getText() );
                 ArrayList<String> sortedByInterface = createSortedByInterfaceList( k );
                 toLowercase( sortedByInterface );
                 ArrayList<String> sortedByRule = new ArrayList<>( sortedByInterface );
@@ -72,7 +74,7 @@ public class Sort extends BaseClass {
                 for (String item : reverseOrder) {
                     System.out.println( item );
                 }*/
-                softAssert.assertEquals( reverseOrder, sortedByInterface, "Проверка по убыванию провалилась." );
+                assertMassDesc( sortedByInterface, reverseOrder, filter.get( k ).getText( ) );
             }
             //По возрастанию
             upArrow.get( i ).click( );
@@ -82,9 +84,19 @@ public class Sort extends BaseClass {
                 ArrayList<String> sortedByRule = new ArrayList<>( sortedByInterface );
                 //сортировка по алфавиту
                 sortList( sortedByRule );
-                softAssert.assertEquals( sortedByRule, sortedByInterface, "Проверка по возрастанию провалилась." );
+                assertMassEsc( sortedByInterface, sortedByRule, filter.get( k ).getText( ) );
             }
         }
+    }
+
+    @Step("Проверка по возрастанию по критерию {2}")
+    public void assertMassEsc( List<String> sortedByInterface, ArrayList<String> sortedByRule, String param ) {
+        softAssert.assertEquals( sortedByRule, sortedByInterface, "Проверка по возрастанию провалилась. По критерию " + param );
+    }
+
+    @Step("Проверка по убыванию по критерию {2}")
+    public void assertMassDesc( ArrayList<String> sortedByInterface, List<String> reverseOrder, String parameter ) {
+        softAssert.assertEquals( reverseOrder, sortedByInterface, "Проверка по убыванию провалилась. По критерию " + parameter );
     }
 
     public ArrayList<String> createSortedByInterfaceList( int k ) {
