@@ -12,7 +12,7 @@ import java.util.List;
 //Элементы подменю отсортированы по алфавиту!Что неудобно, т.к. есть 4 кастом_параметра,
 // которые если перебирать их в цикле будут не совпадать с теми которые есь в меню.
 // Тут очень хочется вставить картинку человека с красными глазами, вопрошающего WHY!?!?!?!?!?
-// В итоге буду делать через кейс...пока ничего умнее в голову не приходит :(
+// В итоге буду делать через свич-кейс...пока ничего умнее в голову не приходит :(
 public class FilterAuthLefSubMenu extends BaseClass {
     @FindBy(xpath = "//div[@class='ant-menu-submenu-title']")
     WebElement allOrg;
@@ -30,9 +30,33 @@ public class FilterAuthLefSubMenu extends BaseClass {
         clickWithExpects( allOrg );
         for (int i = 1; i < subMenu.size() ; i++) {
             //clickWithExpects( allOrg );
-            clickWithExpects( subMenu.get( i ) );
-            clickWithExpects( elementSebMenu );
+            String pointMenu = subMenu.get( i ).getText();
+            switch (pointMenu){
+                case "Группа":
+                    //System.out.println( pointMenu );
+                    clickToSubMenu( i );
+                    
+                    break;
+                case "Название организации":
+                    System.out.println( pointMenu );
+                    break;
+                case "Подразделение":
+                    System.out.println( pointMenu );
+                    break;
+                case "Роль":
+                    System.out.println( pointMenu );
+                    break;
+                case "Тип организации":
+                    System.out.println( pointMenu );
+                    break;
+            }
+
             clickWithExpects( allOrg );
         }
+    }
+
+    public void clickToSubMenu( int i ) {
+        clickWithExpects( subMenu.get( i ) );
+        clickWithExpects( elementSebMenu );
     }
 }
