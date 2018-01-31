@@ -1,12 +1,18 @@
 package FilterAndSort;
 
 import HelpClass.BaseClass;
+import HelpClass.ConnectionHB;
+import HelpClass.UserTable;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Title;
 
+import javax.sound.midi.Soundbank;
+import java.util.ArrayList;
 import java.util.List;
 
 //Элементы подменю отсортированы по алфавиту!Что неудобно, т.к. есть 4 кастом_параметра,
@@ -25,7 +31,7 @@ public class FilterAuthLefSubMenu extends BaseClass {
 
     @Test
     @Title( "Проверка фильтрации по боковому меню" )
-    public void searchAuthLefSubMenu(){
+    public void searchAuthLefSubMenu() throws Exception {
         PageFactory.initElements( wd, this );
         clickWithExpects( allOrg );
         for (int i = 1; i < subMenu.size() ; i++) {
@@ -35,7 +41,7 @@ public class FilterAuthLefSubMenu extends BaseClass {
                 case "Группа":
                     //System.out.println( pointMenu );
                     clickToSubMenu( i );
-                    
+                    System.out.println( getRowsFromDB(" like '"+elementSebMenu.getText()+"%'"," where customParam4 ").size());
                     break;
                 case "Название организации":
                     System.out.println( pointMenu );
@@ -54,6 +60,30 @@ public class FilterAuthLefSubMenu extends BaseClass {
             clickWithExpects( allOrg );
         }
     }
+
+    public List<String> getRowsFromDB( String criterion, String param ) throws Exception {
+        ConnectionHB conDB = new ConnectionHB( );
+        SessionFactory sessionFactory = conDB.setUp( );
+
+        Session session = sessionFactory.openSession( );
+        session.beginTransaction( );
+
+        //List<Integer> idList = numbersFromTable;
+
+        String hql = "from UserTable " + param + criterion;
+        List result = session.createQuery( hql ).list( );
+        session.getTransaction( ).commit( );
+        session.close( );
+        List<String> newStringResult = new ArrayList<>( );
+        for (UserTable item : (List<UserTable>) result) {
+            //System.out.println( item.getNameFirst( ) );
+            newStringResult.add( item.getId( ) + item.getEmail( ) + item.getLogin( ) + item.getNameFirst( ) + item.getNameLast( ) + item.getNameMiddle( ) +
+                    item.getPhone( ) + item.getRole( ) + item.getParam1( ) + item.getParam2( ) + item.getParam3( ) + item.getParam4( )
+            );
+        }
+        return newStringResult;
+    }
+
 
     public void clickToSubMenu( int i ) {
         clickWithExpects( subMenu.get( i ) );
