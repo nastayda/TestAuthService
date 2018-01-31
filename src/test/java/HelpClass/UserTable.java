@@ -66,28 +66,28 @@ public class UserTable {
     }
 
     @Column(name = "CUSTOM_PARAM_1")
-    String customParam1;
+    String customParam1; // Тип организации
 
     public String getParam1( ) {
         return customParam1;
     }
 
     @Column(name = "CUSTOM_PARAM_2")
-    String customParam2;
+    String customParam2; //Название организации
 
     public String getParam2( ) {
         return customParam2;
     }
 
     @Column(name = "CUSTOM_PARAM_3")
-    String customParam3;
+    String customParam3; //Подразделение
 
     public String getParam3( ) {
         return customParam3;
     }
 
     @Column(name = "CUSTOM_PARAM_4")
-    String customParam4;
+    String customParam4; //Группа
 
     public String getParam4( ) {
         return customParam4;
