@@ -1,4 +1,4 @@
-package SettingLogo;
+package SettingLogoAndMetaData;
 
 import HelpClass.BaseClass;
 import org.openqa.selenium.WebElement;

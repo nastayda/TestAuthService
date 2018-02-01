@@ -73,9 +73,9 @@
             <class name="FilterAndSort.Sort"/>
         </classes>
     </test>
-    <test name="Вызов класса SettingLogo.SettingLogo">
+    <test name="Вызов класса SettingLogoAndMetaData.SettingLogo">
         <classes>
-            <class name="SettingLogo.SettingLogo"/>
+            <class name="SettingLogoAndMetaData.SettingLogo"/>
         </classes>
     </test>
     <test name="Вызов класса FilterAndSort.FilterAuthLeftSubMenu">
