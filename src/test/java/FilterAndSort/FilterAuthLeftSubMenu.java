@@ -65,7 +65,7 @@ public class FilterAuthLeftSubMenu extends BaseClass {
         }
     }
 
-    @Step("Сортировка по критерию ")
+    @Step("Сортировка по критерию {0}")
     public void assertCountFromDBadnTable( String elementSebMenuText, String param ) throws Exception {
         //System.out.println( getRowsFromDB(" like '"+elementSebMenu.getText()+"%'"," where customParam4 ").size()+"  "+table.size());
         softAssert.assertEquals( getRowsFromDB(" like '"+ elementSebMenuText +"%'", param ).size(), table.size(),
