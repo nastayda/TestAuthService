@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/FilterAndSort/FilterAuthLefSubMenu.class" afterPath="$PROJECT_DIR$/out/test/classes/FilterAndSort/FilterAuthLefSubMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAuthLefSubMenu.java" afterPath="$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAuthLefSubMenu.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAuthLefSubMenu.java" afterPath="$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAuthLeftSubMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testng-services.xml" afterPath="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -39,13 +40,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FilterAuthLefSubMenu.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAuthLefSubMenu.java">
+      <file leaf-file-name="FilterAuthLeftSubMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAuthLeftSubMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="46" lean-forward="false" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+            <state relative-caret-position="73">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#assertCountFromDBadnTable#0;class#FilterAuthLeftSubMenu#0" expanded="false" />
+                <element signature="method#getRowsFromDB#0;class#FilterAuthLeftSubMenu#0" expanded="false" />
+                <element signature="method#clickToSubMenu#0;class#FilterAuthLeftSubMenu#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -54,8 +58,28 @@
       <file leaf-file-name="UserTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/UserTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="272">
               <caret line="68" column="23" lean-forward="false" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testng-services.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="82" column="60" lean-forward="false" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -610,7 +634,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/HelpClass/PageLocators.java" />
         <option value="$PROJECT_DIR$/src/test/java/AuthService/CreateUserNew.java" />
         <option value="$PROJECT_DIR$/src/test/java/AuthService/CreateNewUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/testPacage/TestAuthorization.java" />
@@ -655,12 +678,13 @@
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchPolitics.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/Filter.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/Sort.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Search/SearchAuthLefSubMenu.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/SearchAuthLefSubMenu.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/АшдеукAuthLefSubMenu.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClass/UserTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAuthLefSubMenu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAuthLeftSubMenu.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
       </list>
     </option>
   </component>
@@ -905,7 +929,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.FilterAuthLefSubMenu.searchAuthLefSubMenu">
+  <component name="RunManager" selected="TestNG.FilterAuthLeftSubMenu.searchAuthLefSubMenu">
     <configuration name="CreateUser.createUser" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -970,7 +994,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="FilterAuthLefSubMenu.searchAuthLefSubMenu" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FilterAuthLeftSubMenu.searchAuthLefSubMenu" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="FilterAndSort.*" />
@@ -982,7 +1006,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="FilterAndSort" />
-      <option name="MAIN_CLASS_NAME" value="FilterAndSort.FilterAuthLefSubMenu" />
+      <option name="MAIN_CLASS_NAME" value="FilterAndSort.FilterAuthLeftSubMenu" />
       <option name="METHOD_NAME" value="searchAuthLefSubMenu" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -1197,11 +1221,11 @@
       <item index="2" class="java.lang.String" itemvalue="TestNG.SearchAuth.search" />
       <item index="3" class="java.lang.String" itemvalue="TestNG.SearchPolitics.searchPolitic" />
       <item index="4" class="java.lang.String" itemvalue="TestNG.Sort.sort" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.FilterAuthLefSubMenu.searchAuthLefSubMenu" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.FilterAuthLeftSubMenu.searchAuthLefSubMenu" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.FilterAuthLefSubMenu.searchAuthLefSubMenu" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.FilterAuthLeftSubMenu.searchAuthLefSubMenu" />
         <item index="1" class="java.lang.String" itemvalue="TestNG.Sort.sort" />
         <item index="2" class="java.lang.String" itemvalue="TestNG.SearchPolitics.searchPolitic" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.SearchAuth.search" />
@@ -1379,7 +1403,7 @@
           <option name="timeStamp" value="177" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="180" />
+      <option name="time" value="183" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1547,14 +1571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/help-files/auth-info.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1698,14 +1714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-394">
-          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FilterAndSort/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -1741,21 +1749,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAuthLeftSubMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#assertCountFromDBadnTable#0;class#FilterAuthLeftSubMenu#0" expanded="false" />
+            <element signature="method#getRowsFromDB#0;class#FilterAuthLeftSubMenu#0" expanded="false" />
+            <element signature="method#clickToSubMenu#0;class#FilterAuthLeftSubMenu#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/UserTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="272">
           <caret line="68" column="23" lean-forward="false" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAuthLefSubMenu.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="46" lean-forward="false" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="244">
+          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="82" column="60" lean-forward="false" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>

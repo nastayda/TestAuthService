@@ -19,7 +19,7 @@ import java.util.List;
 // которые если перебирать их в цикле будут не совпадать с теми которые есь в меню.
 // Тут очень хочется вставить картинку человека с красными глазами, вопрошающего WHY!?!?!?!?!?
 // В итоге буду делать через свич-кейс...пока ничего умнее в голову не приходит :(
-public class FilterAuthLefSubMenu extends BaseClass {
+public class FilterAuthLeftSubMenu extends BaseClass {
     @FindBy(xpath = "//div[@class='ant-menu-submenu-title']")
     WebElement allOrg;
 
@@ -38,17 +38,14 @@ public class FilterAuthLefSubMenu extends BaseClass {
         PageFactory.initElements( wd, this );
         clickWithExpects( allOrg );
         for (int i = 1; i < subMenu.size() ; i++) {
-            //clickWithExpects( allOrg );
             String pointMenu = subMenu.get( i ).getText();
             switch (pointMenu){
                 case "Группа":
                     clickToSubMenu( i );
-                    //System.out.println( pointMenu );
                     assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam4 " );
                     break;
                 case "Название организации":
                     clickToSubMenu( i );
-                    //System.out.println( pointMenu );
                     assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam2 " );
                     break;
                 case "Подразделение":
