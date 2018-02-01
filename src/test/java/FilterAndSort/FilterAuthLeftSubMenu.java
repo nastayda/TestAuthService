@@ -42,31 +42,31 @@ public class FilterAuthLeftSubMenu extends BaseClass {
             switch (pointMenu){
                 case "Группа":
                     clickToSubMenu( i );
-                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam4 " );
+                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam4 ", pointMenu );
                     break;
                 case "Название организации":
                     clickToSubMenu( i );
-                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam2 " );
+                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam2 ", pointMenu );
                     break;
                 case "Подразделение":
                     clickToSubMenu( i );
-                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam3 " );
+                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam3 ", pointMenu );
                     break;
                 case "Роль":
                     clickToSubMenu( i );
-                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where role " );
+                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where role ", pointMenu );
                     break;
                 case "Тип организации":
                     clickToSubMenu( i );
-                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam1 " );
+                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam1 ", pointMenu );
                     break;
             }
             clickWithExpects( allOrg );
         }
     }
 
-    @Step("Сортировка по критерию {0}")
-    public void assertCountFromDBadnTable( String elementSebMenuText, String param ) throws Exception {
+    @Step("Сортировка по критерию {2} и параметру {0}")
+    public void assertCountFromDBadnTable( String elementSebMenuText, String param, String pointMenu ) throws Exception {
         //System.out.println( getRowsFromDB(" like '"+elementSebMenu.getText()+"%'"," where customParam4 ").size()+"  "+table.size());
         softAssert.assertEquals( getRowsFromDB(" like '"+ elementSebMenuText +"%'", param ).size(), table.size(),
                                 "Сортировка по критерию "+ elementSebMenuText +" провалена. Количество элементов в таблице не совпадает с количеством в БД." );
