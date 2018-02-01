@@ -9,9 +9,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
-import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +29,9 @@ public class FilterAuthLefSubMenu extends BaseClass {
     @FindBy(xpath = "//div/div/div[2]/div[1]/div/div/ul[2]/li[last()]")
     WebElement elementSebMenu;
 
+    @FindBy(xpath = "//*[@id=\"root\"]//table/tbody/tr")
+    List<WebElement> table;
+
     @Test
     @Title( "Проверка фильтрации по боковому меню" )
     public void searchAuthLefSubMenu() throws Exception {
@@ -39,26 +42,37 @@ public class FilterAuthLefSubMenu extends BaseClass {
             String pointMenu = subMenu.get( i ).getText();
             switch (pointMenu){
                 case "Группа":
-                    //System.out.println( pointMenu );
                     clickToSubMenu( i );
-                    System.out.println( getRowsFromDB(" like '"+elementSebMenu.getText()+"%'"," where customParam4 ").size());
+                    //System.out.println( pointMenu );
+                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam4 " );
                     break;
                 case "Название организации":
-                    System.out.println( pointMenu );
+                    clickToSubMenu( i );
+                    //System.out.println( pointMenu );
+                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam2 " );
                     break;
                 case "Подразделение":
-                    System.out.println( pointMenu );
+                    clickToSubMenu( i );
+                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam3 " );
                     break;
                 case "Роль":
-                    System.out.println( pointMenu );
+                    clickToSubMenu( i );
+                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where role " );
                     break;
                 case "Тип организации":
-                    System.out.println( pointMenu );
+                    clickToSubMenu( i );
+                    assertCountFromDBadnTable( elementSebMenu.getText( ), " where customParam1 " );
                     break;
             }
-
             clickWithExpects( allOrg );
         }
+    }
+
+    @Step("Сортировка по критерию ")
+    public void assertCountFromDBadnTable( String elementSebMenuText, String param ) throws Exception {
+        //System.out.println( getRowsFromDB(" like '"+elementSebMenu.getText()+"%'"," where customParam4 ").size()+"  "+table.size());
+        softAssert.assertEquals( getRowsFromDB(" like '"+ elementSebMenuText +"%'", param ).size(), table.size(),
+                                "Сортировка по критерию "+ elementSebMenuText +" провалена. Количество элементов в таблице не совпадает с количеством в БД." );
     }
 
     public List<String> getRowsFromDB( String criterion, String param ) throws Exception {
