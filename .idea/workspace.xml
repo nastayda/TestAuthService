@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49b3134-00fc-4c5b-8586-c91e56d60ad2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/FilterAndSort/FilterAuthLefSubMenu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/SettingLogo/SettingLogo.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/SettingLogo/SettingLogo.java" afterPath="$PROJECT_DIR$/src/test/java/SettingLogoAndMetaData/SettingLogo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/resources/testng-services.xml" afterPath="$PROJECT_DIR$/out/test/resources/testng-services.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testng-services.xml" afterPath="$PROJECT_DIR$/src/test/resources/testng-services.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/SettingLogoAndMetaData/ChangeMetaData.class" afterPath="$PROJECT_DIR$/out/test/classes/SettingLogoAndMetaData/ChangeMetaData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SettingLogoAndMetaData/ChangeMetaData.java" afterPath="$PROJECT_DIR$/src/test/java/SettingLogoAndMetaData/ChangeMetaData.java" />
     </list>
     <ignored path="$USER_HOME$/Desktop/TestAuthService/.gradle/" />
     <ignored path="$USER_HOME$/Desktop/TestAuthService/build/" />
@@ -43,30 +39,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FilterAuthLeftSubMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/FilterAndSort/FilterAuthLeftSubMenu.java">
+      <file leaf-file-name="ChangeMetaData.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogoAndMetaData/ChangeMetaData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state relative-caret-position="-83">
+              <caret line="72" column="34" lean-forward="true" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#searchAuthLefSubMenu#0;class#FilterAuthLeftSubMenu#0" expanded="false" />
-                <element signature="method#assertCountFromDBadnTable#0;class#FilterAuthLeftSubMenu#0" expanded="false" />
-                <element signature="method#getRowsFromDB#0;class#FilterAuthLeftSubMenu#0" expanded="false" />
-                <element signature="method#clickToSubMenu#0;class#FilterAuthLeftSubMenu#0" expanded="false" />
+                <element signature="method#elementsFromForm#0;class#ChangeMetaData#0" expanded="false" />
+                <element signature="method#changeMetadataText#0;class#ChangeMetaData#0" expanded="false" />
+                <element signature="method#clickChangeMetadataAll#0;class#ChangeMetaData#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChangeMetaData.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogoAndMetaData/ChangeMetaData.java">
+      <file leaf-file-name="SearchAuth.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-238">
+              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="27" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,6 +90,41 @@
             <state relative-caret-position="244">
               <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+              <folding>
+                <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#goToAuthPage#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#login#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#goToLastPage#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#waitSomeTime#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#waitUntilElementBeClickable#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#clickToSave#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setRole#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setPhoneNumber#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setEmail#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setMiddleName#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setFirstName#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setSurname#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setOrgType#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setOrgSubunit#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#setOrgGroup#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#chooseSetting#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#resizeAreaWithTable#0;class#BaseClass#0" expanded="false" />
+                <element signature="method#createSkreenshot#0;class#BaseClass#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -878,6 +906,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestAuthServiceNew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestAuthServiceNew" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="SettingLogoAndMetaData" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1250,35 +1286,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChangeMetaData_changeMeta - 2018.02.01 at 11h 02m 30s.xml">
+    <history-entry file="ChangeMetaData_changeMeta - 2018.02.06 at 14h 55m 30s.xml">
       <configuration name="ChangeMetaData.changeMeta" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ChangeMetaData_changeMeta - 2018.02.01 at 11h 03m 06s.xml">
+    <history-entry file="ChangeMetaData_changeMeta - 2018.02.06 at 14h 56m 56s.xml">
       <configuration name="ChangeMetaData.changeMeta" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ChangeMetaData_changeMeta - 2018.02.01 at 11h 03m 52s.xml">
+    <history-entry file="ChangeMetaData_changeMeta - 2018.02.06 at 15h 01m 42s.xml">
       <configuration name="ChangeMetaData.changeMeta" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ChangeMetaData_changeMeta - 2018.02.01 at 11h 49m 11s.xml">
+    <history-entry file="ChangeMetaData_changeMeta - 2018.02.06 at 15h 03m 20s.xml">
       <configuration name="ChangeMetaData.changeMeta" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FilterAuthLefSubMenu_searchAuthLefSubMenu - 2018.01.31 at 14h 09m 26s.xml">
-      <configuration name="FilterAuthLefSubMenu.searchAuthLefSubMenu" configurationId="TestNG" />
+    <history-entry file="ChangeMetaData_changeMeta - 2018.02.06 at 15h 04m 26s.xml">
+      <configuration name="ChangeMetaData.changeMeta" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FilterAuthLefSubMenu_searchAuthLefSubMenu - 2018.01.31 at 14h 10m 07s.xml">
-      <configuration name="FilterAuthLefSubMenu.searchAuthLefSubMenu" configurationId="TestNG" />
+    <history-entry file="ChangeMetaData_changeMeta - 2018.02.06 at 15h 05m 33s.xml">
+      <configuration name="ChangeMetaData.changeMeta" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FilterAuthLefSubMenu_searchAuthLefSubMenu - 2018.01.31 at 14h 11m 31s.xml">
-      <configuration name="FilterAuthLefSubMenu.searchAuthLefSubMenu" configurationId="TestNG" />
+    <history-entry file="ChangeMetaData_changeMeta - 2018.02.06 at 15h 06m 23s.xml">
+      <configuration name="ChangeMetaData.changeMeta" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FilterAuthLefSubMenu_searchAuthLefSubMenu - 2018.02.01 at 09h 26m 03s.xml">
-      <configuration name="FilterAuthLefSubMenu.searchAuthLefSubMenu" configurationId="TestNG" />
+    <history-entry file="ChangeMetaData_changeMeta - 2018.02.06 at 15h 06m 50s.xml">
+      <configuration name="ChangeMetaData.changeMeta" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FilterAuthLefSubMenu_searchAuthLefSubMenu - 2018.02.01 at 10h 03m 43s.xml">
-      <configuration name="FilterAuthLefSubMenu.searchAuthLefSubMenu" configurationId="TestNG" />
+    <history-entry file="ChangeMetaData_changeMeta - 2018.02.06 at 15h 07m 24s.xml">
+      <configuration name="ChangeMetaData.changeMeta" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FilterAuthLefSubMenu_searchAuthLefSubMenu - 2018.02.01 at 10h 04m 35s.xml">
-      <configuration name="FilterAuthLefSubMenu.searchAuthLefSubMenu" configurationId="TestNG" />
+    <history-entry file="ChangeMetaData_changeMeta - 2018.02.06 at 15h 17m 43s.xml">
+      <configuration name="ChangeMetaData.changeMeta" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1293,7 +1329,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1504329" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28030303" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2987013" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1402,8 +1438,20 @@
           <properties />
           <option name="timeStamp" value="177" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/SettingLogoAndMetaData/ChangeMetaData.java</url>
+          <line>127</line>
+          <properties />
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/SettingLogoAndMetaData/ChangeMetaData.java</url>
+          <line>126</line>
+          <properties />
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="184" />
+      <option name="time" value="198" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1471,6 +1519,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="607" column="0" lean-forward="false" selection-start-line="607" selection-start-column="0" selection-end-line="607" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1478,6 +1527,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1634,40 +1684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="974">
-          <caret line="242" column="36" lean-forward="false" selection-start-line="242" selection-start-column="36" selection-end-line="242" selection-end-column="36" />
-          <folding>
-            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#clickWithExpects#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#goToAuthPage#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#goToLastPage#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#waitSomeTime#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#waitUntilElementBeClickable#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#clickToSave#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setRole#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setPhoneNumber#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setEmail#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setMiddleName#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setFirstName#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setSurname#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setOrgType#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setOrgSubunit#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setOrgGroup#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#chooseSetting#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#resizeAreaWithTable#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#createSkreenshot#0;class#BaseClass#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Politics/DeletePolitics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -1740,14 +1756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-61">
-          <caret line="100" column="95" lean-forward="true" selection-start-line="100" selection-start-column="78" selection-end-line="100" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/UserTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1786,12 +1794,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Search/SearchAuth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="27" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClass/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding>
+            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#goToAuthPage#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitTable#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#signInClick#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#goToLastPage#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitSomeTime#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitUntilElementBeClickable#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#clickToSave#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setRole#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setPhoneNumber#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setEmail#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setMiddleName#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setFirstName#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setSurname#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setOrgType#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setOrgSubunit#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setOrgGroup#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#chooseSetting#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#resizeAreaWithTable#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#createSkreenshot#0;class#BaseClass#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SettingLogoAndMetaData/ChangeMetaData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="-83">
+          <caret line="72" column="34" lean-forward="true" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#elementsFromForm#0;class#ChangeMetaData#0" expanded="false" />
+            <element signature="method#changeMetadataText#0;class#ChangeMetaData#0" expanded="false" />
+            <element signature="method#clickChangeMetadataAll#0;class#ChangeMetaData#0" expanded="false" />
           </folding>
         </state>
       </provider>
